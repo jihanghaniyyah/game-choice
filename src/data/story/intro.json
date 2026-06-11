@@ -1,0 +1,114 @@
+{
+  "intro_001": {
+    "id": "intro_001",
+    "type": "narration",
+    "background": "bedroom_afternoon",
+    "text": "Sore hari."
+  },
+
+  "intro_002": {
+    "id": "intro_002",
+    "type": "narration",
+    "background": "bedroom_afternoon",
+    "text": "Melati pulang dari sekolah dengan langkah yang terasa berat.",
+    "next": "intro_003"
+  },
+
+  "intro_003": {
+    "id": "intro_003",
+    "type": "narration",
+    "background": "bedroom_afternoon",
+    "text": "Seharian penuh rapat OSIS, latihan ekstrakurikuler, dan ujian Matematika menguras tenaganya.",
+    "next": "intro_004"
+  },
+
+  "intro_004": {
+    "id": "intro_004",
+    "type": "dialogue",
+    "speaker": "Pikiran Melati",
+    "text": "Rumah... tapi nggak berasa kayak rumah.",
+    "next": "intro_005"
+  },
+
+  "intro_005": {
+    "id": "intro_005",
+    "type": "narration",
+    "text": "Beberapa jam kemudian, terdengar ketukan di pintu kamar.",
+    "next": "intro_006"
+  },
+
+  "intro_006": {
+    "id": "intro_006",
+    "type": "narration",
+    "text": "Ayah berdiri di depan pintu. Wajahnya tampak lelah setelah seharian bekerja.",
+    "next": "intro_007"
+  },
+
+  "intro_007": {
+    "id": "intro_007",
+    "type": "dialogue",
+    "speaker": "Ayah",
+    "text": "Melati, nilai 80 ini gimana?",
+    "next": "intro_008"
+  },
+
+  "intro_008": {
+    "id": "intro_008",
+    "type": "dialogue",
+    "speaker": "Ayah",
+    "text": "Ayah dan Ibu berharap kamu bisa lebih dari ini.",
+    "next": "intro_009"
+  },
+
+  "intro_009": {
+    "id": "intro_009",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Ayah, aku lagi usaha. Tapi aku juga pengen ngejar passion di seni.",
+    "next": "intro_010"
+  },
+
+  "intro_010": {
+    "id": "intro_010",
+    "type": "dialogue",
+    "speaker": "Ayah",
+    "text": "Ya ampun kita udah ngomongin ini berkali-kali.",
+    "next": "intro_011"
+  },
+
+  "intro_011": {
+    "id": "intro_011",
+    "type": "dialogue",
+    "speaker": "Ayah",
+    "text": "Yang penting nilai kamu tetap harus naik.",
+    "next": "intro_012"
+  },
+
+  "intro_012": {
+    "id": "intro_012",
+    "type": "narration",
+    "text": "Ayah menutup pintu dan pergi.",
+    "next": "intro_013"
+  },
+
+  "intro_013": {
+    "id": "intro_013",
+    "type": "dialogue",
+    "speaker": "Pikiran Melati",
+    "text": "Aku ngerti Ayah capek. Tapi rasanya... aku nggak sempat didengar.",
+    "next": "intro_014"
+  },
+
+  "intro_014": {
+    "id": "intro_014",
+    "type": "narration",
+    "text": "Malam hari."
+  },
+
+  "intro_015": {
+    "id": "intro_015",
+    "type": "narration",
+    "text": "Setelah mandi, mengerjakan tugas, dan belajar untuk besok, Melati akhirnya membuka ponselnya.",
+    "next": "intro_016"
+  }
+}

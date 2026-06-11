@@ -1,0 +1,15 @@
+{
+  "disclaimer_001": {
+    "id": "disclaimer_001",
+    "type": "narration",
+    "text": "Game ini mengandung simulasi percakapan yang mungkin menimbulkan rasa tidak nyaman bagi sebagian pemain.",
+    "next": "disclaimer_002"
+  },
+
+  "disclaimer_002": {
+    "id": "disclaimer_002",
+    "type": "narration",
+    "text": "Tujuan game ini adalah membantu pemain mengenali tanda-tanda grooming digital dan membangun kewaspadaan.",
+    "next": "consent_001"
+  }
+}

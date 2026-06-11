@@ -1,0 +1,22 @@
+{
+  "ending_instinct": {
+    "id": "ending_instinct",
+    "type": "ending",
+    "title": "Instinct",
+    "text": "Dummy ending instinct."
+  },
+
+  "ending_escape": {
+    "id": "ending_escape",
+    "type": "ending",
+    "title": "Escape",
+    "text": "Dummy ending escape."
+  },
+
+  "ending_exit": {
+    "id": "ending_exit",
+    "type": "ending",
+    "title": "Keluar Permainan",
+    "text": "Pemain memilih untuk tidak melanjutkan simulasi."
+  }
+}

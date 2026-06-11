@@ -1,0 +1,24 @@
+{
+  "dm_001": {
+    "id": "dm_001",
+    "type": "dialogue",
+    "speaker": "Raka",
+    "text": "Haii aku Raka. Ini kamu yang gambar?",
+    "next": "choice_001"
+  },
+
+  "choice_001": {
+    "id": "choice_001",
+    "type": "choice",
+    "choices": [
+      {
+        "label": "Balas Singkat",
+        "next": "ending_instinct"
+      },
+      {
+        "label": "Balas Antusias",
+        "next": "ending_escape"
+      }
+    ]
+  }
+}

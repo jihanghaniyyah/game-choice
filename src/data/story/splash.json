@@ -1,0 +1,15 @@
+{
+  "splash_001": {
+    "id": "splash_001",
+    "type": "narration",
+    "text": "Digital Grooming Game",
+    "next": "splash_002"
+  },
+
+  "splash_002": {
+    "id": "splash_002",
+    "type": "narration",
+    "text": "Sebuah simulasi interaktif tentang interaksi di dunia digital.",
+    "next": "disclaimer_001"
+  }
+}
