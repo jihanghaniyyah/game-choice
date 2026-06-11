@@ -3,7 +3,8 @@
     "id": "intro_001",
     "type": "narration",
     "background": "bedroom_afternoon",
-    "text": "Sore hari."
+    "text": "Sore hari.",
+    "next": "intro_002"
   },
 
   "intro_002": {
@@ -102,7 +103,8 @@
   "intro_014": {
     "id": "intro_014",
     "type": "narration",
-    "text": "Malam hari."
+    "text": "Malam hari.",
+    "next": "intro_015"
   },
 
   "intro_015": {
@@ -110,5 +112,33 @@
     "type": "narration",
     "text": "Setelah mandi, mengerjakan tugas, dan belajar untuk besok, Melati akhirnya membuka ponselnya.",
     "next": "intro_016"
+  },
+
+  "intro_016": {
+    "id": "intro_016",
+    "type": "narration",
+    "text": "Sebuah notifikasi Instagram muncul.",
+    "next": "intro_017"
+  },
+  "intro_017": {
+    "id": "intro_017",
+    "type": "dialogue",
+    "speaker": "Raka (Komentar Instagram)",
+    "text": "Hai aku Raka. Ini kamu yang gambar? Keren banget perspektifnya.",
+    "next": "intro_018"
+  },
+  "intro_018": {
+    "id": "intro_018",
+    "type": "dialogue",
+    "speaker": "Pikiran Melati",
+    "text": "Ada yang perhatian sama gambarku...",
+    "next": "intro_019"
+  },
+
+  "intro_019": {
+    "id": "intro_019",
+    "type": "narration",
+    "text": "Melati tersenyum untuk pertama kalinya hari itu.",
+    "next": "dm_001"
   }
 }

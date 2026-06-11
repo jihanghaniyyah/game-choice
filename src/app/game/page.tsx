@@ -1,13 +1,9 @@
-// import StoryEngine from "@/components/story/StoryEngine";
+import type { Metadata } from "next";
 
-// export default function GamePage() {
-//   return (
-//     <main className="min-h-screen bg-slate-900 text-white p-10">
-//       <StoryEngine />
-//     </main>
-//   );
-// }
+export const metadata: Metadata = {
+  title: "Game | Digital Grooming Game",
+};
 
 export default function GamePage() {
-  return <h1>GAME PAGE WORKS</h1>;
+  return <div>Game</div>;
 }
