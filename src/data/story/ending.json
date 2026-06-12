@@ -1,9 +1,48 @@
 {
-  "ending_instinct": {
-    "id": "ending_instinct",
+  "ending_instinct_001": {
+    "id": "ending_instinct_001",
+    "type": "narration",
+    "text": "Melati mengetik balasan dengan tangan yang sedikit gemetar.",
+    "next": "ending_instinct_002"
+  },
+
+  "ending_instinct_002": {
+    "id": "ending_instinct_002",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Maaf Raka, aku nggak bisa. Aku lagi sama teman-teman dan nggak enak ninggalin mereka.",
+    "next": "ending_instinct_003"
+  },
+
+  "ending_instinct_003": {
+    "id": "ending_instinct_003",
+    "type": "dialogue",
+    "speaker": "Raka",
+    "text": "Ih, nggak bisa fleksibel dikit? Kapan lagi ada kesempatan gini?",
+    "next": "ending_instinct_004"
+  },
+
+  "ending_instinct_004": {
+    "id": "ending_instinct_004",
+    "type": "dialogue",
+    "speaker": "(Pikiran Melati)",
+    "text": "Ada sesuatu yang salah dari cara dia bereaksi ini.",
+    "next": "ending_instinct_005"
+  },
+
+  "ending_instinct_005": {
+    "id": "ending_instinct_005",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Maaf ya. Lain kali aja.",
+    "next": "ending_instinct_006"
+  },
+
+  "ending_instinct_006": {
+    "id": "ending_instinct_006",
     "type": "ending",
     "title": "Instinct",
-    "text": "Dummy ending instinct."
+    "text": "Melati tidak tahu pasti apakah Raka berbahaya. Tapi ketidaknyamanan itu sudah cukup sebagai alasan untuk berhenti. Pelajaran: Perasaan tidak nyaman adalah sinyal, bukan imajinasi. Kamu tidak perlu bukti untuk berhenti dari situasi yang tidak terasa aman. "
   },
 
   "ending_escape": {

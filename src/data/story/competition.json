@@ -1,0 +1,53 @@
+{
+  "competition_001": {
+    "id": "competition_001",
+    "type": "narration",
+    "text": "Melati dan Nisa tiba.",
+    "next": "competition_002"
+  },
+  "competition_002": {
+    "id": "competition_002",
+    "type": "narration",
+    "text": "Suasana berbeda dari keseharian : kota yang lebih besar, museum seni di dekat venue lomba, udara yang berbeda.",
+    "next": "competition_003"
+  },
+  "competition_003": {
+    "id": "competition_003",
+    "type": "narration",
+    "text": "Lomba berjalan. Melati melukis dengan fokus.",
+    "next": "competition_004"
+  },
+  "competition_004": {
+    "id": "competition_004",
+    "type": "narration",
+    "text": "Sesi berakhir. Para peserta istirahat.",
+    "next": "competition_005"
+  },
+  "competition_005": {
+    "id": "competition_005",
+    "type": "narration",
+    "text": "Melati dan Nisa berjalan-jalan sebentar di sekitar area lomba.",
+    "next": "competition_006"
+  },
+  "competition_006": {
+    "id": "competition_006",
+    "type": "dialogue",
+    "speaker": "(Pikiran Melati)",
+    "text": "Viewnya bagus banget di sini. Sayang kalau nggak diabadiin. ",
+    "next": "choice_competition_001"
+  },
+  "choice_competition_001": {
+    "id": "choice_competition_001",
+    "type": "choice",
+    "choices": [
+      {
+        "label": "[A] Posting foto pemandangan dengan caption nama kota dan tag lokasi venue.",
+        "next": "dm_022"
+      },
+      {
+        "label": "[B] Posting foto bareng Nisa.",
+        "next": "dea_001"
+      }
+    ]
+  }
+}

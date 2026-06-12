@@ -1,23 +1,225 @@
 {
   "dm_001": {
     "id": "dm_001",
-    "type": "dialogue",
-    "speaker": "Raka",
-    "text": "Haii aku Raka. Ini kamu yang gambar?",
-    "next": "choice_001"
+    "type": "narration",
+    "text": "Notifikasi dari @raka.workinframe. Like semua foto lukisannya. Lalu komentar:",
+    "next": "dm_002"
   },
 
-  "choice_001": {
-    "id": "choice_001",
+  "dm_002": {
+    "id": "dm_002",
+    "type": "dialogue",
+    "speaker": "Raka (komentar IG)",
+    "text": "Haii aku Raka. Ini kamu yang gambar? Keren banget perspektifnya. Jarang ada yang bisa nangkep lighting kayak gini.",
+    "next": "dm_003"
+  },
+
+  "dm_003": {
+    "id": "dm_003",
+    "type": "dialogue",
+    "speaker": "(Pikiran Melati)",
+    "text": "Ada yang perhatiin gambarku...",
+    "next": "dm_004"
+  },
+
+  "dm_004": {
+    "id": "dm_004",
+    "type": "narration",
+    "text": "Melati tersenyum untuk pertama kalinya hari ini.",
+    "next": "dm_005"
+  },
+
+  "dm_005": {
+    "id": "dm_005",
+    "type": "narration",
+    "text": "Beberapa jam kemudian, DM masuk.",
+    "next": "dm_006"
+  },
+
+  "dm_006": {
+    "id": "dm_006",
+    "type": "dialogue",
+    "speaker": "Raka (DM)",
+    "text": "Hei, maaf DM langsung ya. Tadi lihat gambaran kamu. Kamu gambarnya di mana? Pake tablet atau manual? Soalnya kamu gambarnya bagus banget.",
+    "next": "dm_007"
+  },
+
+  "dm_007": {
+    "id": "dm_007",
     "type": "choice",
     "choices": [
       {
-        "label": "Balas Singkat",
-        "next": "ending_instinct"
+        "label": "[A] Balas singkat: Makasih ya! Aku gambar manual biasanya.",
+        "next": "dm_008"
       },
       {
-        "label": "Balas Antusias",
-        "next": "ending_escape"
+        "label": "[B] Balas antusias: Hehe beneran? Aku suka banget nih latihan perspektif! Kamu juga suka gambar?",
+        "next": "dm_008"
+      },
+      {
+        "label": "[C] Tidak balas dulu. Melati mengunjungi profil Raka dulu",
+        "next": "dm_008"
+      }
+    ]
+  },
+
+  "dm_008": {
+    "id": "dm_008",
+    "type": "dialogue",
+    "speaker": "Raka",
+    "text": " Kamu kelasnya sibuk banget ya? Kayaknya stress dari postingan-postingan kamu.",
+    "next": "dm_009"
+  },
+  "dm_009": {
+    "id": "dm_009",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": " Haha iya, lagi banyak PR. Nilai juga lagi ga bagus.",
+    "next": "dm_010"
+  },
+  "dm_010": {
+    "id": "dm_010",
+    "type": "dialogue",
+    "speaker": "Raka",
+    "text": " Ih, padahal gambarnya sekeren ini. Sayang banget kalau kamu down terus. Orang sekreatif kamu harusnya lebih diapresiasi. ",
+    "next": "dm_011"
+  },
+  "dm_011": {
+    "id": "dm_011",
+    "type": "dialogue",
+    "speaker": "(Pikiran Melati)",
+    "text": " Dia... ngerti. Padahal baru kenal.",
+    "next": "day2_001"
+  },
+  "dm_012": {
+    "id": "dm_012",
+    "type": "dialogue",
+    "speaker": "Raka",
+    "text": "Gimana hari kamu?",
+    "next": "dm_013"
+  },
+  "dm_013": {
+    "id": "dm_013",
+    "type": "narration",
+    "text": "Pertanyaan itu, tiga kata sederhana, membuat Melati menceritakan semuanya.",
+    "next": "dm_014"
+  },
+  "dm_014": {
+    "id": "dm_014",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Hari ini lumayan berat.",
+    "next": "dm_015"
+  },
+  "dm_015": {
+    "id": "dm_015",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Rasanya belum sempat ngobrol beneran sama siapa-siapa di rumah.",
+    "next": "dm_016"
+  },
+  "dm_016": {
+    "id": "dm_016",
+    "type": "dialogue",
+    "speaker": "Raka",
+    "text": "Hey... itu pasti capek banget.",
+    "next": "dm_017"
+  },
+  "dm_017": {
+    "id": "dm_017",
+    "type": "dialogue",
+    "speaker": "Raka",
+    "text": "Kamu kuat ya, Mel. ",
+    "next": "dm_018"
+  },
+  "dm_018": {
+    "id": "dm_018",
+    "type": "dialogue",
+    "speaker": "Raka",
+    "text": "Tapi aku dukung kamu.",
+    "next": "dm_019"
+  },
+  "dm_019": {
+    "id": "dm_019",
+    "type": "dialogue",
+    "speaker": "Raka",
+    "text": "Gambar kamu keren, kamu punya bakat.",
+    "next": "dm_020"
+  },
+  "dm_020": {
+    "id": "dm_020",
+    "type": "dialogue",
+    "speaker": "Raka",
+    "text": "Kamu nggak harus dapet izin dari siapapun untuk jadi pelukis yang baik.",
+    "next": "dm_021"
+  },
+  "dm_021": {
+    "id": "dm_021",
+    "type": "dialogue",
+    "speaker": "(Pikiran Melati)",
+    "text": "Raka... ngerti aku. Padahal kita belum pernah ketemu.",
+    "next": "competition_001"
+  },
+
+  "dm_022": {
+    "id": "dm_022",
+    "type": "dialogue",
+    "speaker": "Raka",
+    "text": "Eh, kamu lagi di [nama kota]?",
+    "next": "dm_023"
+  },
+  "dm_023": {
+    "id": "dm_023",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Hah, serius? Wah kebetulan banget.",
+    "next": "dm_024"
+  },
+  "dm_024": {
+    "id": "dm_024",
+    "type": "dialogue",
+    "speaker": "Raka",
+    "text": "Iya. Btw, ada museum seni yang bagus banget di sini.",
+    "next": "dm_025"
+  },
+  "dm_025": {
+    "id": "dm_025",
+    "type": "dialogue",
+    "speaker": "Raka",
+    "text": "Kamu suka seni kan? Gimana kalau kita ke sana?",
+    "next": "dm_026"
+  },
+  "dm_026": {
+    "id": "dm_026",
+    "type": "dialogue",
+    "speaker": "Raka",
+    "text": "Kapan lagi ada kesempatan kayak gini, kita kan belum pernah ketemu langsung.",
+    "next": "dm_027"
+  },
+  "dm_027": {
+    "id": "dm_023",
+    "type": "narration",
+    "text": "Melati membaca pesan itu berkali-kali.",
+    "next": "dm_028"
+  },
+  "dm_028": {
+    "id": "dm_028",
+    "type": "dialogue",
+    "speaker": "(Pikiran Melati)",
+    "text": "Ini yang aku tunggu-tunggu... ketemu langsung. Tapi sekarang? Di kota yang bukan kotaku?",
+    "next": "choice_dm_001"
+  },
+  "choice_dm_001": {
+    "id": "choice_dm_001",
+    "type": "choice",
+    "choices": [
+      {
+        "label": "[A] Wah... boleh deh. Kamu di mana sekarang?",
+        "next": ""
+      },
+      {
+        "label": "[B] Maaf Raka, aku nggak bisa. Aku lagi sama teman-temanku di sini dan nggak enak ninggalin mereka.",
+        "next": "ending_instinct_001"
       }
     ]
   }

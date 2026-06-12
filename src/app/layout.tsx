@@ -12,9 +12,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Digital Grooming Game",
-  description: "Choice-based narration game about digital grooming awareness",
+export const metadata = {
+  title: {
+    default: "Mengenal Bahaya di Balik Layar",
+    template: "%s | Mengenal Bahaya di Balik Layar",
+  },
+  description: "Game edukasi interaktif tentang digital grooming",
 };
 
 export default function RootLayout({

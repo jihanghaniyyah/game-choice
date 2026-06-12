@@ -1,0 +1,217 @@
+{
+  "day2_001": {
+    "id": "day2_001",
+    "type": "narration",
+    "text": "Satu minggu kemudian.",
+    "next": "day2_002"
+  },
+  "day2_002": {
+    "id": "day2_002",
+    "type": "narration",
+    "text": "Bel istirahat berbunyi. Melati dan tiga temannya : Kira, Dea, dan Nisa, duduk bersama di kelas sambil makan",
+    "next": "day2_003"
+  },
+  "day2_003": {
+    "id": "day2_003",
+    "type": "narration",
+    "text": "Melati berkali-kali mengecek HP-nya, senyum-senyum sendiri.",
+    "next": "day2_004"
+  },
+  "day2_004": {
+    "id": "day2_004",
+    "type": "dialogue",
+    "speaker": "Kira",
+    "text": "Eh, dari tadi senyum-senyum sendiri.",
+    "next": "day2_005"
+  },
+  "day2_005": {
+    "id": "day2_005",
+    "type": "dialogue",
+    "speaker": "Kira",
+    "text": "Punya cowok ya?! Spill dong spill!",
+    "next": "day2_006"
+  },
+  "day2_006": {
+    "id": "day2_006",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Bukan cowok... cuman teman cowok. Tapi online.",
+    "next": "choice_friend_001"
+  },
+  "choice_friend_001": {
+    "id": "choice_friend_001",
+    "type": "choice",
+    "choices": [
+      {
+        "label": "[A] Dengar reaksi KIRA",
+        "next": "kira_001"
+      },
+      {
+        "label": "[B] Dengar reaksi DEA",
+        "next": "dea_001"
+      },
+      {
+        "label": "[C] Dengar reaksi NISA",
+        "next": "nisa_001"
+      }
+    ]
+  },
+
+  "day2_008": {
+    "id": "day2_008",
+    "type": "dialogue",
+    "speaker": "Nisa",
+    "text": "Seminggu lagi lomba melukis di kota lainnya, Mel.",
+    "next": "day2_009"
+  },
+
+  "day2_009": {
+    "id": "day2_009",
+    "type": "dialogue",
+    "speaker": "Nisa",
+    "text": "Aku udah 60% latihan ngelukisnya. Kamu gimana?",
+    "next": "day2_010"
+  },
+
+  "day2_010": {
+    "id": "day2_010",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Aku baru setengah, kayaknya malem ini aku lanjutin.",
+    "next": "day2_011"
+  },
+
+  "day2_011": {
+    "id": "day2_011",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Mumpung besok nggak ada PR.",
+    "next": "day2_012"
+  },
+
+  "day2_012": {
+    "id": "day2_012",
+    "type": "dialogue",
+    "speaker": "Nisa",
+    "text": "Okay, semangat ya!",
+    "next": "day2_013"
+  },
+
+  "day2_013": {
+    "id": "day2_013",
+    "type": "dialogue",
+    "speaker": "Kira",
+    "text": "GESS SEMANGAT YAA BUAT LOMBANYA, PASTI KALIAN BISA MENANG!",
+    "next": "day2_014"
+  },
+
+  "day2_014": {
+    "id": "day2_014",
+    "type": "dialogue",
+    "speaker": "Dea",
+    "text": "Semangat gess.",
+    "next": "day2_015"
+  },
+
+  "day2_015": {
+    "id": "day2_015",
+    "type": "dialogue",
+    "speaker": "Nisa & Melati",
+    "text": "Makasihh!",
+    "next": "day2_016"
+  },
+
+  "day2_016": {
+    "id": "day2_016",
+    "type": "narration",
+    "text": "Bel berbunyi. Teman-teman berpencar ke kelasnya masing-masing.",
+    "next": "day2_017"
+  },
+  "day2_017": {
+    "id": "day2_017",
+    "type": "narration",
+    "text": "Malam hari...",
+    "next": "day2_018"
+  },
+  "day2_018": {
+    "id": "day2_018",
+    "type": "narration",
+    "text": "Rumah terasa sunyi. Melati sedang melukis di kamarnya. Pintu kamarnya dibuka.",
+    "next": "day2_019"
+  },
+  "day2_019": {
+    "id": "day2_019",
+    "type": "dialogue",
+    "speaker": "Ibu",
+    "text": "Melati, kamar kamu berantakan lagi nih.",
+    "next": "day2_020"
+  },
+  "day2_020": {
+    "id": "day2_020",
+    "type": "dialogue",
+    "speaker": "Ibu",
+    "text": "Nanti kalau udah selesai tolong dibereskan ya.",
+    "next": "day2_021"
+  },
+  "day2_021": {
+    "id": "day2_021",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Melati lagi menyelesaiin proyek melukis, Bu. Bagus kan? ",
+    "next": "day2_022"
+  },
+  "day2_022": {
+    "id": "day2_022",
+    "type": "dialogue",
+    "speaker": "Ibu",
+    "text": "Bagus sih, tapi Ibu khawatir kalau waktumu kebanyakan buat ini, nilai kamu jadi nggak terjaga.",
+    "next": "day2_023"
+  },
+  "day2_023": {
+    "id": "day2_023",
+    "type": "dialogue",
+    "speaker": "Ibu",
+    "text": " Ibu cuma mau yang terbaik buat kamu.",
+    "next": "day2_024"
+  },
+  "day2_024": {
+    "id": "day2_024",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Aku ngerti Bu... tapi ini juga masa depanku. ",
+    "next": "day2_025"
+  },
+  "day2_025": {
+    "id": "day2_025",
+    "type": "dialogue",
+    "speaker": "Ibu",
+    "text": "Iya, Ibu nggak bilang nggak boleh. Tapi balance ya",
+    "next": "day2_026"
+  },
+  "day2_026": {
+    "id": "day2_026",
+    "type": "dialogue",
+    "speaker": "Ibu",
+    "text": "Ibu capek, besok kita omongin lagi ya. ",
+    "next": "day2_027"
+  },
+  "day2_027": {
+    "id": "day2_027",
+    "type": "narration",
+    "text": "Pintu ditutup. Melati menatap lukisannya.",
+    "next": "day2_028"
+  },
+  "day2_028": {
+    "id": "day2_028",
+    "type": "dialogue",
+    "speaker": "(Pikiran Melati)",
+    "text": "Aku ngerti Ibu capek. Tapi rasanya... belum sempat aku jelasin apa yang aku mau.",
+    "next": "day2_029"
+  },
+  "day2_029": {
+    "id": "day2_029",
+    "type": "narration",
+    "text": "Setelah targetnya selesai, Melati rebahan di kasur dan membuka HP. Ada notif dari Raka.",
+    "next": "dm_012"
+  }
+}

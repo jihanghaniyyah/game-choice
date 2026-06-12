@@ -5,7 +5,7 @@
     "choices": [
       {
         "label": "Saya mengerti dan ingin melanjutkan",
-        "next": "intro_001"
+        "next": "day1_001"
       },
       {
         "label": "Keluar dari permainan",

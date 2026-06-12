@@ -1,0 +1,152 @@
+{
+  "day1_001": {
+    "id": "day1_001",
+    "type": "narration",
+    "background": "home_outside",
+    "text": "Sore hari...",
+    "next": "day1_002"
+  },
+  "day1_002": {
+    "id": "day1_002",
+    "type": "narration",
+    "background": "bedroom",
+    "text": "Melati pulang dengan seragam yang masih rapi tapi langkahnya terasa berat.",
+    "next": "day1_003"
+  },
+  "day1_003": {
+    "id": "day1_003",
+    "type": "narration",
+    "background": "bedroom",
+    "text": "Seharian rapat OSIS, latihan ekstrakurikuler, dan ujian Matematika.",
+    "next": "day1_004"
+  },
+  "day1_004": {
+    "id": "day1_004",
+    "type": "narration",
+    "background": "bedroom",
+    "text": "Ia langsung masuk ke kamar, menutup pintunya pelan.",
+    "next": "day1_005"
+  },
+
+  "day1_005": {
+    "id": "day1_005",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "(Pikiran Melati) Rumah... tapi nggak berasa kayak rumah.",
+    "next": "day1_006"
+  },
+
+  "day1_006": {
+    "id": "day1_006",
+    "type": "narration",
+    "text": "Beberapa jam kemudian, pintu kamar diketuk.",
+    "next": "day1_007"
+  },
+
+  "day1_007": {
+    "id": "day1_007",
+    "type": "narration",
+    "text": "Tok tok tok",
+    "next": "day1_008"
+  },
+
+  "day1_008": {
+    "id": "day1_008",
+    "type": "narration",
+    "text": "Ayah berdiri di sana, masih memakai baju dokter. Wajahnya lelah.",
+    "next": "day1_009"
+  },
+
+  "day1_009": {
+    "id": "day1_009",
+    "type": "dialogue",
+    "speaker": "Ayah",
+    "text": "Melati, nilai 80 ini gimana?",
+    "next": "day1_010"
+  },
+
+  "day1_010": {
+    "id": "day1_010",
+    "type": "dialogue",
+    "speaker": "Ayah",
+    "text": "Ayah dan Ibu berharap kamu bisa lebih dari ini.",
+    "next": "day1_011"
+  },
+
+  "day1_011": {
+    "id": "day1_011",
+    "type": "dialogue",
+    "speaker": "Ayah",
+    "text": "Ya ampunn Melati, Ayah bukan marah yaa, cuma khawatir soal masa depan kamu.",
+    "next": "day1_012"
+  },
+
+  "day1_012": {
+    "id": "day1_012",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Ayah, aku lagi usaha.",
+    "next": "day1_013"
+  },
+
+  "day1_013": {
+    "id": "day1_013",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Tapi aku juga pengen bisa ngejar passion aku di seni, aku mau jadi graphic designer, pelukis, aku mau kerja di bidang se-",
+    "next": "day1_014"
+  },
+
+  "day1_014": {
+    "id": "day1_014",
+    "type": "dialogue",
+    "speaker": "Ayah",
+    "text": "Ya ampun kita undah omongin ini berkali-kali Melati, semua itu bakal digantiin AI.",
+    "next": "day1_015"
+  },
+
+  "day1_015": {
+    "id": "day1_015",
+    "type": "dialogue",
+    "speaker": "Ayah",
+    "text": "Yaudah deh nanti kita omongin. Ayah capek banget sekarang",
+    "next": "day1_016"
+  },
+
+  "day1_016": {
+    "id": "day1_016",
+    "type": "dialogue",
+    "speaker": "Ayah",
+    "text": "Yang penting nilai kamu tetap harus naik 90 keatas. Titik!",
+    "next": "day1_017"
+  },
+
+  "day1_017": {
+    "id": "day1_017",
+    "type": "narration",
+    "text": "Ayahnya menutup pintu.",
+    "next": "day1_018"
+  },
+
+  "day1_018": {
+    "id": "day1_018",
+    "type": "dialogue",
+    "speaker": "(Pikiran Melati)",
+    "text": "Aku ngerti Ayah capek. Tapi rasanya... aku nggak sempat didengar.",
+    "next": "day1_019"
+  },
+
+  "day1_019": {
+    "id": "day1_019",
+    "type": "narration",
+    "text": "Malam hari...",
+    "next": "day1_020"
+  },
+
+  "day1_020": {
+    "id": "day1_020",
+    "type": "narration",
+    "text": "Mandi, tugas, belajar untuk ulangan besok. Setelah semuanya selesai, Melati akhirnya meraih ponselnya.",
+    "next": "dm_001"
+  }
+}

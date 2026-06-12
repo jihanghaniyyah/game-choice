@@ -3,15 +3,21 @@ import { Story } from "@/types/story";
 import splash from "./splash.json";
 import disclaimer from "./disclaimer.json";
 import consent from "./consent.json";
-import intro from "./intro.json";
+import day1 from "./day1.json";
 import dm from "./dm.json";
+import competition from "./competition.json";
+import day2 from "./day2.json";
+import friends from "./friends.json";
 import ending from "./ending.json";
 
 export const story = {
   ...splash,
   ...disclaimer,
   ...consent,
-  ...intro,
+  ...day1,
   ...dm,
+  ...competition,
+  ...day2,
+  ...friends,
   ...ending,
 } as unknown as Story;
