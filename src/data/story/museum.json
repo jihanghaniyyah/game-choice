@@ -27,7 +27,7 @@
   "museum_005": {
     "id": "museum_005",
     "type": "dialogue",
-    "speaker": "[ORANG ITU]",
+    "speaker": "(ORANG ITU)",
     "text": "Melati ya? Aku Raka.",
     "next": "museum_006"
   },
@@ -110,7 +110,7 @@
       },
       {
         "label": "[C] Melati tidak tahu harus berbuat apa. Ia membeku sesaat.",
-        "next": "ending_001"
+        "next": "ending_rescue_001"
       }
     ]
   }

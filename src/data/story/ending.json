@@ -135,7 +135,7 @@
   "ending_boundary_003": {
     "id": "ending_boundary_003",
     "type": "dialogue",
-    "speaker": "ORANG ITU",
+    "speaker": "(ORANG ITU)",
     "text": "Eh, baru datang juga. Nggak bisa sebentar-",
     "next": "ending_boundary_004"
   },
@@ -167,6 +167,171 @@
     "type": "ending",
     "title": "Boundary",
     "text": "Melati tidak menjelaskan, tidak meminta maaf berlebihan, tidak menunggu izin. Ia hanya pergi. Dan itu cukup. Kamu tidak perlu penjelasan panjang untuk pergi dari situasi yang tidak aman. Aku harus pergi sudah cukup sebagai kalimat lengkap."
+  },
+
+  "ending_rescue_001": {
+    "id": "ending_rescue_001",
+    "type": "narration",
+    "text": "Selama berjalan, pikiran Melati penuh. Seluruh sinyalnya berbunyi.",
+    "next": "ending_rescue_002"
+  },
+
+  "ending_rescue_002": {
+    "id": "ending_rescue_002",
+    "type": "dialogue",
+    "speaker": "(Pikiran Melati)",
+    "text": "Ini nggak bener. Aku nggak nyaman di sini. Aku mau pergi.",
+    "next": "ending_rescue_003"
+  },
+
+  "ending_rescue_003": {
+    "id": "ending_rescue_003",
+    "type": "narration",
+    "text": "Tiba-tiba seseorang menggenggam tangannya dari belakang. Nisa.",
+    "next": "ending_rescue_004"
+  },
+
+  "ending_rescue_004": {
+    "id": "ending_rescue_004",
+    "type": "dialogue",
+    "speaker": "Nisa",
+    "text": "Mel, kamu ke mana aja? Dari tadi aku cariin.",
+    "next": "ending_rescue_005"
+  },
+
+  "ending_rescue_005": {
+    "id": "ending_rescue_005",
+    "type": "dialogue",
+    "speaker": "(ORANG ITU)",
+    "text": "Heh, lo siapa?",
+    "next": "ending_rescue_006"
+  },
+
+  "ending_rescue_006": {
+    "id": "ending_rescue_006",
+    "type": "dialogue",
+    "speaker": "Nisa",
+    "text": "Gue temennya.",
+    "next": "ending_rescue_007"
+  },
+
+  "ending_rescue_007": {
+    "id": "ending_rescue_008",
+    "type": "dialogue",
+    "speaker": "(ORANG ITU)",
+    "text": "Oh, jadi kamu nggak ke sini sendirian, Melati? Harusnya bilang, biar bisa jalan bertiga.",
+    "next": "ending_rescue_009"
+  },
+
+  "ending_rescue_009": {
+    "id": "ending_rescue_009",
+    "type": "narration",
+    "text": "Melati merasa lega ada Nisa di sisinya.",
+    "next": "ending_rescue_010"
+  },
+
+  "ending_rescue_010": {
+    "id": "ending_rescue_010",
+    "type": "narration",
+    "text": "Saat orang itu kembali mengajak mereka ke arah yang lebih sepi, Nisa memegang lengan Melati.",
+    "next": "ending_rescue_011"
+  },
+
+  "ending_rescue_011": {
+    "id": "ending_rescue_011",
+    "type": "dialogue",
+    "speaker": "Nisa",
+    "text": "Maaf, kami harus pergi sekarang. Ada yang tunggu di luar.",
+    "next": "ending_rescue_012"
+  },
+
+  "ending_rescue_012": {
+    "id": "ending_rescue_012",
+    "type": "dialogue",
+    "speaker": "(ORANG ITU)",
+    "text": "Eh, nggak usah buru-buru-",
+    "next": "ending_rescue_013"
+  },
+
+  "ending_rescue_013": {
+    "id": "ending_rescue_013",
+    "type": "dialogue",
+    "speaker": "Nisa",
+    "text": "Kami harus pergi sekarang.",
+    "next": "ending_rescue_014"
+  },
+
+  "ending_rescue_014": {
+    "id": "ending_rescue_014",
+    "type": "narration",
+    "text": "Nisa menarik Melati berjalan cepat ke arah pintu.",
+    "next": "ending_rescue_015"
+  },
+
+  "ending_rescue_015": {
+    "id": "ending_rescue_015",
+    "type": "narration",
+    "text": "Di luar, guru pendamping sudah menunggu",
+    "next": "ending_rescue_016"
+  },
+
+  "ending_rescue_016": {
+    "id": "ending_rescue_016",
+    "type": "dialogue",
+    "speaker": "GURU",
+    "text": "Melati, Nisa. Ayo masuk mobil dulu.",
+    "next": "ending_rescue_017"
+  },
+
+  "ending_rescue_017": {
+    "id": "ending_rescue_017",
+    "type": "narration",
+    "text": "Di dalam mobil, Melati menyadari: Nisa sudah menghubungi guru itu jauh sebelum mereka tiba di museum.",
+    "next": "ending_rescue_018"
+  },
+
+  "ending_rescue_018": {
+    "id": "ending_rescue_018",
+    "type": "dialogue",
+    "speaker": "(Pikiran Melati)",
+    "text": "Nisa... tahu. Dari tadi dia tahu.",
+    "next": "ending_rescue_019"
+  },
+
+  "ending_rescue_019": {
+    "id": "ending_rescue_019",
+    "type": "narration",
+    "text": "Melati menangis sembari dipeluk oleh Nisa",
+    "next": "ending_rescue_020"
+  },
+
+  "ending_rescue_020": {
+    "id": "ending_rescue_020",
+    "type": "dialogue",
+    "speaker": "(Pikiran Melati)",
+    "text": "Nisa... tahu. Dari tadi dia tahu.",
+    "next": "ending_rescue_021"
+  },
+
+  "ending_rescue_021": {
+    "id": "ending_rescue_021",
+    "type": "narration",
+    "text": "Mereka melaporkan kejadian ini.",
+    "next": "ending_rescue_022"
+  },
+
+  "ending_rescue_022": {
+    "id": "ending_rescue_022",
+    "type": "narration",
+    "text": "Akun @raka.workinframe ternyata sudah pernah dilaporkan oleh orang lain sebelumnya.",
+    "next": "ending_rescue_023"
+  },
+
+  "ending_rescue_023": {
+    "id": "ending_rescue_023",
+    "type": "ending",
+    "title": "Anchor",
+    "text": "Melati selamat karena Nisa tidak diam. Nisa tidak berteriak, tidak menghakimi, tidak melarang : ia hanya hadir, mengamati, dan bertindak tepat waktu. Kadang yang menyelamatkan kita bukan yang paling keras suaranya, tapi yang paling memperhatikan."
   },
 
   "ending_exit": {

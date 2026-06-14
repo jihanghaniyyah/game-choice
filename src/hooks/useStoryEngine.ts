@@ -8,6 +8,7 @@ const STARTING_SCENE = "splash_001";
 
 export function useStoryEngine() {
   const [currentSceneId, setCurrentSceneId] = useState(STARTING_SCENE);
+  const [history, setHistory] = useState<string[]>([]);
 
   useEffect(() => {
     const savedScene = localStorage.getItem(STORAGE_KEY);
@@ -28,15 +29,25 @@ export function useStoryEngine() {
   }, [currentSceneId]);
 
   const nextScene = () => {
-    if (!currentScene) return;
-
     if (currentScene.next) {
+      setHistory((prev) => [...prev, currentSceneId]);
       setCurrentSceneId(currentScene.next);
     }
   };
 
   const choose = (nextId: string) => {
+    setHistory((prev) => [...prev, currentSceneId]);
     setCurrentSceneId(nextId);
+  };
+
+  const previousScene = () => {
+    if (history.length === 0) return;
+
+    const previous = history[history.length - 1];
+
+    setHistory((prev) => prev.slice(0, -1));
+
+    setCurrentSceneId(previous);
   };
 
   const resetProgress = () => {
@@ -47,6 +58,7 @@ export function useStoryEngine() {
   return {
     currentScene,
     nextScene,
+    previousScene,
     choose,
     resetProgress,
   };
