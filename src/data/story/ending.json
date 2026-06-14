@@ -45,11 +45,128 @@
     "text": "Melati tidak tahu pasti apakah Raka berbahaya. Tapi ketidaknyamanan itu sudah cukup sebagai alasan untuk berhenti. Pelajaran: Perasaan tidak nyaman adalah sinyal, bukan imajinasi. Kamu tidak perlu bukti untuk berhenti dari situasi yang tidak terasa aman. "
   },
 
-  "ending_escape": {
-    "id": "ending_escape",
+  "ending_escape_001": {
+    "id": "ending_escape_001",
+    "type": "narration",
+    "text": "Di dalam museum, Melati mengambil napas.",
+    "next": "ending_escape_002"
+  },
+
+  "ending_escape_002": {
+    "id": "ending_escape_002",
+    "type": "narration",
+    "text": "Ponselnya di saku. Ia tekan layar pura-pura menerima telepon.",
+    "next": "ending_escape_003"
+  },
+
+  "ending_escape_003": {
+    "id": "ending_escape_003",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Halo? Oh - iya, sebentar.",
+    "next": "ending_escape_004"
+  },
+
+  "ending_escape_004": {
+    "id": "ending_escape_004",
+    "type": "narration",
+    "text": "Ia berbalik ke orang itu",
+    "next": "ending_escape_005"
+  },
+
+  "ending_escape_005": {
+    "id": "ending_escape_005",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Maaf, ada teman yang nyariin. Aku permisi dulu ke toilet ya.",
+    "next": "ending_escape_006"
+  },
+
+  "ending_escape_006": {
+    "id": "ending_escape_006",
+    "type": "narration",
+    "text": "Ia berjalan ke arah toilet, tapi langkahnya tidak berhenti.",
+    "next": "ending_escape_007"
+  },
+
+  "ending_escape_007": {
+    "id": "ending_escape_007",
+    "type": "narration",
+    "text": "Ia terus berjalan sampai ke area ramai, ke pintu utama, ke luar.",
+    "next": "ending_escape_008"
+  },
+
+  "ending_escape_008": {
+    "id": "ending_escape_008",
+    "type": "narration",
+    "text": "Di sana ia bertemu Nisa yang ternyata mengikutinya.",
+    "next": "ending_escape_009"
+  },
+
+  "ending_escape_009": {
+    "id": "ending_escape_009",
+    "type": "narration",
+    "text": "Nisa langsung menghubungi guru pendamping. Semuanya segera ditangani.",
+    "next": "ending_escape_010"
+  },
+
+  "ending_escape_010": {
+    "id": "ending_escape_010",
     "type": "ending",
     "title": "Escape",
-    "text": "Dummy ending escape."
+    "text": "Melati tidak panik. Ia berpikir cepat dan menggunakan alasan yang terasa natural. Keluar dari situasi yang tidak aman tidak selalu harus dramatis. Pelajaran: Kamu boleh menggunakan alasan apapun untuk keluar dari situasi yang tidak terasa aman. Aku harus pergi adalah kalimat yang valid tanpa perlu penjelasan apapun."
+  },
+
+  "ending_boundary_001": {
+    "id": "ending_boundary_001",
+    "type": "narration",
+    "text": "Melati berhenti melangkah.",
+    "next": "ending_boundary_001"
+  },
+
+  "ending_boundary_002": {
+    "id": "ending_boundary_001",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Maaf. Aku harus pergi.",
+    "next": "ending_boundary_003"
+  },
+
+  "ending_boundary_003": {
+    "id": "ending_boundary_003",
+    "type": "dialogue",
+    "speaker": "ORANG ITU",
+    "text": "Eh, baru datang juga. Nggak bisa sebentar-",
+    "next": "ending_boundary_004"
+  },
+
+  "ending_boundary_004": {
+    "id": "ending_boundary_004",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Aku harus pergi sekarang. ",
+    "next": "ending_boundary_005"
+  },
+
+  "ending_boundary_005": {
+    "id": "ending_boundary_005",
+    "type": "narration",
+    "text": "Ia berjalan keluar. Kakinya terasa berat tapi terus bergerak.",
+    "next": "ending_boundary_006"
+  },
+
+  "ending_boundary_006": {
+    "id": "ending_boundary_006",
+    "type": "narration",
+    "text": "Di luar ia menghubungi guru pendamping dan menceritakan semuanya.",
+    "next": "ending_boundary_007"
+  },
+
+  "ending_boundary_007": {
+    "id": "ending_boundary_007",
+    "type": "ending",
+    "title": "Boundary",
+    "text": "Melati tidak menjelaskan, tidak meminta maaf berlebihan, tidak menunggu izin. Ia hanya pergi. Dan itu cukup. Kamu tidak perlu penjelasan panjang untuk pergi dari situasi yang tidak aman. Aku harus pergi sudah cukup sebagai kalimat lengkap."
   },
 
   "ending_exit": {

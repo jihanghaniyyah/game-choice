@@ -8,6 +8,7 @@ import dm from "./dm.json";
 import competition from "./competition.json";
 import day2 from "./day2.json";
 import friends from "./friends.json";
+import museum from "./museum.json";
 import ending from "./ending.json";
 
 export const story = {
@@ -19,5 +20,6 @@ export const story = {
   ...competition,
   ...day2,
   ...friends,
+  ...museum,
   ...ending,
 } as unknown as Story;

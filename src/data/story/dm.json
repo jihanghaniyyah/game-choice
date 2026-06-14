@@ -215,7 +215,7 @@
     "choices": [
       {
         "label": "[A] Wah... boleh deh. Kamu di mana sekarang?",
-        "next": ""
+        "next": "museum_001"
       },
       {
         "label": "[B] Maaf Raka, aku nggak bisa. Aku lagi sama teman-temanku di sini dan nggak enak ninggalin mereka.",

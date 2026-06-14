@@ -1,0 +1,117 @@
+{
+  "museum_001": {
+    "id": "museum_001",
+    "type": "narration",
+    "text": "Museum lebih sepi dari yang Melati bayangkan. Pengunjung semakin berkurang.",
+    "next": "museum_002"
+  },
+  "museum_002": {
+    "id": "museum_002",
+    "type": "narration",
+    "text": "Seseorang mendekatinya.",
+    "next": "museum_003"
+  },
+  "museum_003": {
+    "id": "museum_003",
+    "type": "narration",
+    "text": "Bukan seperti foto-foto yang pernah ia lihat di Instagram. Usianya terlihat jauh lebih tua dari mahasiswa 19 tahun.",
+    "next": "museum_004"
+  },
+  "museum_004": {
+    "id": "museum_004",
+    "type": "dialogue",
+    "speaker": "(Pikiran Melati)",
+    "text": "Ini... Raka?",
+    "next": "museum_005"
+  },
+  "museum_005": {
+    "id": "museum_005",
+    "type": "dialogue",
+    "speaker": "[ORANG ITU]",
+    "text": "Melati ya? Aku Raka.",
+    "next": "museum_006"
+  },
+  "museum_006": {
+    "id": "museum_006",
+    "type": "dialogue",
+    "speaker": "Raka",
+    "text": "Ayok ke bagian sana, di sana ada lukisan dengan teknik yang biasa kamu pakai.",
+    "next": "museum_007"
+  },
+  "museum_007": {
+    "id": "museum_007",
+    "type": "dialogue",
+    "speaker": "(Pikiran Melati)",
+    "text": "Ada yang aneh.. ",
+    "next": "museum_008"
+  },
+  "museum_008": {
+    "id": "museum_008",
+    "type": "narration",
+    "text": "Ada sesuatu yang tidak terasa tepat.",
+    "next": "museum_009"
+  },
+  "museum_009": {
+    "id": "museum_009",
+    "type": "narration",
+    "text": "Melati merasakannya, tapi belum tahu harus berbuat apa.",
+    "next": "museum_010"
+  },
+  "museum_010": {
+    "id": "museum_010",
+    "type": "narration",
+    "text": "Orang itu mengajaknya ke area koleksi di sayap yang lebih sepi.",
+    "next": "museum_011"
+  },
+  "museum_011": {
+    "id": "museum_011",
+    "type": "narration",
+    "text": " Jumlah pengunjung di sekitar mereka semakin berkurang.",
+    "next": "museum_012"
+  },
+  "museum_012": {
+    "id": "museum_012",
+    "type": "narration",
+    "text": "Di dalam benaknya, ada sinyal yang berbunyi.",
+    "next": "museum_013"
+  },
+  "museum_013": {
+    "id": "museum_013",
+    "type": "dialogue",
+    "speaker": "(Pikiran Melati)",
+    "text": "Ini nggak seperti yang aku bayangkan.",
+    "next": "museum_014"
+  },
+  "museum_014": {
+    "id": "museum_014",
+    "type": "dialogue",
+    "speaker": "(Pikiran Melati)",
+    "text": "Tempat ini makin sepi.",
+    "next": "museum_015"
+  },
+  "museum_015": {
+    "id": "museum_015",
+    "type": "dialogue",
+    "speaker": "(Pikiran Melati)",
+    "text": " Dia bukan seperti di foto.",
+    "next": "choice_museum_001"
+  },
+  "choice_museum_001": {
+    "id": "choice_museum_001",
+    "type": "choice",
+    "choices": [
+      {
+        "label": "[A] Melati berpura-pura ada yang meneleponnya dan minta izin ke toilet. Lalu langsung berjalan ke area ramai.",
+        "next": "ending_escape_001"
+      },
+      {
+        "label": "[B] Melati langsung berkata Maaf, aku harus pergi dan berjalan cepat keluar.",
+        "next": "ending_boundary_001"
+      },
+      {
+        "label": "[C] Melati tidak tahu harus berbuat apa. Ia membeku sesaat.",
+        "next": "ending_001"
+      }
+    ]
+  }
+}
