@@ -1,5 +1,7 @@
 "use client";
 
+import GameLayout from "./GameLayout";
+import GameControls from "./GameControls";
 import SceneRenderer from "./SceneRenderer";
 import { useStoryEngine } from "@/hooks/useStoryEngine";
 
@@ -8,28 +10,20 @@ export default function StoryEngine() {
     useStoryEngine();
 
   return (
-    <>
-      <div className="mb-4 flex gap-2">
-        <button
-          onClick={previousScene}
-          className="rounded bg-gray-700 px-4 py-2"
-        >
-          ← Previous
-        </button>
-
-        <button
-          onClick={resetProgress}
-          className="rounded bg-red-700 px-4 py-2"
-        >
-          Reset
-        </button>
-      </div>
-
+    <GameLayout>
       <SceneRenderer
         scene={currentScene}
         nextScene={nextScene}
         choose={choose}
       />
-    </>
+
+      <GameControls
+        // currentSceneId={currentScene.id}
+        onNext={nextScene}
+        onPrevious={previousScene}
+        onReset={resetProgress}
+        showNext={!!currentScene.next}
+      />
+    </GameLayout>
   );
 }

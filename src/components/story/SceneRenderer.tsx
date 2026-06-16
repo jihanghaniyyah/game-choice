@@ -10,33 +10,24 @@ interface SceneRendererProps {
   choose: (nextId: string) => void;
 }
 
-export default function SceneRenderer({
-  scene,
-  nextScene,
-  choose,
-}: SceneRendererProps) {
-  switch (scene.type) {
-    case "narration":
-      return (
-        <NarrationBox
-          text={scene.text ?? ""}
-          onNext={scene.next ? nextScene : undefined}
-        />
-      );
+export default function SceneRenderer({ scene, choose }: SceneRendererProps) {
+  return (
+    <div className="flex h-full flex-col">
+      {/* SCENE AREA */}
+      <div className="flex-1 bg-slate-950">
+        {/* nanti background masuk sini */}
+      </div>
 
-    case "dialogue":
-      return (
-        <DialogueBox
-          speaker={scene.speaker ?? ""}
-          text={scene.text ?? ""}
-          onNext={scene.next ? nextScene : undefined}
-        />
-      );
+      {/* CONTENT AREA */}
+      {scene.type === "dialogue" && (
+        <DialogueBox speaker={scene.speaker ?? ""} text={scene.text ?? ""} />
+      )}
 
-    case "choice":
-      return <ChoiceList choices={scene.choices ?? []} onChoose={choose} />;
+      {scene.type === "narration" && <NarrationBox text={scene.text ?? ""} />}
 
-    default:
-      return null;
-  }
+      {scene.type === "choice" && (
+        <ChoiceList choices={scene.choices ?? []} onChoose={choose} />
+      )}
+    </div>
+  );
 }
