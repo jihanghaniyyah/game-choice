@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Digital Grooming Game
 
-## Getting Started
+Game naratif interaktif berbasis pilihan (choice-based narration game) yang bertujuan mengedukasi remaja mengenai fenomena digital grooming dan pentingnya menjaga keamanan dalam berinteraksi di dunia digital.
 
-First, run the development server:
+Pemain akan mengikuti perjalanan seorang siswi bernama **Melati** yang secara perlahan terjebak dalam hubungan online yang tampak nyaman dan suportif, namun sebenarnya mengandung tanda-tanda digital grooming.
+
+---
+
+## Tujuan Project
+
+- Memberikan edukasi mengenai digital grooming melalui media interaktif.
+- Membantu pemain mengenali tanda-tanda manipulasi emosional di dunia digital.
+- Menyediakan pengalaman belajar yang lebih menarik dibandingkan materi edukasi konvensional.
+
+---
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+---
+
+## Menjalankan Project
+
+Install dependency:
+
+```bash
+npm install
+```
+
+Menjalankan development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Struktur Folder
 
-To learn more about Next.js, take a look at the following resources:
+```text
+src/
+├── app/
+│   ├── page.tsx
+│   └── game/
+├── components/
+│   └── story/
+├── data/
+│   ├── intro.json
+│   ├── day1.json
+│   ├── day2.json
+│   ├── dm.json
+│   └── ending.json
+├── hooks/
+│   └── useStoryEngine.ts
+└── types/
+    └── story.ts
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Story Engine
 
-## Deploy on Vercel
+Cerita disimpan dalam format JSON.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contoh scene:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```json
+{
+  "id": "day1_001",
+  "type": "dialogue",
+  "speaker": "Melati",
+  "text": "Aku capek...",
+  "next": "day1_002"
+}
+```
+
+Contoh pilihan:
+
+```json
+{
+  "id": "choice_001",
+  "type": "choice",
+  "choices": [
+    {
+      "label": "Balas Singkat",
+      "next": "ending_instinct"
+    },
+    {
+      "label": "Balas Antusias",
+      "next": "ending_escape"
+    }
+  ]
+}
+```
+
+---
+
+## Progress Saat Ini
+
+### Selesai
+
+- Story Engine
+- Scene Navigation
+- Choice System
+- Save Progress (Local Storage)
+- Previous Scene
+- Reset Progress
+- Dialogue Box
+- Narration Box
+- Game Controls
+
+### Roadmap
+
+- Background System
+- Character Sprite System
+- Typewriter Effect
+- Sound Effect
+- UI Final Design
+- Multiple Endings
+- Achievement System
+
+---
+
+## Status
+
+Project masih dalam tahap pengembangan awal (prototype).
+Aset visual final dan desain UI masih menunggu proses desain.
