@@ -1,21 +1,11 @@
-interface Choice {
-  label: string;
-  next: string;
-}
-
-interface Props {
-  choices: Choice[];
-  onChoose: (next: string) => void;
-}
-
-export default function ChoiceList({ choices, onChoose }: Props) {
+export default function ChoiceList({ choices, onChoose }: any) {
   return (
-    <div className="flex flex-col gap-3">
-      {choices.map((choice) => (
+    <div className="absolute bottom-32 left-1/2 flex w-[600px] -translate-x-1/2 flex-col gap-3">
+      {choices.map((choice: any) => (
         <button
           key={choice.label}
           onClick={() => onChoose(choice.next)}
-          className="rounded-lg bg-blue-600 p-3"
+          className="rounded-xl border border-slate-600 bg-slate-800 p-4 text-left transition hover:bg-slate-700"
         >
           {choice.label}
         </button>
