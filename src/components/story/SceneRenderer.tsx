@@ -3,6 +3,7 @@ import { Scene } from "@/types/story";
 import DialogueBox from "./DialogueBox";
 import NarrationBox from "./NarrationBox";
 import ChoiceList from "./ChoiceList";
+import EndingBox from "./EndingBox";
 
 interface SceneRendererProps {
   scene: Scene;
@@ -27,6 +28,10 @@ export default function SceneRenderer({ scene, choose }: SceneRendererProps) {
 
       {scene.type === "choice" && (
         <ChoiceList choices={scene.choices ?? []} onChoose={choose} />
+      )}
+
+      {scene.type === "ending" && (
+        <EndingBox title={scene.title} text={scene.text} />
       )}
     </div>
   );

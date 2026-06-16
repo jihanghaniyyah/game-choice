@@ -15,7 +15,7 @@ export default function GameControls({
 }: GameControlsProps) {
   return (
     <div className="flex items-center justify-between border-t border-slate-700 bg-slate-900 p-4">
-      <div>
+      <div className="flex gap-2">
         <button onClick={onPrevious} className="rounded bg-slate-700 px-4 py-2">
           ← Kembali
         </button>

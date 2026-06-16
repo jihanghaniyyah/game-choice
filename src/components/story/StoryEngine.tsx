@@ -18,7 +18,6 @@ export default function StoryEngine() {
       />
 
       <GameControls
-        // currentSceneId={currentScene.id}
         onNext={nextScene}
         onPrevious={previousScene}
         onReset={resetProgress}
