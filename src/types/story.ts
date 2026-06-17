@@ -4,11 +4,23 @@ export type SceneType =
   | "choice"
   | "chat"
   | "popup"
-  | "ending";
+  | "ending"
+  | "epilogue";
 
 export interface Choice {
   label: string;
   next: string;
+}
+
+export interface Lesson {
+  title: string;
+  content: string;
+}
+
+export interface ContentBlock {
+  type: "text" | "lesson";
+  title?: string;
+  value: string;
 }
 
 export interface Scene {
@@ -20,9 +32,10 @@ export interface Scene {
 
   background?: string;
   character?: string;
-  expression?: string;
 
   title?: string;
+
+  content?: ContentBlock[];
 
   choices?: Choice[];
 

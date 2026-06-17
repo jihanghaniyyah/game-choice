@@ -1,0 +1,44 @@
+{
+  "epilogue_001": {
+    "id": "epilogue_001",
+    "type": "epilogue",
+
+    "title": "Melati adalah siapa saja",
+
+    "content": [
+      {
+        "type": "text",
+        "value": "Melati adalah siapa saja.\nKamu mungkin pernah merasa sepertinya.\nDan itu bukan salahmu."
+      },
+
+      {
+        "type": "section",
+        "title": "6 Tanda Bahaya Digital Grooming",
+        "items": [
+          "Memuji secara berlebihan dan cepat merasa dekat",
+          "Selalu hadir tepat saat korban paling rentan",
+          "Menghindari verifikasi identitas",
+          "Membuat korban merasa paling dimengerti",
+          "Memantau lokasi lewat media sosial",
+          "Menggunakan urgensi semu"
+        ]
+      },
+
+      {
+        "type": "section",
+        "title": "Jika Kamu atau Temanmu Mengalami Situasi Seperti Ini",
+        "items": [
+          "Cerita ke orang dewasa yang dipercaya",
+          "Hubungi SAPA 129",
+          "Jangan hapus bukti",
+          "Blokir dan laporkan akun"
+        ]
+      },
+
+      {
+        "type": "quote",
+        "value": "Kamu tidak sendirian. Kamu tidak bersalah. Dan kamu selalu bisa meminta tolong."
+      }
+    ]
+  }
+}

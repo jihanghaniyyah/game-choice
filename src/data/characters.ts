@@ -17,6 +17,8 @@ export const CHARACTER_AVATARS: Record<string, string> = {
   Nisa: "/characters/nisa.png",
   Kira: "/characters/kira.png",
   Dea: "/characters/dea.png",
+
+  Guru: "/characters/guru.png",
 };
 
 export const CHARACTER_COLORS: Record<string, string> = {
@@ -37,5 +39,7 @@ export const CHARACTER_COLORS: Record<string, string> = {
   // Teman
   Nisa: "bg-green-500",
   Kira: "bg-orange-500",
-  Dea: "bg-slate-500",
+  Dea: "bg-orange-500",
+
+  Guru: "bg-yellow-500 ",
 };

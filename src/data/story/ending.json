@@ -42,7 +42,18 @@
     "id": "ending_instinct_006",
     "type": "ending",
     "title": "Instinct",
-    "text": "Melati tidak tahu pasti apakah Raka berbahaya. Tapi ketidaknyamanan itu sudah cukup sebagai alasan untuk berhenti. Pelajaran: Perasaan tidak nyaman adalah sinyal, bukan imajinasi. Kamu tidak perlu bukti untuk berhenti dari situasi yang tidak terasa aman. "
+    "content": [
+      {
+        "type": "text",
+        "value": "Melati tidak tahu pasti apakah Raka berbahaya. Tapi ketidaknyamanan itu sudah cukup sebagai alasan untuk berhenti."
+      },
+
+      {
+        "type": "lesson",
+        "title": "Pelajaran yang Bisa Diambil",
+        "value": "Perasaan tidak nyaman adalah sinyal, bukan imajinasi. Kamu tidak perlu bukti untuk berhenti dari situasi yang tidak terasa aman. "
+      }
+    ]
   },
 
   "ending_escape_001": {
@@ -114,18 +125,29 @@
     "id": "ending_escape_010",
     "type": "ending",
     "title": "Escape",
-    "text": "Melati tidak panik. Ia berpikir cepat dan menggunakan alasan yang terasa natural. Keluar dari situasi yang tidak aman tidak selalu harus dramatis. Pelajaran: Kamu boleh menggunakan alasan apapun untuk keluar dari situasi yang tidak terasa aman. Aku harus pergi adalah kalimat yang valid tanpa perlu penjelasan apapun."
+    "content": [
+      {
+        "type": "text",
+        "value": "Melati tidak panik. Ia berpikir cepat dan menggunakan alasan yang terasa natural. Keluar dari situasi yang tidak aman tidak selalu harus dramatis."
+      },
+
+      {
+        "type": "lesson",
+        "title": "Pelajaran yang Bisa Diambil",
+        "value": "Kamu boleh menggunakan alasan apapun untuk keluar dari situasi yang tidak terasa aman. Aku harus pergi adalah kalimat yang valid tanpa perlu penjelasan apapun."
+      }
+    ]
   },
 
   "ending_boundary_001": {
     "id": "ending_boundary_001",
     "type": "narration",
     "text": "Melati berhenti melangkah.",
-    "next": "ending_boundary_001"
+    "next": "ending_boundary_002"
   },
 
   "ending_boundary_002": {
-    "id": "ending_boundary_001",
+    "id": "ending_boundary_002",
     "type": "dialogue",
     "speaker": "Melati",
     "text": "Maaf. Aku harus pergi.",
@@ -166,7 +188,18 @@
     "id": "ending_boundary_007",
     "type": "ending",
     "title": "Boundary",
-    "text": "Melati tidak menjelaskan, tidak meminta maaf berlebihan, tidak menunggu izin. Ia hanya pergi. Dan itu cukup. Kamu tidak perlu penjelasan panjang untuk pergi dari situasi yang tidak aman. Aku harus pergi sudah cukup sebagai kalimat lengkap."
+    "content": [
+      {
+        "type": "text",
+        "value": "Melati tidak menjelaskan, tidak meminta maaf berlebihan, tidak menunggu izin. Ia hanya pergi. Dan itu cukup."
+      },
+
+      {
+        "type": "lesson",
+        "title": "Pelajaran yang Bisa Diambil",
+        "value": " Kamu tidak perlu penjelasan panjang untuk pergi dari situasi yang tidak aman. Aku harus pergi sudah cukup sebagai kalimat lengkap."
+      }
+    ]
   },
 
   "ending_rescue_001": {
@@ -278,7 +311,7 @@
   "ending_rescue_016": {
     "id": "ending_rescue_016",
     "type": "dialogue",
-    "speaker": "GURU",
+    "speaker": "Guru",
     "text": "Melati, Nisa. Ayo masuk mobil dulu.",
     "next": "ending_rescue_017"
   },
@@ -302,14 +335,6 @@
     "id": "ending_rescue_019",
     "type": "narration",
     "text": "Melati menangis sembari dipeluk oleh Nisa",
-    "next": "ending_rescue_020"
-  },
-
-  "ending_rescue_020": {
-    "id": "ending_rescue_020",
-    "type": "dialogue",
-    "speaker": "(Pikiran Melati)",
-    "text": "Nisa... tahu. Dari tadi dia tahu.",
     "next": "ending_rescue_021"
   },
 
@@ -330,14 +355,25 @@
   "ending_rescue_023": {
     "id": "ending_rescue_023",
     "type": "ending",
-    "title": "Anchor",
-    "text": "Melati selamat karena Nisa tidak diam. Nisa tidak berteriak, tidak menghakimi, tidak melarang : ia hanya hadir, mengamati, dan bertindak tepat waktu. Kadang yang menyelamatkan kita bukan yang paling keras suaranya, tapi yang paling memperhatikan."
+    "title": "Ending",
+    "content": [
+      {
+        "type": "text",
+        "value": "Melati selamat karena Nisa tidak diam. Nisa tidak berteriak, tidak menghakimi, tidak melarang : ia hanya hadir, mengamati, dan bertindak tepat waktu. Kadang yang menyelamatkan kita bukan yang paling keras suaranya, tapi yang paling memperhatikan."
+      }
+    ],
+    "next": "epilogue_001"
   },
 
   "ending_exit": {
     "id": "ending_exit",
     "type": "ending",
     "title": "Keluar Permainan",
-    "text": "Pemain memilih untuk tidak melanjutkan simulasi."
+    "content": [
+      {
+        "type": "text",
+        "value": "Pemain memilih untuk tidak melanjutkan simulasi."
+      }
+    ]
   }
 }

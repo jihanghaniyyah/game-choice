@@ -1,0 +1,44 @@
+{
+  "grooming_stage_001": {
+    "id": "grooming_stage_001",
+    "type": "popup",
+    "title": "GROOMING STAGE : (Stage 1) Victim Selection",
+    "text": "Pelaku memilih target yang sedang rentan secara emosional. Melati merasa tidak didengar di rumah. Groomer masuk lewat minat korban (seni) dan menggunakan emotional mirroring, berpura-pura memahami perasaan korban secara mendalam.",
+    "next": "day2_020"
+  },
+
+  "grooming_stage_002": {
+    "id": "grooming_stage_002",
+    "type": "popup",
+    "title": "GROOMING STAGE : (Stage 2) Gaining Access",
+    "text": "Pelaku berhasil masuk ke DM dengan alasan yang terasa legitimate (bertanya soal teknik gambar). Ini adalah tahap pertama akses pribadi yang kemudian diperluas.",
+    "next": "day2_020"
+  },
+
+  "grooming_stage_003": {
+    "id": "grooming_stage_003",
+    "type": "popup",
+    "title": "GROOMING STAGE : (Stage 3) Trust Development",
+    "text": "Raka kini menjadi satu satunya sumber validasi emosional Melati. Ia hadir tepat saat Melati sedang paling rentan. Ini adalah pola khas grooming: mengisi kekosongan emosional yang tidak terpenuhi di lingkungan sekitar korban.",
+    "next": "day2_020"
+  },
+
+  "grooming_stage_004": {
+    "id": "grooming_stage_004",
+    "type": "popup",
+    "title": "GROOMING STAGE : (Stage 2, Lanjutan) Information Gathering",
+    "content": [
+      {
+        "type": "text",
+        "value": "Groomer memantau aktivitas online korban untuk mendapatkan informasi lokasi dan rutinitas. Pilihan A memberikan akses paling mudah. Pilihan B membuat pelacakan lebih sulit, walaupun groomer bisa mencoba cara lain."
+      },
+
+      {
+        "type": "lesson",
+        "title": "Pelajaran yang Bisa Diambil",
+        "value": " Pikirkan dua kali sebelum posting lokasi real-time. Semakin sedikit informasi lokasi yang kamu bagikan secara publik, semakin kecil peluang seseorang yang tidak kamu kenal secara langsung bisa melacakmu."
+      }
+    ],
+    "next": "day2_020"
+  }
+}

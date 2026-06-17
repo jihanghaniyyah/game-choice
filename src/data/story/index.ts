@@ -10,6 +10,7 @@ import day2 from "./day2.json";
 import friends from "./friends.json";
 import museum from "./museum.json";
 import ending from "./ending.json";
+import epilogue from "./epilogue.json";
 
 export const story = {
   ...splash,
@@ -22,4 +23,5 @@ export const story = {
   ...friends,
   ...museum,
   ...ending,
+  ...epilogue,
 } as unknown as Story;
