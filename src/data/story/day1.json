@@ -2,28 +2,24 @@
   "day1_001": {
     "id": "day1_001",
     "type": "narration",
-    "background": "home_outside",
     "text": "Sore hari...",
     "next": "day1_002"
   },
   "day1_002": {
     "id": "day1_002",
     "type": "narration",
-    "background": "bedroom",
     "text": "Melati pulang dengan seragam yang masih rapi tapi langkahnya terasa berat.",
     "next": "day1_003"
   },
   "day1_003": {
     "id": "day1_003",
     "type": "narration",
-    "background": "bedroom",
     "text": "Seharian rapat OSIS, latihan ekstrakurikuler, dan ujian Matematika.",
     "next": "day1_004"
   },
   "day1_004": {
     "id": "day1_004",
     "type": "narration",
-    "background": "bedroom",
     "text": "Ia langsung masuk ke kamar, menutup pintunya pelan.",
     "next": "day1_005"
   },

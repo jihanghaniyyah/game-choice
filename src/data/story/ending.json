@@ -311,6 +311,7 @@
   "ending_rescue_016": {
     "id": "ending_rescue_016",
     "type": "dialogue",
+    "background": "/backgrounds/ending/ending_car.jpeg",
     "speaker": "Guru",
     "text": "Melati, Nisa. Ayo masuk mobil dulu.",
     "next": "ending_rescue_017"
@@ -319,6 +320,7 @@
   "ending_rescue_017": {
     "id": "ending_rescue_017",
     "type": "narration",
+    "background": "/backgrounds/ending/ending_car.jpeg",
     "text": "Di dalam mobil, Melati menyadari: Nisa sudah menghubungi guru itu jauh sebelum mereka tiba di museum.",
     "next": "ending_rescue_018"
   },
@@ -326,6 +328,7 @@
   "ending_rescue_018": {
     "id": "ending_rescue_018",
     "type": "dialogue",
+    "background": "/backgrounds/ending/ending_car.jpeg",
     "speaker": "(Pikiran Melati)",
     "text": "Nisa... tahu. Dari tadi dia tahu.",
     "next": "ending_rescue_019"
@@ -334,6 +337,7 @@
   "ending_rescue_019": {
     "id": "ending_rescue_019",
     "type": "narration",
+    "background": "/backgrounds/ending/ending_car.jpeg",
     "text": "Melati menangis sembari dipeluk oleh Nisa",
     "next": "ending_rescue_021"
   },

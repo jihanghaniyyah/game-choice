@@ -26,6 +26,7 @@
   "competition_005": {
     "id": "competition_005",
     "type": "narration",
+    "background": "/backgrounds/museum/museum_background.jpeg",
     "text": "Melati dan Nisa berjalan-jalan sebentar di sekitar area lomba.",
     "next": "competition_006"
   },

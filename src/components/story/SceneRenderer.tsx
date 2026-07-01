@@ -15,9 +15,13 @@ export default function SceneRenderer({ scene, choose }: SceneRendererProps) {
   return (
     <div className="flex h-full flex-col">
       {/* SCENE AREA */}
-      <div className="flex-1 bg-slate-950">
-        {/* nanti background masuk sini */}
-      </div>
+
+      <div
+        className="flex-1 bg-cover bg-center bg-no-repeat transition-all duration-500"
+        style={{
+          backgroundImage: `url(${scene.background})`,
+        }}
+      ></div>
 
       {/* DIALOGUE */}
       {scene.type === "dialogue" && (

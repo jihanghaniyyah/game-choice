@@ -2,6 +2,7 @@
   "museum_001": {
     "id": "museum_001",
     "type": "narration",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
     "text": "Museum lebih sepi dari yang Melati bayangkan. Pengunjung semakin berkurang.",
     "next": "museum_002"
   },

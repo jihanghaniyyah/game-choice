@@ -2,6 +2,7 @@
   "kira_001": {
     "id": "kira_001",
     "type": "dialogue",
+    "background": "/backgrounds/school/cafeteria_kira.jpeg",
     "speaker": "Kira",
     "text": "WAHH PASTI SERUU BANGET, pasti dia seru dan sefrekuensi kan?!",
     "next": "kira_002"
@@ -17,6 +18,7 @@
   "dea_001": {
     "id": "dea_001",
     "type": "dialogue",
+    "background": "/backgrounds/school/cafeteria_dea.jpeg",
     "speaker": "Dea",
     "text": "Wow... semoga jadi teman baik-baik terus ya. ",
     "next": "dea_002"
@@ -31,6 +33,7 @@
   "nisa_001": {
     "id": "nisa_001",
     "type": "dialogue",
+    "background": "/backgrounds/school/cafeteria_nisa.jpeg",
     "speaker": "Nisa",
     "text": "Mel, aku bilang kamu harus hati-hati deh. Apalagi sama orang yang kamu temuin di media sosial. ",
     "next": "nisa_002"
@@ -45,6 +48,7 @@
   "nisa_003": {
     "id": "nisa_003",
     "type": "dialogue",
+    "background": "/backgrounds/school/cafeteria_nisa_2.jpeg",
     "speaker": "Nisa",
     "text": "Bilang ya kalau ada apa-apa, Mel.",
     "next": "nisa_004"
