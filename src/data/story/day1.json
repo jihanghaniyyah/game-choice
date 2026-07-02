@@ -23,6 +23,7 @@
   "day1_004": {
     "id": "day1_004",
     "type": "narration",
+    "background": "/backgrounds/bedroom/bedroom_base.png",
     "text": "Ia langsung masuk ke kamar, menutup pintunya pelan.",
     "next": "day1_005"
   },

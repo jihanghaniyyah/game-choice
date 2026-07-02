@@ -5,7 +5,7 @@ export default function ChoiceList({ choices, onChoose }: any) {
         <button
           key={choice.label}
           onClick={() => onChoose(choice.next)}
-          className="rounded-xl border border-slate-600 bg-slate-800 p-4 text-left transition hover:bg-slate-700"
+          className="cursor-pointer rounded-xl border border-slate-600 bg-slate-800 p-4 text-left transition hover:bg-slate-700"
         >
           {choice.label}
         </button>
