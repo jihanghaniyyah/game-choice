@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: "Mengenal Bahaya di Balik Layar",
+    default: "Under His Spell",
     template: "%s | Mengenal Bahaya di Balik Layar",
   },
   description: "Game edukasi interaktif tentang digital grooming",

@@ -2,14 +2,24 @@
   "splash_001": {
     "id": "splash_001",
     "type": "narration",
+    "background": "/backgrounds/splash/intro.png",
     "text": "Digital Grooming Game",
-    "next": "splash_002"
+    "next": "consent_001"
   },
 
-  "splash_002": {
-    "id": "splash_002",
-    "type": "narration",
-    "text": "Sebuah simulasi interaktif tentang interaksi di dunia digital.",
-    "next": "disclaimer_001"
+  "consent_001": {
+    "id": "consent_001",
+    "type": "choice",
+    "background": "/backgrounds/splash/disclaimer.jpeg",
+    "choices": [
+      {
+        "label": "Saya mengerti dan ingin melanjutkan",
+        "next": "day1_001"
+      },
+      {
+        "label": "Keluar dari permainan",
+        "next": "ending_exit"
+      }
+    ]
   }
 }

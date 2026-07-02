@@ -1,8 +1,6 @@
 import { Story } from "@/types/story";
 
 import splash from "./splash.json";
-import disclaimer from "./disclaimer.json";
-import consent from "./consent.json";
 import day1 from "./day1.json";
 import dm from "./dm.json";
 import competition from "./competition.json";
@@ -14,8 +12,6 @@ import epilogue from "./epilogue.json";
 
 export const story = {
   ...splash,
-  ...disclaimer,
-  ...consent,
   ...day1,
   ...dm,
   ...competition,
