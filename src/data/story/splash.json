@@ -1,9 +1,8 @@
 {
   "splash_001": {
     "id": "splash_001",
-    "type": "narration",
     "background": "/backgrounds/splash/intro.png",
-    "text": "Digital Grooming Game",
+    "controls": "intro",
     "next": "consent_001"
   },
 

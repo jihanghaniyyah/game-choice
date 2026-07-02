@@ -39,6 +39,8 @@ export interface Scene {
 
   choices?: Choice[];
 
+  controls?: "intro" | "default" | "none";
+
   next?: string;
 }
 

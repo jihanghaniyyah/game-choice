@@ -15,7 +15,7 @@ export default function DialogueBox({ speaker, text }: DialogueBoxProps) {
   const isDualSpeaker = speaker === "Nisa & Melati";
 
   return (
-    <div className="border-t border-slate-700 bg-black/90 p-6">
+    <div className="absolute bottom-8 left-1/2 z-20 w-[90%] max-w-5xl -translate-x-1/2 rounded-2xl border border-slate-700 bg-black/80 p-6 shadow-2xl backdrop-blur-md">
       <div className="flex gap-4">
         <div className="flex-1">
           {isDualSpeaker ? (

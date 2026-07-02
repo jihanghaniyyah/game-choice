@@ -13,15 +13,19 @@ interface SceneRendererProps {
 
 export default function SceneRenderer({ scene, choose }: SceneRendererProps) {
   return (
-    <div className="flex h-full flex-col">
-      {/* SCENE AREA */}
-
+    <div className="relative h-full w-full overflow-hidden">
+      {/* BACKGROUND */}
       <div
-        className="flex-1 bg-cover bg-center bg-no-repeat transition-all duration-500"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-500"
         style={{
-          backgroundImage: `url(${scene.background})`,
+          backgroundImage: scene.background
+            ? `url(${scene.background})`
+            : undefined,
         }}
-      ></div>
+      />
+
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/20" />
 
       {/* DIALOGUE */}
       {scene.type === "dialogue" && (
@@ -36,7 +40,7 @@ export default function SceneRenderer({ scene, choose }: SceneRendererProps) {
         <ChoiceList choices={scene.choices ?? []} onChoose={choose} />
       )}
 
-      {/* POPUP EDUKASI */}
+      {/* POPUP */}
       {scene.type === "popup" && (
         <InfoBox title={scene.title} content={scene.content ?? []} />
       )}

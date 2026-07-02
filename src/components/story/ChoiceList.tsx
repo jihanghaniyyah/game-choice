@@ -1,6 +1,6 @@
 export default function ChoiceList({ choices, onChoose }: any) {
   return (
-    <div className="absolute bottom-32 left-1/2 flex w-[600px] -translate-x-1/2 flex-col gap-3">
+    <div className="absolute bottom-32 left-1/2 z-30 flex w-[600px] -translate-x-1/2 flex-col gap-3">
       {choices.map((choice: any) => (
         <button
           key={choice.label}
