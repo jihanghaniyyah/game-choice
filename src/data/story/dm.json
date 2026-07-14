@@ -2,108 +2,158 @@
   "dm_001": {
     "id": "dm_001",
     "type": "narration",
-    "text": "Notifikasi dari @raka.workinframe. Like semua foto lukisannya. Lalu komentar:",
+    "background": "/backgrounds/phone/phone_notification.png",
+    "text": "Notifikasi dari @raka.workinframe. Like semua foto lukisannya",
     "next": "dm_002"
   },
 
   "dm_002": {
     "id": "dm_002",
-    "type": "dialogue",
-    "speaker": "Raka (komentar IG)",
-    "text": "Haii aku Raka. Ini kamu yang gambar? Keren banget perspektifnya. Jarang ada yang bisa nangkep lighting kayak gini.",
+    "type": "narration",
+    "background": "/backgrounds/phone/phone_conversation.png",
+    "text": "Lalu komentar:",
     "next": "dm_003"
   },
 
   "dm_003": {
     "id": "dm_003",
     "type": "dialogue",
-    "speaker": "(Pikiran Melati)",
-    "text": "Ada yang perhatiin gambarku...",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
+    "speaker": "Raka (komentar IG)",
+    "text": "Haii aku Raka. Ini kamu yang gambar? Keren banget perspektifnya. Jarang ada yang bisa nangkep lighting kayak gini.",
     "next": "dm_004"
   },
 
   "dm_004": {
     "id": "dm_004",
-    "type": "narration",
-    "text": "Melati tersenyum untuk pertama kalinya hari ini.",
+    "type": "dialogue",
+    "background": "/backgrounds/phone/phone_profile_melati.png",
+    "speaker": "(Pikiran Melati)",
+    "text": "Ada yang perhatiin gambarku...",
     "next": "dm_005"
   },
 
   "dm_005": {
     "id": "dm_005",
     "type": "narration",
-    "text": "Beberapa jam kemudian, DM masuk.",
+    "background": "/backgrounds/phone/phone_profile_melati.png",
+    "text": "Melati tersenyum untuk pertama kalinya hari ini.",
     "next": "dm_006"
   },
 
   "dm_006": {
     "id": "dm_006",
-    "type": "dialogue",
-    "speaker": "Raka (DM)",
-    "text": "Hei, maaf DM langsung ya. Tadi lihat gambaran kamu. Kamu gambarnya di mana? Pake tablet atau manual? Soalnya kamu gambarnya bagus banget.",
+    "type": "narration",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
+    "text": "Beberapa jam kemudian, DM masuk.",
     "next": "dm_007"
   },
 
   "dm_007": {
     "id": "dm_007",
-    "type": "choice",
-    "choices": [
-      {
-        "label": "[A] Balas singkat: Makasih ya! Aku gambar manual biasanya.",
-        "next": "dm_008"
-      },
-      {
-        "label": "[B] Balas antusias: Hehe beneran? Aku suka banget nih latihan perspektif! Kamu juga suka gambar?",
-        "next": "dm_008"
-      },
-      {
-        "label": "[C] Tidak balas dulu. Melati mengunjungi profil Raka dulu",
-        "next": "dm_008"
-      }
-    ]
+    "type": "dialogue",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
+    "speaker": "Raka (DM)",
+    "text": "Hei, maaf DM langsung ya. Tadi lihat gambaran kamu. Kamu gambarnya di mana? Pake tablet atau manual? Soalnya kamu gambarnya bagus banget.",
+    "next": "dm_008"
   },
 
   "dm_008": {
     "id": "dm_008",
-    "type": "dialogue",
-    "speaker": "Raka",
-    "text": " Kamu kelasnya sibuk banget ya? Kayaknya stress dari postingan-postingan kamu.",
-    "next": "dm_009"
+    "type": "choice",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
+    "choices": [
+      {
+        "label": "[A] Balas singkat: Makasih ya! Aku gambar manual biasanya.",
+        "next": "dm_009"
+      },
+      {
+        "label": "[B] Balas antusias: Hehe beneran? Aku suka banget nih latihan perspektif! Kamu juga suka gambar?",
+        "next": "dm_009"
+      },
+      {
+        "label": "[C] Tidak balas dulu. Melati mengunjungi profil Raka dulu",
+        "next": "dm_009"
+      }
+    ]
   },
+
   "dm_009": {
     "id": "dm_009",
     "type": "dialogue",
-    "speaker": "Melati",
-    "text": " Haha iya, lagi banyak PR. Nilai juga lagi ga bagus.",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
+    "speaker": "Raka",
+    "text": "Kamu kelasnya sibuk banget ya? Kayaknya stress dari postingan-postingan kamu.",
     "next": "dm_010"
   },
+
   "dm_010": {
     "id": "dm_010",
     "type": "dialogue",
-    "speaker": "Raka",
-    "text": " Ih, padahal gambarnya sekeren ini. Sayang banget kalau kamu down terus. Orang sekreatif kamu harusnya lebih diapresiasi. ",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
+    "speaker": "Melati",
+    "text": " Haha iya, lagi banyak PR. Nilai juga lagi ga bagus.",
     "next": "dm_011"
   },
+
   "dm_011": {
     "id": "dm_011",
     "type": "dialogue",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
+    "speaker": "Raka",
+    "text": " Ih, padahal gambarnya sekeren ini. Sayang banget kalau kamu down terus. Orang sekreatif kamu harusnya lebih diapresiasi. ",
+    "next": "dm_012"
+  },
+
+  "dm_012": {
+    "id": "dm_012",
+    "type": "dialogue",
+
+    "background": "/backgrounds/phone/phone_profile_raka.png",
+
+    "speaker": "(Pikiran Melati)",
+
+    "text": "Dia... ngerti. Padahal baru kenal.",
+
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png",
+      "delay": 3000
+    },
+
+    "next": "day2_001"
+  },
+
+  "book_001": {
+    "id": "book_001",
+    "type": "overlay",
+    "overlayImage": "/backgrounds/overlay/notebook_1.png",
+    "next": "dm_012_after"
+  },
+
+  "dm_012_after": {
+    "id": "dm_012_after",
+    "type": "dialogue",
+    "background": "/backgrounds/phone/phone_profile_raka.png",
     "speaker": "(Pikiran Melati)",
     "text": " Dia... ngerti. Padahal baru kenal.",
     "next": "day2_001"
   },
-  "dm_012": {
-    "id": "dm_012",
+
+  "dm_013": {
+    "id": "dm_013",
     "type": "dialogue",
     "speaker": "Raka",
     "text": "Gimana hari kamu?",
     "next": "dm_013"
   },
+
   "dm_013": {
     "id": "dm_013",
     "type": "narration",
     "text": "Pertanyaan itu, tiga kata sederhana, membuat Melati menceritakan semuanya.",
     "next": "dm_014"
   },
+
   "dm_014": {
     "id": "dm_014",
     "type": "dialogue",
@@ -111,6 +161,7 @@
     "text": "Hari ini lumayan berat.",
     "next": "dm_015"
   },
+
   "dm_015": {
     "id": "dm_015",
     "type": "dialogue",
@@ -118,6 +169,7 @@
     "text": "Rasanya belum sempat ngobrol beneran sama siapa-siapa di rumah.",
     "next": "dm_016"
   },
+
   "dm_016": {
     "id": "dm_016",
     "type": "dialogue",
@@ -125,6 +177,7 @@
     "text": "Hey... itu pasti capek banget.",
     "next": "dm_017"
   },
+
   "dm_017": {
     "id": "dm_017",
     "type": "dialogue",

@@ -1,5 +1,9 @@
 import { Scene } from "@/types/story";
 
+import BackgroundLayer from "./BackgroundLayer";
+import CharacterLayer from "./CharacterLayer";
+import OverlayLayer from "./OverlayLayer";
+import SplashBox from "./SplashBox";
 import DialogueBox from "./DialogueBox";
 import NarrationBox from "./NarrationBox";
 import ChoiceList from "./ChoiceList";
@@ -11,49 +15,45 @@ interface SceneRendererProps {
   choose: (nextId: string) => void;
 }
 
-export default function SceneRenderer({ scene, choose }: SceneRendererProps) {
+export default function SceneRenderer({
+  scene,
+  nextScene,
+  choose,
+}: SceneRendererProps) {
   return (
     <div className="relative h-full w-full overflow-hidden">
-      {/* BACKGROUND */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-500"
-        style={{
-          backgroundImage: scene.background
-            ? `url(${scene.background})`
-            : undefined,
-        }}
-      />
+      {/* Background */}
+      <BackgroundLayer scene={scene} />
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/20" />
+      {/* Character */}
+      <CharacterLayer scene={scene} />
 
-      {/* DIALOGUE */}
-      {scene.type === "dialogue" && (
-        <DialogueBox speaker={scene.speaker ?? ""} text={scene.text ?? ""} />
-      )}
+      {/* Overlay Gelap */}
+      <div className="absolute inset-0 z-30 bg-black/20" />
 
-      {/* NARRATION */}
-      {scene.type === "narration" && <NarrationBox text={scene.text ?? ""} />}
+      {/* Overlay */}
+      <div className="absolute inset-0 z-30 bg-black/20" />
 
-      {/* CHOICE */}
-      {scene.type === "choice" && (
-        <ChoiceList choices={scene.choices ?? []} onChoose={choose} />
-      )}
+      {/* UI Layer */}
+      <div className="absolute inset-0 z-40">
+        {scene.type === "splash" && <SplashBox onStart={nextScene} />}
 
-      {/* POPUP */}
-      {scene.type === "popup" && (
-        <InfoBox title={scene.title} content={scene.content ?? []} />
-      )}
+        {scene.type === "dialogue" && (
+          <DialogueBox speaker={scene.speaker ?? ""} text={scene.text ?? ""} />
+        )}
 
-      {/* ENDING */}
-      {scene.type === "ending" && (
-        <InfoBox title={scene.title} content={scene.content ?? []} />
-      )}
+        {scene.type === "narration" && <NarrationBox text={scene.text ?? ""} />}
 
-      {/* EPILOGUE */}
-      {scene.type === "epilogue" && (
-        <InfoBox title={scene.title} content={scene.content ?? []} />
-      )}
+        {scene.type === "choice" && (
+          <ChoiceList choices={scene.choices ?? []} onChoose={choose} />
+        )}
+
+        {(scene.type === "popup" ||
+          scene.type === "ending" ||
+          scene.type === "epilogue") && (
+          <InfoBox title={scene.title} content={scene.content ?? []} />
+        )}
+      </div>
     </div>
   );
 }

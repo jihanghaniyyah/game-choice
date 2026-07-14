@@ -1,6 +1,4 @@
-import Image from "next/image";
-
-import { CHARACTER_AVATARS, CHARACTER_COLORS } from "@/data/characters";
+import { CHARACTER_COLORS } from "@/data/characters";
 
 interface DialogueBoxProps {
   speaker: string;
@@ -8,36 +6,31 @@ interface DialogueBoxProps {
 }
 
 export default function DialogueBox({ speaker, text }: DialogueBoxProps) {
-  const avatar = CHARACTER_AVATARS[speaker] ?? "/characters/default.png";
-
   const badgeColor = CHARACTER_COLORS[speaker] ?? "bg-slate-600";
 
   const isDualSpeaker = speaker === "Nisa & Melati";
 
   return (
-    <div className="absolute bottom-8 left-1/2 z-20 w-[90%] max-w-5xl -translate-x-1/2 rounded-2xl border border-slate-700 bg-black/80 p-6 shadow-2xl backdrop-blur-md">
-      <div className="flex gap-4">
-        <div className="flex-1">
-          {isDualSpeaker ? (
-            <div className="mb-3 flex gap-2">
-              <div className="rounded-md bg-green-500 px-3 py-1 text-sm font-bold text-white">
-                Nisa
-              </div>
+    <div className="absolute bottom-6 left-1/2 z-40 w-[92%] max-w-6xl -translate-x-1/2 rounded-3xl border border-white/10 bg-black/75 p-7 backdrop-blur-md shadow-2xl">
+      {isDualSpeaker ? (
+        <div className="mb-4 flex gap-2">
+          <span className="rounded-lg bg-green-500 px-3 py-1 text-sm font-semibold">
+            Nisa
+          </span>
 
-              <div className="rounded-md bg-pink-500 px-3 py-1 text-sm font-bold text-white">
-                Melati
-              </div>
-            </div>
-          ) : (
-            <div
-              className={`mb-3 inline-block rounded-md px-3 py-1 text-sm font-bold text-white ${badgeColor}`}
-            >
-              {speaker}
-            </div>
-          )}
-          <p className="text-lg leading-relaxed text-white">{text}</p>
+          <span className="rounded-lg bg-pink-500 px-3 py-1 text-sm font-semibold">
+            Melati
+          </span>
         </div>
-      </div>
+      ) : (
+        <span
+          className={`inline-block rounded-lg px-3 py-1 text-sm font-semibold text-white ${badgeColor}`}
+        >
+          {speaker}
+        </span>
+      )}
+
+      <p className="mt-4 text-xl leading-9 text-white">{text}</p>
     </div>
   );
 }

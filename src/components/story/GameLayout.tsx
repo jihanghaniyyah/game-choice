@@ -4,8 +4,8 @@ interface GameLayoutProps {
 
 export default function GameLayout({ children }: GameLayoutProps) {
   return (
-    <main className="relative h-screen w-screen overflow-hidden bg-black text-white">
+    <div className="relative h-screen w-screen overflow-hidden bg-black">
       {children}
-    </main>
+    </div>
   );
 }

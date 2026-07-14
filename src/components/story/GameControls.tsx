@@ -15,34 +15,33 @@ export default function GameControls({
   onReset,
   showNext = true,
 }: GameControlsProps) {
-  // Controls khusus Intro
+  // Splash Screen
   if (scene.controls === "intro") {
     return (
-      <div className="absolute bottom-8 left-0 right-0 z-50 flex justify-center">
+      <div className="absolute bottom-10 left-0 right-0 z-50 flex justify-center">
         <button
           onClick={onNext}
-          className="cursor-pointer rounded-xl bg-green-600 px-8 py-3 text-lg font-semibold transition hover:bg-green-500"
+          className="cursor-pointer rounded-xl bg-pink-600 px-10 py-4 text-xl font-bold text-white shadow-lg transition-all duration-200 hover:scale-105 hover:bg-pink-500"
         >
-          Mulai
+          ▶ PLAY
         </button>
       </div>
     );
   }
 
-  // Controls default
   return (
-    <div className="absolute bottom-4 left-0 right-0 z-50 flex items-center justify-between px-8">
-      <div className="flex gap-2">
+    <div className="absolute bottom-6 left-0 right-0 z-50 flex items-center justify-between px-8">
+      <div className="flex gap-3">
         <button
           onClick={onPrevious}
-          className="cursor-pointer rounded bg-slate-700 px-4 py-2"
+          className="cursor-pointer rounded-xl bg-black/60 px-5 py-3 text-white backdrop-blur-md transition hover:bg-black/80"
         >
           ← Kembali
         </button>
 
         <button
           onClick={onReset}
-          className="cursor-pointer rounded bg-red-600 px-4 py-2"
+          className="cursor-pointer rounded-xl bg-red-600/90 px-5 py-3 text-white transition hover:bg-red-500"
         >
           Ulangi
         </button>
@@ -51,7 +50,7 @@ export default function GameControls({
       {showNext && (
         <button
           onClick={onNext}
-          className="cursor-pointer rounded bg-green-600 px-4 py-2"
+          className="cursor-pointer rounded-xl bg-green-600 px-6 py-3 font-semibold text-white transition hover:bg-green-500"
         >
           Lanjut →
         </button>
