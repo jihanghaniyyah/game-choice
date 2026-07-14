@@ -117,140 +117,148 @@
     "next": "day2_001"
   },
 
-  "book_001": {
-    "id": "book_001",
-    "type": "overlay",
-    "overlayImage": "/backgrounds/overlay/notebook_1.png",
-    "next": "dm_012_after"
-  },
-
-  "dm_012_after": {
-    "id": "dm_012_after",
-    "type": "dialogue",
-    "background": "/backgrounds/phone/phone_profile_raka.png",
-    "speaker": "(Pikiran Melati)",
-    "text": " Dia... ngerti. Padahal baru kenal.",
-    "next": "day2_001"
-  },
-
   "dm_013": {
     "id": "dm_013",
     "type": "dialogue",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
     "speaker": "Raka",
     "text": "Gimana hari kamu?",
-    "next": "dm_013"
-  },
-
-  "dm_013": {
-    "id": "dm_013",
-    "type": "narration",
-    "text": "Pertanyaan itu, tiga kata sederhana, membuat Melati menceritakan semuanya.",
     "next": "dm_014"
   },
 
   "dm_014": {
     "id": "dm_014",
-    "type": "dialogue",
-    "speaker": "Melati",
-    "text": "Hari ini lumayan berat.",
+    "type": "narration",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
+    "text": "Pertanyaan itu, tiga kata sederhana, membuat Melati menceritakan semuanya.",
     "next": "dm_015"
   },
 
   "dm_015": {
     "id": "dm_015",
     "type": "dialogue",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
     "speaker": "Melati",
-    "text": "Rasanya belum sempat ngobrol beneran sama siapa-siapa di rumah.",
+    "text": "Hari ini lumayan berat.",
     "next": "dm_016"
   },
 
   "dm_016": {
     "id": "dm_016",
     "type": "dialogue",
-    "speaker": "Raka",
-    "text": "Hey... itu pasti capek banget.",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
+    "speaker": "Melati",
+    "text": "Rasanya belum sempat ngobrol beneran sama siapa-siapa di rumah.",
     "next": "dm_017"
   },
 
   "dm_017": {
     "id": "dm_017",
     "type": "dialogue",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
     "speaker": "Raka",
-    "text": "Kamu kuat ya, Mel. ",
+    "text": "Hey... itu pasti capek banget.",
     "next": "dm_018"
   },
+
   "dm_018": {
     "id": "dm_018",
     "type": "dialogue",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
     "speaker": "Raka",
-    "text": "Tapi aku dukung kamu.",
+    "text": "Kamu kuat ya, Mel. ",
     "next": "dm_019"
   },
+
   "dm_019": {
     "id": "dm_019",
     "type": "dialogue",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
     "speaker": "Raka",
-    "text": "Gambar kamu keren, kamu punya bakat.",
+    "text": "Tapi aku dukung kamu.",
     "next": "dm_020"
   },
+
   "dm_020": {
     "id": "dm_020",
     "type": "dialogue",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
     "speaker": "Raka",
-    "text": "Kamu nggak harus dapet izin dari siapapun untuk jadi pelukis yang baik.",
+    "text": "Gambar kamu keren, kamu punya bakat.",
     "next": "dm_021"
   },
+
   "dm_021": {
     "id": "dm_021",
     "type": "dialogue",
-    "speaker": "(Pikiran Melati)",
-    "text": "Raka... ngerti aku. Padahal kita belum pernah ketemu.",
-    "next": "competition_001"
+    "background": "/backgrounds/phone/phone_dm_raka.png",
+    "speaker": "Raka",
+    "text": "Kamu nggak harus dapet izin dari siapapun untuk jadi pelukis yang baik.",
+    "next": "dm_022"
   },
 
   "dm_022": {
     "id": "dm_022",
     "type": "dialogue",
-    "speaker": "Raka",
-    "text": "Eh, kamu lagi di [nama kota]?",
-    "next": "dm_023"
+    "background": "/backgrounds/phone/phone_dm_raka.png",
+    "speaker": "(Pikiran Melati)",
+    "text": "Raka... ngerti aku. Padahal kita belum pernah ketemu.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_2.png"
+    },
+    "next": "competition_001"
   },
+
   "dm_023": {
     "id": "dm_023",
     "type": "dialogue",
-    "speaker": "Melati",
-    "text": "Hah, serius? Wah kebetulan banget.",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_3.png"
+    },
+    "speaker": "Raka",
+    "text": "Eh, kamu lagi di Surabaya? Kebetulan banget, aku lagi di sini buat urusan kuliah!",
     "next": "dm_024"
   },
+
   "dm_024": {
     "id": "dm_024",
     "type": "dialogue",
-    "speaker": "Raka",
-    "text": "Iya. Btw, ada museum seni yang bagus banget di sini.",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
+    "speaker": "Melati",
+    "text": "Hah, serius? Wah kebetulan banget.",
     "next": "dm_025"
   },
   "dm_025": {
     "id": "dm_025",
     "type": "dialogue",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
     "speaker": "Raka",
-    "text": "Kamu suka seni kan? Gimana kalau kita ke sana?",
+    "text": "Iya. Btw, ada museum seni yang bagus banget di sini.",
     "next": "dm_026"
   },
   "dm_026": {
     "id": "dm_026",
     "type": "dialogue",
     "speaker": "Raka",
-    "text": "Kapan lagi ada kesempatan kayak gini, kita kan belum pernah ketemu langsung.",
+    "text": "Kamu suka seni kan? Gimana kalau kita ke sana?",
     "next": "dm_027"
   },
   "dm_027": {
-    "id": "dm_023",
-    "type": "narration",
-    "text": "Melati membaca pesan itu berkali-kali.",
+    "id": "dm_027",
+    "type": "dialogue",
+    "speaker": "Raka",
+    "text": "Kapan lagi ada kesempatan kayak gini, kita kan belum pernah ketemu langsung.",
     "next": "dm_028"
   },
   "dm_028": {
     "id": "dm_028",
+    "type": "narration",
+    "text": "Melati membaca pesan itu berkali-kali.",
+    "next": "dm_029"
+  },
+  "dm_029": {
+    "id": "dm_029",
     "type": "dialogue",
     "speaker": "(Pikiran Melati)",
     "text": "Ini yang aku tunggu-tunggu... ketemu langsung. Tapi sekarang? Di kota yang bukan kotaku?",

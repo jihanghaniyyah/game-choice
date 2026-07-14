@@ -2,52 +2,73 @@
   "competition_001": {
     "id": "competition_001",
     "type": "narration",
+    "background": "/backgrounds/museum/competition.png",
     "text": "Melati dan Nisa tiba.",
     "next": "competition_002"
   },
+
   "competition_002": {
     "id": "competition_002",
     "type": "narration",
+    "background": "/backgrounds/museum/competition.png",
     "text": "Suasana berbeda dari keseharian : kota yang lebih besar, museum seni di dekat venue lomba, udara yang berbeda.",
     "next": "competition_003"
   },
+
   "competition_003": {
     "id": "competition_003",
     "type": "narration",
+    "background": "/backgrounds/museum/competition.png",
     "text": "Lomba berjalan. Melati melukis dengan fokus.",
     "next": "competition_004"
   },
+
   "competition_004": {
     "id": "competition_004",
     "type": "narration",
+    "background": "/backgrounds/museum/competition.png",
     "text": "Sesi berakhir. Para peserta istirahat.",
     "next": "competition_005"
   },
+
   "competition_005": {
     "id": "competition_005",
     "type": "narration",
-    "background": "/backgrounds/museum/museum_background.jpeg",
+    "background": "/backgrounds/museum/competition.png",
     "text": "Melati dan Nisa berjalan-jalan sebentar di sekitar area lomba.",
     "next": "competition_006"
   },
+
   "competition_006": {
     "id": "competition_006",
     "type": "dialogue",
+    "background": "/backgrounds/museum/selfie_1.png",
+    "speaker": "(Pikiran Melati)",
+    "text": "Viewnya bagus banget di sini. Sayang kalau nggak diabadiin. ",
+    "next": "competition_007"
+  },
+
+  "competition_007": {
+    "id": "competition_007",
+    "type": "dialogue",
+    "background": "/backgrounds/museum/selfie_2.png",
     "speaker": "(Pikiran Melati)",
     "text": "Viewnya bagus banget di sini. Sayang kalau nggak diabadiin. ",
     "next": "choice_competition_001"
   },
+
   "choice_competition_001": {
     "id": "choice_competition_001",
+    "background": "/backgrounds/museum/photo_choice.png",
     "type": "choice",
     "choices": [
       {
         "label": "[A] Posting foto pemandangan dengan caption nama kota dan tag lokasi venue.",
-        "next": "dm_022"
+        "next": "dm_023"
       },
       {
         "label": "[B] Posting foto bareng Nisa.",
-        "next": "dm_022"
+        "next": "dm_023"
       }
     ]
   }

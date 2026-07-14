@@ -81,6 +81,7 @@ export function useStoryEngine() {
 
   const resetProgress = () => {
     localStorage.removeItem(STORAGE_KEY);
+    setVisitedFriends([]);
     setCurrentSceneId(STARTING_SCENE);
   };
 
