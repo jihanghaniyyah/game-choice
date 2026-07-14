@@ -68,6 +68,7 @@
   "day2_008": {
     "id": "day2_008",
     "type": "dialogue",
+    "background": "/backgrounds/school/cafeteria_nisa_3.png",
     "speaker": "Nisa",
     "text": "Seminggu lagi lomba melukis di kota lainnya, Mel.",
     "next": "day2_009"
@@ -76,6 +77,7 @@
   "day2_009": {
     "id": "day2_009",
     "type": "dialogue",
+    "background": "/backgrounds/school/cafeteria_nisa_4.png",
     "speaker": "Nisa",
     "text": "Aku udah 60% latihan ngelukisnya. Kamu gimana?",
     "next": "day2_010"
@@ -84,6 +86,7 @@
   "day2_010": {
     "id": "day2_010",
     "type": "dialogue",
+    "background": "/backgrounds/school/cafeteria_nisa_4.png",
     "speaker": "Melati",
     "text": "Aku baru setengah, kayaknya malem ini aku lanjutin.",
     "next": "day2_011"
@@ -92,6 +95,7 @@
   "day2_011": {
     "id": "day2_011",
     "type": "dialogue",
+    "background": "/backgrounds/school/cafeteria_nisa_4.png",
     "speaker": "Melati",
     "text": "Mumpung besok nggak ada PR.",
     "next": "day2_012"
@@ -100,6 +104,7 @@
   "day2_012": {
     "id": "day2_012",
     "type": "dialogue",
+    "background": "/backgrounds/school/cafeteria_nisa_5.png",
     "speaker": "Nisa",
     "text": "Okay, semangat ya!",
     "next": "day2_013"
@@ -108,6 +113,7 @@
   "day2_013": {
     "id": "day2_013",
     "type": "dialogue",
+    "background": "/backgrounds/school/cafeteria_kira_3.png",
     "speaker": "Kira",
     "text": "GESS SEMANGAT YAA BUAT LOMBANYA, PASTI KALIAN BISA MENANG!",
     "next": "day2_014"
@@ -116,6 +122,7 @@
   "day2_014": {
     "id": "day2_014",
     "type": "dialogue",
+    "background": "/backgrounds/school/cafeteria_dea_2.png",
     "speaker": "Dea",
     "text": "Semangat gess.",
     "next": "day2_015"
@@ -124,6 +131,7 @@
   "day2_015": {
     "id": "day2_015",
     "type": "dialogue",
+    "background": "/backgrounds/school/cafeteria_dea_2.png",
     "speaker": "Nisa & Melati",
     "text": "Makasihh!",
     "next": "day2_016"
@@ -132,9 +140,11 @@
   "day2_016": {
     "id": "day2_016",
     "type": "narration",
+    "background": "/backgrounds/school/cafeteria_empty.png",
     "text": "Bel berbunyi. Teman-teman berpencar ke kelasnya masing-masing.",
     "next": "day2_017"
   },
+
   "day2_017": {
     "id": "day2_017",
     "type": "narration",
