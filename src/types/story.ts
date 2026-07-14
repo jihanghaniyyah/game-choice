@@ -40,8 +40,8 @@ export interface CharacterInstance {
 }
 
 export interface Overlay {
+  icon: string;
   image: string;
-  delay?: number;
 }
 
 export interface Scene {

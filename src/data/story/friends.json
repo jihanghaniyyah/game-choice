@@ -2,17 +2,19 @@
   "kira_001": {
     "id": "kira_001",
     "type": "dialogue",
-    "background": "/backgrounds/school/cafeteria_kira.jpeg",
+    "background": "/backgrounds/school/cafeteria_kira_2.jpeg",
     "speaker": "Kira",
     "text": "WAHH PASTI SERUU BANGET, pasti dia seru dan sefrekuensi kan?!",
     "next": "kira_002"
   },
+
   "kira_002": {
     "id": "kira_002",
     "type": "dialogue",
+    "background": "/backgrounds/school/cafeteria_kira_2.jpeg",
     "speaker": "Melati",
     "text": " Iyaa, dia sefrekuensi.",
-    "next": "day2_008"
+    "next": "choice_friend_001"
   },
 
   "dea_001": {
@@ -20,14 +22,16 @@
     "type": "dialogue",
     "background": "/backgrounds/school/cafeteria_dea.jpeg",
     "speaker": "Dea",
-    "text": "Wow... semoga jadi teman baik-baik terus ya. ",
+    "text": "Wow... semoga jadi teman baik-baik terus ya.",
     "next": "dea_002"
   },
+
   "dea_002": {
     "id": "dea_002",
     "type": "narration",
+    "background": "/backgrounds/school/cafeteria_friends.png",
     "text": "Dea langsung kembali ke ponselnya sendiri.",
-    "next": "day2_008"
+    "next": "choice_friend_001"
   },
 
   "nisa_001": {
@@ -38,13 +42,16 @@
     "text": "Mel, aku bilang kamu harus hati-hati deh. Apalagi sama orang yang kamu temuin di media sosial. ",
     "next": "nisa_002"
   },
+
   "nisa_002": {
     "id": "nisa_002",
     "type": "dialogue",
+    "background": "/backgrounds/school/cafeteria_nisa.jpeg",
     "speaker": "Melati",
     "text": "Nggak kok, dia baik banget. Apalagi dia udah ngobrol sama aku seminggu dan baik kok, baik banget malah. ",
     "next": "nisa_003"
   },
+
   "nisa_003": {
     "id": "nisa_003",
     "type": "dialogue",
@@ -53,11 +60,13 @@
     "text": "Bilang ya kalau ada apa-apa, Mel.",
     "next": "nisa_004"
   },
+
   "nisa_004": {
     "id": "nisa_004",
     "type": "dialogue",
+    "background": "/backgrounds/school/cafeteria_nisa_2.jpeg",
     "speaker": "Melati",
     "text": " Iyaa, iyaa, aman Nis.",
-    "next": "day2_008"
+    "next": "choice_friend_001"
   }
 }

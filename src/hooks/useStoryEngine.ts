@@ -9,6 +9,7 @@ const STARTING_SCENE = "splash_001";
 export function useStoryEngine() {
   const [currentSceneId, setCurrentSceneId] = useState(STARTING_SCENE);
   const [history, setHistory] = useState<string[]>([]);
+  const [visitedFriends, setVisitedFriends] = useState<string[]>([]);
 
   useEffect(() => {
     const savedScene = localStorage.getItem(STORAGE_KEY);
@@ -29,16 +30,44 @@ export function useStoryEngine() {
   }, [currentSceneId]);
 
   const nextScene = () => {
-    if (currentScene.next) {
-      setHistory((prev) => [...prev, currentSceneId]);
-      setCurrentSceneId(currentScene.next);
+    if (!currentScene.next) return;
+
+    let nextId = currentScene.next;
+
+    // Khusus choice teman kantin
+    if (nextId === "choice_friend_001" && visitedFriends.length === 3) {
+      nextId = "day2_008";
     }
+
+    setHistory((prev) => [...prev, currentSceneId]);
+    setCurrentSceneId(nextId);
   };
 
   const choose = (nextId: string) => {
     setHistory((prev) => [...prev, currentSceneId]);
+
+    if (nextId.startsWith("kira")) {
+      setVisitedFriends((prev) =>
+        prev.includes("kira") ? prev : [...prev, "kira"],
+      );
+    }
+
+    if (nextId.startsWith("dea")) {
+      setVisitedFriends((prev) =>
+        prev.includes("dea") ? prev : [...prev, "dea"],
+      );
+    }
+
+    if (nextId.startsWith("nisa")) {
+      setVisitedFriends((prev) =>
+        prev.includes("nisa") ? prev : [...prev, "nisa"],
+      );
+    }
+
     setCurrentSceneId(nextId);
   };
+
+  console.log(visitedFriends);
 
   const previousScene = () => {
     if (history.length === 0) return;
@@ -61,5 +90,6 @@ export function useStoryEngine() {
     previousScene,
     choose,
     resetProgress,
+    visitedFriends,
   };
 }

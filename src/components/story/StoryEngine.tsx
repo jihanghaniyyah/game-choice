@@ -6,8 +6,14 @@ import SceneRenderer from "./SceneRenderer";
 import { useStoryEngine } from "@/hooks/useStoryEngine";
 
 export default function StoryEngine() {
-  const { currentScene, nextScene, previousScene, choose, resetProgress } =
-    useStoryEngine();
+  const {
+    currentScene,
+    nextScene,
+    previousScene,
+    choose,
+    resetProgress,
+    visitedFriends,
+  } = useStoryEngine();
 
   return (
     <GameLayout>
@@ -15,6 +21,7 @@ export default function StoryEngine() {
         scene={currentScene}
         nextScene={nextScene}
         choose={choose}
+        visitedFriends={visitedFriends}
       />
 
       <GameControls

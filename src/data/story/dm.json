@@ -108,18 +108,12 @@
   "dm_012": {
     "id": "dm_012",
     "type": "dialogue",
-
     "background": "/backgrounds/phone/phone_profile_raka.png",
-
     "speaker": "(Pikiran Melati)",
-
     "text": "Dia... ngerti. Padahal baru kenal.",
-
     "overlay": {
-      "image": "/backgrounds/overlay/notebook_1.png",
-      "delay": 3000
+      "image": "/backgrounds/overlay/notebook_1.png"
     },
-
     "next": "day2_001"
   },
 

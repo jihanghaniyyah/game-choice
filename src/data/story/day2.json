@@ -9,20 +9,21 @@
   "day2_002": {
     "id": "day2_002",
     "type": "narration",
-    "background": "/backgrounds/school/cafeteria_friends.jpeg",
+    "background": "/backgrounds/school/cafeteria_friends.png",
     "text": "Bel istirahat berbunyi. Melati dan tiga temannya : Kira, Dea, dan Nisa, duduk bersama di kantin sambil makan",
     "next": "day2_003"
   },
   "day2_003": {
     "id": "day2_003",
     "type": "narration",
-    "background": "/backgrounds/school/cafeteria_friends.jpeg",
+    "background": "/backgrounds/school/cafeteria_friends.png",
     "text": "Melati berkali-kali mengecek HP-nya, senyum-senyum sendiri.",
     "next": "day2_004"
   },
   "day2_004": {
     "id": "day2_004",
     "type": "dialogue",
+    "background": "/backgrounds/school/cafeteria_kira_1.png",
     "speaker": "Kira",
     "text": "Eh, dari tadi senyum-senyum sendiri.",
     "next": "day2_005"
@@ -30,6 +31,7 @@
   "day2_005": {
     "id": "day2_005",
     "type": "dialogue",
+    "background": "/backgrounds/school/cafeteria_kira_1.png",
     "speaker": "Kira",
     "text": "Punya cowok ya?! Spill dong spill!",
     "next": "day2_006"
@@ -37,15 +39,16 @@
   "day2_006": {
     "id": "day2_006",
     "type": "dialogue",
-    "background": "/backgrounds/school/cafeteria_friends_nisa.jpeg",
+    "background": "/backgrounds/school/cafeteria_kira_2.jpeg",
     "speaker": "Melati",
     "text": "Bukan cowok... cuman teman cowok. Tapi online.",
     "next": "choice_friend_001"
   },
+
   "choice_friend_001": {
     "id": "choice_friend_001",
     "type": "choice",
-    "background": "/backgrounds/school/cafeteria_friends_choice.jpeg",
+    "background": "/backgrounds/school/cafeteria_friends.png",
     "choices": [
       {
         "label": "[A] Dengar reaksi KIRA",
