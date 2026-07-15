@@ -34,7 +34,7 @@
   "competition_005": {
     "id": "competition_005",
     "type": "narration",
-    "background": "/backgrounds/museum/competition.png",
+    "background": "/backgrounds/museum/museum.png",
     "text": "Melati dan Nisa berjalan-jalan sebentar di sekitar area lomba.",
     "next": "competition_006"
   },
@@ -64,12 +64,24 @@
     "choices": [
       {
         "label": "[A] Posting foto pemandangan dengan caption nama kota dan tag lokasi venue.",
-        "next": "dm_023"
+        "next": "competition_008"
       },
       {
         "label": "[B] Posting foto bareng Nisa.",
-        "next": "dm_023"
+        "next": "competition_009"
       }
     ]
+  },
+
+  "competition_008": {
+    "id": "competition_008",
+    "background": "/backgrounds/museum/photo_choice_2.png",
+    "next": "dm_023"
+  },
+
+  "competition_009": {
+    "id": "competition_009",
+    "background": "/backgrounds/museum/photo_choice_1.png",
+    "next": "dm_023"
   }
 }

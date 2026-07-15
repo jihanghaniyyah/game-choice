@@ -1,0 +1,64 @@
+{
+  "hotel_001": {
+    "id": "hotel_001",
+    "type": "dialogue",
+    "background": "/backgrounds/hotel/hotel_1.png",
+    "speaker": "Melati",
+    "text": "Nis, aku pergi sebentar ya. Mau ke museum.",
+    "next": "hotel_002"
+  },
+
+  "hotel_002": {
+    "id": "hotel_002",
+    "type": "dialogue",
+    "background": "/backgrounds/hotel/hotel_2.png",
+    "speaker": "Nisa",
+    "text": "Sama siapa, Mel? Mau aku temenin?",
+    "next": "hotel_003"
+  },
+
+  "hotel_003": {
+    "id": "hotel_003",
+    "type": "dialogue",
+    "background": "/backgrounds/hotel/hotel_3.png",
+    "speaker": "Melati",
+    "text": "Nggak usah Nis, nanti aneh. Aku mau pergi sama Raka.",
+    "next": "hotel_004"
+  },
+
+  "hotel_004": {
+    "id": "hotel_004",
+    "type": "dialogue",
+    "background": "/backgrounds/hotel/hotel_4.png",
+    "speaker": "Nisa",
+    "text": "Teman baru online kamu itu? Mel, beneran nggak perlu aku temenin? Aku khawatir.",
+    "next": "hotel_005"
+  },
+
+  "hotel_005": {
+    "id": "hotel_005",
+    "type": "dialogue",
+    "background": "/backgrounds/hotel/hotel_5.png",
+    "speaker": "Melati",
+    "text": "Nggak usah Nis, beneran aman kok.",
+    "next": "hotel_006"
+  },
+
+  "hotel_006": {
+    "id": "hotel_006",
+    "type": "dialogue",
+    "background": "/backgrounds/hotel/hotel_6.png",
+    "speaker": "Nisa",
+    "text": "Hmm... oke deh. Tapi WhatsApp aku ya kalau udah sampai, kalau ada apa-apa!",
+    "next": "hotel_007"
+  },
+
+  "hotel_007": {
+    "id": "hotel_007",
+    "type": "dialogue",
+    "background": "/backgrounds/hotel/hotel_7.png",
+    "speaker": "Melati",
+    "text": "Okay aman-aman Nis. Duluan ya, Bye!",
+    "next": "museum_001"
+  }
+}

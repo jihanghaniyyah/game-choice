@@ -6,6 +6,7 @@ import dm from "./dm.json";
 import competition from "./competition.json";
 import day2 from "./day2.json";
 import friends from "./friends.json";
+import hotel from "./hotel.json";
 import museum from "./museum.json";
 import ending from "./ending.json";
 import epilogue from "./epilogue.json";
@@ -17,6 +18,7 @@ export const story = {
   ...competition,
   ...day2,
   ...friends,
+  ...hotel,
   ...museum,
   ...ending,
   ...epilogue,

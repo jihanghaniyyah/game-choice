@@ -2,6 +2,7 @@
   "ending_instinct_001": {
     "id": "ending_instinct_001",
     "type": "narration",
+    "background": "/backgrounds/museum/phone_dm_raka.png",
     "text": "Melati mengetik balasan dengan tangan yang sedikit gemetar.",
     "next": "ending_instinct_002"
   },
@@ -9,6 +10,7 @@
   "ending_instinct_002": {
     "id": "ending_instinct_002",
     "type": "dialogue",
+    "background": "/backgrounds/museum/phone_dm_raka.png",
     "speaker": "Melati",
     "text": "Maaf Raka, aku nggak bisa. Aku lagi sama teman-teman dan nggak enak ninggalin mereka.",
     "next": "ending_instinct_003"
@@ -17,6 +19,7 @@
   "ending_instinct_003": {
     "id": "ending_instinct_003",
     "type": "dialogue",
+    "background": "/backgrounds/museum/phone_dm_raka.png",
     "speaker": "Raka",
     "text": "Ih, nggak bisa fleksibel dikit? Kapan lagi ada kesempatan gini?",
     "next": "ending_instinct_004"
@@ -25,6 +28,7 @@
   "ending_instinct_004": {
     "id": "ending_instinct_004",
     "type": "dialogue",
+    "background": "/backgrounds/museum/phone_dm_raka.png",
     "speaker": "(Pikiran Melati)",
     "text": "Ada sesuatu yang salah dari cara dia bereaksi ini.",
     "next": "ending_instinct_005"
@@ -33,6 +37,7 @@
   "ending_instinct_005": {
     "id": "ending_instinct_005",
     "type": "dialogue",
+    "background": "/backgrounds/museum/phone_dm_raka.png",
     "speaker": "Melati",
     "text": "Maaf ya. Lain kali aja.",
     "next": "ending_instinct_006"
