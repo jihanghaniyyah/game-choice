@@ -267,7 +267,7 @@
   "ending_escape_013": {
     "id": "ending_escape_013",
     "background": "/backgrounds/ending/ending_2_3.png",
-    "next": "ending_credit"
+    "next": "epilogue_001"
   },
 
   "ending_boundary_001": {
@@ -398,7 +398,7 @@
   "ending_boundary_009": {
     "id": "ending_boundary_009",
     "background": "/backgrounds/ending/ending_3_3.png",
-    "next": "ending_boundary_010"
+    "next": "epilogue_001"
   },
 
   "ending_rescue_001": {
@@ -778,17 +778,5 @@
     "id": "ending_rescue_023",
     "background": "/backgrounds/ending/ending_4_3.png",
     "next": "epilogue_001"
-  },
-
-  "ending_exit": {
-    "id": "ending_exit",
-    "type": "ending",
-    "title": "Keluar Permainan",
-    "content": [
-      {
-        "type": "text",
-        "value": "Pemain memilih untuk tidak melanjutkan simulasi."
-      }
-    ]
   }
 }

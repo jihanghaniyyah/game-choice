@@ -28,5 +28,10 @@
     "id": "epilogue_006",
     "background": "/backgrounds/epilogue/epilogue_6.png",
     "next": "epilogue_007"
+  },
+  "epilogue_007": {
+    "id": "epilogue_007",
+    "type": "video",
+    "video": "/videos/credit.mp4"
   }
 }

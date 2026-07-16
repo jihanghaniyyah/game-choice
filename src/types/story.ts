@@ -7,7 +7,8 @@ export type SceneType =
   | "overlay"
   | "popup"
   | "ending"
-  | "epilogue";
+  | "epilogue"
+  | "video";
 
 export interface Choice {
   label: string;
@@ -70,6 +71,8 @@ export interface Scene {
   choices?: Choice[];
 
   controls?: "intro" | "default" | "none";
+
+  video?: string;
 
   next?: string;
 }

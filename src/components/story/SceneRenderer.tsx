@@ -12,6 +12,7 @@ import DialogueBox from "./DialogueBox";
 import NarrationBox from "./NarrationBox";
 import ChoiceList from "./ChoiceList";
 import InfoBox from "./InfoBox";
+import VideoPlayer from "./VideoPlayer";
 
 interface SceneRendererProps {
   scene: Scene;
@@ -74,6 +75,10 @@ export default function SceneRenderer({
           scene.type === "ending" ||
           scene.type === "epilogue") && (
           <InfoBox title={scene.title} content={scene.content ?? []} />
+        )}
+
+        {scene.type === "video" && scene.video && (
+          <VideoPlayer src={scene.video} onEnded={nextScene} />
         )}
       </div>
     </div>
