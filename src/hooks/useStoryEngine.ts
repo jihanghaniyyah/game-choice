@@ -10,6 +10,7 @@ export function useStoryEngine() {
   const [currentSceneId, setCurrentSceneId] = useState(STARTING_SCENE);
   const [history, setHistory] = useState<string[]>([]);
   const [visitedFriends, setVisitedFriends] = useState<string[]>([]);
+  const [readNotebooks, setReadNotebooks] = useState<string[]>([]);
   const [flash, setFlash] = useState(false);
   const [transition, setTransition] = useState(false);
 
@@ -109,6 +110,15 @@ export function useStoryEngine() {
     setCurrentSceneId(nextId);
   };
 
+  const markNotebookAsRead = () => {
+    if (!currentScene.overlay) return;
+
+    setReadNotebooks((prev) => {
+      if (prev.includes(currentScene.id)) return prev;
+      return [...prev, currentScene.id];
+    });
+  };
+
   const previousScene = () => {
     if (history.length === 0) return;
     const previous = history[history.length - 1];
@@ -131,5 +141,7 @@ export function useStoryEngine() {
     visitedFriends,
     flash,
     transition,
+    markNotebookAsRead,
+    readNotebooks,
   };
 }

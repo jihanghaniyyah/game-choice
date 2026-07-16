@@ -74,6 +74,7 @@ export interface Scene {
   hotspots?: Hotspot[];
   choiceLayout?: "vertical" | "horizontal";
   controls?: "intro" | "default" | "none";
+  showNotebook?: boolean;
   video?: string;
   audio?: string;
   next?: string;

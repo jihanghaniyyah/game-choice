@@ -15,6 +15,8 @@ export default function StoryEngine() {
     visitedFriends,
     flash,
     transition,
+    readNotebooks,
+    markNotebookAsRead,
   } = useStoryEngine();
 
   return (
@@ -26,6 +28,8 @@ export default function StoryEngine() {
         visitedFriends={visitedFriends}
         flash={flash}
         transition={transition}
+        readNotebooks={readNotebooks}
+        markNotebookAsRead={markNotebookAsRead}
       />
 
       <GameControls

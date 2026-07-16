@@ -6,7 +6,6 @@ import { Scene } from "@/types/story";
 import BackgroundLayer from "./BackgroundLayer";
 import CharacterLayer from "./CharacterLayer";
 import OverlayLayer from "./OverlayLayer";
-import OverlayTrigger from "./OverlayTrigger";
 import SplashBox from "./SplashBox";
 import DialogueBox from "./DialogueBox";
 import NarrationBox from "./NarrationBox";
@@ -17,6 +16,7 @@ import AudioPlayer from "./AudioPlayer";
 import FlashEffect from "./FlashEffect";
 import FadeTransition from "./FadeTransition";
 import ImageChoice from "./ImageChoice";
+import NotebookButton from "./NotebookButton";
 
 interface SceneRendererProps {
   scene: Scene;
@@ -25,6 +25,8 @@ interface SceneRendererProps {
   visitedFriends: string[];
   flash: boolean;
   transition: boolean;
+  readNotebooks: string[];
+  markNotebookAsRead: () => void;
 }
 
 export default function SceneRenderer({
@@ -34,6 +36,8 @@ export default function SceneRenderer({
   visitedFriends,
   flash,
   transition,
+  readNotebooks,
+  markNotebookAsRead,
 }: SceneRendererProps) {
   const [showOverlay, setShowOverlay] = useState(false);
   useEffect(() => {
@@ -54,7 +58,15 @@ export default function SceneRenderer({
       <div className="absolute inset-0 z-30" />
 
       {/* Notebook Icon */}
-      <OverlayTrigger scene={scene} onOpen={() => setShowOverlay(true)} />
+      {scene.showNotebook !== false && (
+        <NotebookButton
+          onOpen={() => {
+            setShowOverlay(true);
+            markNotebookAsRead();
+          }}
+          hasNotification={!!scene.overlay && !readNotebooks.includes(scene.id)}
+        />
+      )}
 
       {/* Notebook Overlay */}
       <OverlayLayer

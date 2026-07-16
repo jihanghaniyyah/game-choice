@@ -4,6 +4,7 @@
     "type": "splash",
     "background": "/backgrounds/splash/intro.png",
     "transition": "fade",
+    "showNotebook": false,
     "next": "consent_001"
   },
 
@@ -13,6 +14,7 @@
     "background": "/backgrounds/splash/consent.png",
     "choiceLayout": "horizontal",
     "transition": "fade",
+    "showNotebook": false,
     "choices": [
       {
         "label": "TIDAK",

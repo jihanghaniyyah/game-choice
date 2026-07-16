@@ -2,35 +2,42 @@
   "epilogue_001": {
     "id": "epilogue_001",
     "background": "/backgrounds/epilogue/epilogue_1.png",
+    "showNotebook": false,
     "next": "epilogue_002"
   },
   "epilogue_002": {
     "id": "epilogue_002",
     "background": "/backgrounds/epilogue/epilogue_2.png",
+    "showNotebook": false,
     "next": "epilogue_003"
   },
   "epilogue_003": {
     "id": "epilogue_003",
     "background": "/backgrounds/epilogue/epilogue_3.png",
+    "showNotebook": false,
     "next": "epilogue_004"
   },
   "epilogue_004": {
     "id": "epilogue_004",
     "background": "/backgrounds/epilogue/epilogue_4.png",
+    "showNotebook": false,
     "next": "epilogue_005"
   },
   "epilogue_005": {
     "id": "epilogue_005",
     "background": "/backgrounds/epilogue/epilogue_5.png",
+    "showNotebook": false,
     "next": "epilogue_006"
   },
   "epilogue_006": {
     "id": "epilogue_006",
     "background": "/backgrounds/epilogue/epilogue_6.png",
+    "showNotebook": false,
     "next": "epilogue_007"
   },
   "epilogue_007": {
     "id": "epilogue_007",
+    "showNotebook": false,
     "type": "video",
     "video": "/videos/credit.mp4"
   }
