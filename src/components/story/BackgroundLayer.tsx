@@ -17,7 +17,7 @@ export default function BackgroundLayer({ scene }: BackgroundLayerProps) {
         alt="Background"
         fill
         priority
-        className="object-cover"
+        className="object-cover object-center"
       />
     </div>
   );

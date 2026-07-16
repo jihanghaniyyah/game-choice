@@ -46,7 +46,8 @@
   "ending_instinct_006": {
     "id": "ending_instinct_006",
     "background": "/backgrounds/ending/ending_1_1.png",
-    "next": "ending_instinct_007"
+    "next": "ending_instinct_007",
+    "audios": "/audios/after_gallery.mp3"
   },
 
   "ending_instinct_007": {
@@ -255,7 +256,8 @@
   "ending_escape_011": {
     "id": "ending_escape_011",
     "background": "/backgrounds/ending/ending_2_1.png",
-    "next": "ending_escape_012"
+    "next": "ending_escape_012",
+    "audios": "/audios/after_gallery.mp3"
   },
 
   "ending_escape_012": {
@@ -386,7 +388,8 @@
   "ending_boundary_007": {
     "id": "ending_boundary_007",
     "background": "/backgrounds/ending/ending_3_1.png",
-    "next": "ending_boundary_008"
+    "next": "ending_boundary_008",
+    "audios": "/audios/after_gallery.mp3"
   },
 
   "ending_boundary_008": {
@@ -765,7 +768,8 @@
   "ending_rescue_021": {
     "id": "ending_rescue_021",
     "background": "/backgrounds/ending/ending_4_1.png",
-    "next": "ending_rescue_022"
+    "next": "ending_rescue_022",
+    "audios": "/audios/after_gallery.mp3"
   },
 
   "ending_rescue_022": {

@@ -13,6 +13,7 @@ import NarrationBox from "./NarrationBox";
 import ChoiceList from "./ChoiceList";
 import InfoBox from "./InfoBox";
 import VideoPlayer from "./VideoPlayer";
+import AudioPlayer from "./AudioPlayer";
 
 interface SceneRendererProps {
   scene: Scene;
@@ -36,6 +37,8 @@ export default function SceneRenderer({
     <div className="relative h-full w-full overflow-hidden">
       {/* Background */}
       <BackgroundLayer scene={scene} />
+
+      {scene.audio && <AudioPlayer src={scene.audio} />}
 
       {/* Character */}
       <CharacterLayer scene={scene} />

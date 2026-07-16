@@ -142,6 +142,7 @@
     "type": "narration",
     "background": "/backgrounds/school/cafeteria_empty.png",
     "text": "Bel berbunyi. Teman-teman berpencar ke kelasnya masing-masing.",
+    "audios": "/audios/bell_ring_cafeteria.mp3",
     "next": "day2_017"
   },
 
@@ -150,6 +151,7 @@
     "type": "narration",
     "background": "/backgrounds/bedroom/bedroom_messy.png",
     "text": "Malam hari...",
+    "audios": "/audios/knock_door.mp3",
     "next": "day2_018"
   },
 

@@ -8,7 +8,8 @@ export type SceneType =
   | "popup"
   | "ending"
   | "epilogue"
-  | "video";
+  | "video"
+  | "audio";
 
 export interface Choice {
   label: string;
@@ -73,6 +74,8 @@ export interface Scene {
   controls?: "intro" | "default" | "none";
 
   video?: string;
+
+  audio?: string;
 
   next?: string;
 }
