@@ -10,37 +10,65 @@ export function useStoryEngine() {
   const [currentSceneId, setCurrentSceneId] = useState(STARTING_SCENE);
   const [history, setHistory] = useState<string[]>([]);
   const [visitedFriends, setVisitedFriends] = useState<string[]>([]);
+  const [flash, setFlash] = useState(false);
+  const [transition, setTransition] = useState(false);
 
   useEffect(() => {
     const savedScene = localStorage.getItem(STORAGE_KEY);
-
     if (savedScene && story[savedScene]) {
       setCurrentSceneId(savedScene);
     }
   }, []);
 
-  console.log("currentSceneId", currentSceneId);
-
   const currentScene = story[currentSceneId];
-
-  console.log("currentScene", currentScene);
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, currentSceneId);
   }, [currentSceneId]);
 
+  useEffect(() => {
+    if (currentSceneId === "choice_friend_001" && visitedFriends.length === 3) {
+      setCurrentSceneId("day2_008");
+    }
+  }, [visitedFriends, currentSceneId]);
+
   const nextScene = () => {
-    if (!currentScene.next) return;
+    console.log("NEXT CLICK");
+    console.log("Current Scene:", currentScene);
 
-    let nextId = currentScene.next;
-
-    // Khusus choice teman kantin
-    if (nextId === "choice_friend_001" && visitedFriends.length === 3) {
-      nextId = "day2_008";
+    if (!currentScene.next) {
+      console.log("NEXT TIDAK ADA");
+      return;
     }
 
     setHistory((prev) => [...prev, currentSceneId]);
-    setCurrentSceneId(nextId);
+
+    if (currentScene.flash) {
+      setFlash(true);
+
+      setTimeout(() => {
+        setCurrentSceneId(currentScene.next!);
+        setFlash(false);
+      }, 200);
+
+      return;
+    }
+
+    if (currentScene.transition === "fade") {
+      setTransition(true);
+
+      setTimeout(() => {
+        setCurrentSceneId(currentScene.next!);
+
+        setTimeout(() => {
+          setTransition(false);
+        }, 200);
+      }, 300);
+
+      return;
+    }
+
+    setCurrentSceneId(currentScene.next);
   };
 
   const choose = (nextId: string) => {
@@ -64,18 +92,27 @@ export function useStoryEngine() {
       );
     }
 
+    if (currentScene.transition === "fade") {
+      setTransition(true);
+
+      setTimeout(() => {
+        setCurrentSceneId(nextId);
+
+        setTimeout(() => {
+          setTransition(false);
+        }, 200);
+      }, 300);
+
+      return;
+    }
+
     setCurrentSceneId(nextId);
   };
 
-  console.log(visitedFriends);
-
   const previousScene = () => {
     if (history.length === 0) return;
-
     const previous = history[history.length - 1];
-
     setHistory((prev) => prev.slice(0, -1));
-
     setCurrentSceneId(previous);
   };
 
@@ -92,5 +129,7 @@ export function useStoryEngine() {
     choose,
     resetProgress,
     visitedFriends,
+    flash,
+    transition,
   };
 }

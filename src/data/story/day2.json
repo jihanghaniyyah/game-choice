@@ -1,11 +1,11 @@
 {
   "day2_001": {
     "id": "day2_001",
-    "type": "narration",
-    "background": "/backgrounds/school/cafeteria.png",
-    "text": "Satu minggu kemudian.",
+    "background": "/backgrounds/school/satu_minggu.png",
+    "transition": "fade",
     "next": "day2_002"
   },
+
   "day2_002": {
     "id": "day2_002",
     "type": "narration",
@@ -13,6 +13,7 @@
     "text": "Bel istirahat berbunyi. Melati dan tiga temannya : Kira, Dea, dan Nisa, duduk bersama di kantin sambil makan",
     "next": "day2_003"
   },
+
   "day2_003": {
     "id": "day2_003",
     "type": "narration",
@@ -20,6 +21,7 @@
     "text": "Melati berkali-kali mengecek HP-nya, senyum-senyum sendiri.",
     "next": "day2_004"
   },
+
   "day2_004": {
     "id": "day2_004",
     "type": "dialogue",
@@ -28,6 +30,7 @@
     "text": "Eh, dari tadi senyum-senyum sendiri.",
     "next": "day2_005"
   },
+
   "day2_005": {
     "id": "day2_005",
     "type": "dialogue",
@@ -36,6 +39,7 @@
     "text": "Punya cowok ya?! Spill dong spill!",
     "next": "day2_006"
   },
+
   "day2_006": {
     "id": "day2_006",
     "type": "dialogue",
@@ -67,6 +71,13 @@
 
   "day2_008": {
     "id": "day2_008",
+    "background": "/backgrounds/school/sisa_istirahat.png",
+    "transition": "fade",
+    "next": "day2_0081"
+  },
+
+  "day2_0081": {
+    "id": "day2_0081",
     "type": "dialogue",
     "background": "/backgrounds/school/cafeteria_nisa_3.png",
     "speaker": "Nisa",
@@ -143,14 +154,27 @@
     "background": "/backgrounds/school/cafeteria_empty.png",
     "text": "Bel berbunyi. Teman-teman berpencar ke kelasnya masing-masing.",
     "audios": "/audios/bell_ring_cafeteria.mp3",
+    "transition": "fade",
     "next": "day2_017"
   },
 
   "day2_017": {
     "id": "day2_017",
-    "type": "narration",
+    "background": "/backgrounds/bedroom/malam.png",
+    "audios": "/audios/knock_door.mp3",
+    "next": "day2_0171"
+  },
+
+  "day2_0171": {
+    "id": "day2_0171",
     "background": "/backgrounds/bedroom/bedroom_messy.png",
-    "text": "Malam hari...",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_idle.png",
+        "position": "2"
+      }
+    ],
     "audios": "/audios/knock_door.mp3",
     "next": "day2_018"
   },
@@ -371,6 +395,7 @@
     ],
     "speaker": "(Pikiran Melati)",
     "text": "Aku ngerti Ibu capek. Tapi rasanya... belum sempat aku jelasin apa yang aku mau.",
+    "transition": "fade",
     "next": "day2_029"
   },
 
@@ -379,6 +404,9 @@
     "type": "narration",
     "background": "/backgrounds/phone/phone_conversation.png",
     "text": "Setelah targetnya selesai, Melati rebahan di kasur dan membuka HP. Ada notif dari Raka.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_2.png"
+    },
     "next": "dm_013"
   }
 }

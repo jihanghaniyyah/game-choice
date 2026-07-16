@@ -1,23 +1,27 @@
 {
   "splash_001": {
     "id": "splash_001",
+    "type": "splash",
     "background": "/backgrounds/splash/intro.png",
-    "controls": "intro",
+    "transition": "fade",
     "next": "consent_001"
   },
 
   "consent_001": {
     "id": "consent_001",
     "type": "choice",
-    "background": "/backgrounds/splash/disclaimer.jpeg",
+    "background": "/backgrounds/splash/consent.png",
+    "choiceLayout": "horizontal",
+    "transition": "fade",
     "choices": [
       {
-        "label": "Saya mengerti dan ingin melanjutkan",
-        "next": "day1_001"
+        "label": "TIDAK",
+        "next": "splash_001"
       },
+
       {
-        "label": "Keluar dari permainan",
-        "next": "ending_exit"
+        "label": "YA",
+        "next": "day1_001"
       }
     ]
   }

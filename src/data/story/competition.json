@@ -1,6 +1,13 @@
 {
   "competition_001": {
     "id": "competition_001",
+    "background": "/backgrounds/museum/hari_perlombaan.png",
+    "transition": "fade",
+    "next": "competition_0011"
+  },
+
+  "competition_0011": {
+    "id": "competition_0011",
     "type": "narration",
     "background": "/backgrounds/museum/competition.png",
     "text": "Melati dan Nisa tiba.",
@@ -34,8 +41,10 @@
   "competition_005": {
     "id": "competition_005",
     "type": "narration",
-    "background": "/backgrounds/museum/museum.png",
+    "background": "/backgrounds/museum/competition.png",
     "text": "Melati dan Nisa berjalan-jalan sebentar di sekitar area lomba.",
+    "transition": "fade",
+    "flash": true,
     "next": "competition_006"
   },
 
@@ -45,6 +54,8 @@
     "background": "/backgrounds/museum/selfie_1.png",
     "speaker": "(Pikiran Melati)",
     "text": "Viewnya bagus banget di sini. Sayang kalau nggak diabadiin. ",
+    "transition": "fade",
+    "flash": true,
     "next": "competition_007"
   },
 
@@ -54,20 +65,27 @@
     "background": "/backgrounds/museum/selfie_2.png",
     "speaker": "(Pikiran Melati)",
     "text": "Di sini juga bagus.",
+    "transition": "fade",
     "next": "choice_competition_001"
   },
 
   "choice_competition_001": {
     "id": "choice_competition_001",
+    "type": "image-choice",
     "background": "/backgrounds/museum/photo_choice.png",
-    "type": "choice",
-    "choices": [
+    "hotspots": [
       {
-        "label": "[A] Posting foto pemandangan dengan caption nama kota dan tag lokasi venue.",
+        "left": "40%",
+        "top": "13%",
+        "width": "23%",
+        "height": "28%",
         "next": "competition_008"
       },
       {
-        "label": "[B] Posting foto bareng Nisa.",
+        "left": "40%",
+        "top": "54%",
+        "width": "23%",
+        "height": "28%",
         "next": "competition_009"
       }
     ]

@@ -15,20 +15,9 @@ export default function GameControls({
   onReset,
   showNext = true,
 }: GameControlsProps) {
-  // Splash Screen
-  if (scene.controls === "intro") {
-    return (
-      <div className="absolute bottom-10 left-0 right-0 z-50 flex justify-center">
-        <button
-          onClick={onNext}
-          className="cursor-pointer rounded-xl bg-pink-600 px-10 py-4 text-xl font-bold text-white shadow-lg transition-all duration-200 hover:scale-105 hover:bg-pink-500"
-        >
-          ▶ PLAY
-        </button>
-      </div>
-    );
+  if (scene.type === "splash") {
+    return null;
   }
-
   return (
     <div className="absolute bottom-6 left-0 right-0 z-50 flex items-center justify-between px-8">
       <div className="flex gap-3">

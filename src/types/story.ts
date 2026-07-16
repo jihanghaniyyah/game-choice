@@ -9,7 +9,8 @@ export type SceneType =
   | "ending"
   | "epilogue"
   | "video"
-  | "audio";
+  | "audio"
+  | "image-choice";
 
 export interface Choice {
   label: string;
@@ -46,38 +47,38 @@ export interface Overlay {
   image: string;
 }
 
+export interface Hotspot {
+  left: string;
+  top: string;
+  width: string;
+  height: string;
+  next: string;
+}
+
 export interface Scene {
   id: string;
   type: SceneType;
-
   speaker?: string;
   text?: string;
-
   background?: string;
-
   overlay?: Overlay;
-
   characters?: CharacterInstance[];
-
   camera?: Camera;
   backgroundSize?: {
     width: number;
     height: number;
   };
-
   title?: string;
-
   content?: ContentBlock[];
-
   choices?: Choice[];
-
+  hotspots?: Hotspot[];
+  choiceLayout?: "vertical" | "horizontal";
   controls?: "intro" | "default" | "none";
-
   video?: string;
-
   audio?: string;
-
   next?: string;
+  flash?: boolean;
+  transition?: "fade";
 }
 
 export type Story = Record<string, Scene>;

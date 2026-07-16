@@ -38,14 +38,6 @@
     "type": "narration",
     "background": "/backgrounds/phone/phone_profile_melati.png",
     "text": "Melati tersenyum untuk pertama kalinya hari ini.",
-    "next": "dm_006"
-  },
-
-  "dm_006": {
-    "id": "dm_006",
-    "type": "narration",
-    "background": "/backgrounds/phone/phone_dm_raka.png",
-    "text": "Beberapa jam kemudian, DM masuk.",
     "next": "dm_007"
   },
 
@@ -65,25 +57,40 @@
     "choices": [
       {
         "label": "[A] Balas singkat: Makasih ya! Aku gambar manual biasanya.",
-        "next": "dm_009"
+        "next": "dm_after_choice_001"
       },
       {
         "label": "[B] Balas antusias: Hehe beneran? Aku suka banget nih latihan perspektif! Kamu juga suka gambar?",
-        "next": "dm_009"
+        "next": "dm_after_choice_002"
       },
       {
         "label": "[C] Tidak balas dulu. Melati mengunjungi profil Raka dulu",
-        "next": "dm_009"
+        "next": "dm_after_choice_003"
       }
     ]
   },
 
-  "dm_009": {
-    "id": "dm_009",
+  "dm_after_choice_001": {
+    "id": "dm_after_choice_001",
     "type": "dialogue",
     "background": "/backgrounds/phone/phone_dm_raka.png",
     "speaker": "Raka",
-    "text": "Kamu kelasnya sibuk banget ya? Kayaknya stress dari postingan-postingan kamu.",
+    "text": "Kamu kelasnya sibuk banget ya? Kayaknya stress dari postingan ulang kamu.",
+    "next": "dm_010"
+  },
+
+  "dm_after_choice_002": {
+    "id": "dm_after_choice_002",
+    "type": "dialogue",
+    "background": "/backgrounds/phone/phone_dm_raka.png",
+    "speaker": "Raka",
+    "text": "Iyaa aku juga suka. Kamu kelasnya sibuk banget ya? Kayaknya stress dari postingan ulang kamu.",
+    "next": "dm_010"
+  },
+
+  "dm_after_choice_003": {
+    "id": "dm_after_choice_003",
+    "background": "/backgrounds/phone/phone_profile_raka.png",
     "next": "dm_010"
   },
 
@@ -114,6 +121,7 @@
     "overlay": {
       "image": "/backgrounds/overlay/notebook_1.png"
     },
+    "transition": "fade",
     "next": "day2_001"
   },
 
@@ -203,9 +211,7 @@
     "background": "/backgrounds/phone/phone_dm_raka.png",
     "speaker": "(Pikiran Melati)",
     "text": "Raka... ngerti aku. Padahal kita belum pernah ketemu.",
-    "overlay": {
-      "image": "/backgrounds/overlay/notebook_2.png"
-    },
+    "transition": "fade",
     "next": "competition_001"
   },
 

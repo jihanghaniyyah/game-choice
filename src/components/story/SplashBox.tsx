@@ -42,6 +42,7 @@ export default function SplashBox({ onStart }: SplashBoxProps) {
             duration-300
             hover:scale-105
             hover:bg-pink-500
+            cursor-pointer
           "
         >
           <Play size={24} fill="white" />

@@ -4,6 +4,7 @@
     "type": "narration",
     "background": "/backgrounds/bedroom/in_car.png",
     "text": "Melati pulang dengan seragam yang masih rapi tapi langkahnya terasa berat. Seharian rapat OSIS, latihan ekstrakurikuler, dan ujian Matematika. Ia langsung masuk ke kamar, menutup pintunya pelan.",
+    "transition": "fade",
     "next": "day1_002"
   },
 
@@ -277,6 +278,7 @@
     "id": "day1_016",
     "type": "narration",
     "background": "/backgrounds/bedroom/base.png",
+    "transition": "fade",
     "characters": [
       {
         "id": "melati",
@@ -292,7 +294,7 @@
     "id": "day1_017",
     "type": "narration",
     "background": "/backgrounds/phone/phone_off.png",
-    "text": "Mandi, tugas, belajar untuk ulangan besok. Setelah semuanya selesai, Melati akhirnya meraih ponselnya.",
+    "text": "Tugas, belajar untuk ulangan besok. Setelah semuanya selesai, Melati akhirnya meraih ponselnya.",
     "next": "dm_001"
   }
 }

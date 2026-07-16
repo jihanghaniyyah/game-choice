@@ -14,12 +14,17 @@ import ChoiceList from "./ChoiceList";
 import InfoBox from "./InfoBox";
 import VideoPlayer from "./VideoPlayer";
 import AudioPlayer from "./AudioPlayer";
+import FlashEffect from "./FlashEffect";
+import FadeTransition from "./FadeTransition";
+import ImageChoice from "./ImageChoice";
 
 interface SceneRendererProps {
   scene: Scene;
   nextScene: () => void;
   choose: (nextId: string) => void;
   visitedFriends: string[];
+  flash: boolean;
+  transition: boolean;
 }
 
 export default function SceneRenderer({
@@ -27,6 +32,8 @@ export default function SceneRenderer({
   nextScene,
   choose,
   visitedFriends,
+  flash,
+  transition,
 }: SceneRendererProps) {
   const [showOverlay, setShowOverlay] = useState(false);
   useEffect(() => {
@@ -71,7 +78,12 @@ export default function SceneRenderer({
             choices={scene.choices ?? []}
             onChoose={choose}
             visitedFriends={visitedFriends}
+            layout={scene.choiceLayout}
           />
+        )}
+
+        {scene.type === "image-choice" && (
+          <ImageChoice hotspots={scene.hotspots ?? []} onChoose={choose} />
         )}
 
         {(scene.type === "popup" ||
@@ -84,6 +96,9 @@ export default function SceneRenderer({
           <VideoPlayer src={scene.video} onEnded={nextScene} />
         )}
       </div>
+
+      <FlashEffect visible={flash} />
+      <FadeTransition visible={transition} />
     </div>
   );
 }

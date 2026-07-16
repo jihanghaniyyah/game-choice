@@ -13,6 +13,8 @@ export default function StoryEngine() {
     choose,
     resetProgress,
     visitedFriends,
+    flash,
+    transition,
   } = useStoryEngine();
 
   return (
@@ -22,6 +24,8 @@ export default function StoryEngine() {
         nextScene={nextScene}
         choose={choose}
         visitedFriends={visitedFriends}
+        flash={flash}
+        transition={transition}
       />
 
       <GameControls
