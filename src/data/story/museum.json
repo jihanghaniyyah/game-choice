@@ -181,7 +181,7 @@
     "characters": [
       {
         "id": "melati",
-        "image": "/characters/melati/melati_dalam_hati.png",
+        "image": "/characters/melati/melati_jalan_sedih_2_kiri.png",
         "position": "3"
       },
       {
@@ -195,12 +195,12 @@
   "museum_011": {
     "id": "museum_011",
     "type": "narration",
-    "text": "Orang itu mengajaknya ke area koleksi di sayap yang lebih sepi.",
+    "text": "Orang itu mengajaknya ke area koleksi di sayap yang lebih sepi. Jumlah pengunjung di sekitar mereka semakin berkurang. Di dalam benaknya, ada sinyal yang berbunyi.",
     "background": "/backgrounds/museum/museum_background_quiet.png",
     "characters": [
       {
         "id": "melati",
-        "image": "/characters/melati/melati_dalam_hati.png",
+        "image": "/characters/melati/melati_jalan_sedih_1_kiri.png",
         "position": "2"
       },
       {
@@ -211,89 +211,12 @@
     ],
     "next": "museum_012"
   },
+
   "museum_012": {
     "id": "museum_012",
-    "type": "narration",
-    "text": " Jumlah pengunjung di sekitar mereka semakin berkurang.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
-    "characters": [
-      {
-        "id": "melati",
-        "image": "/characters/melati/melati_dalam_hati.png",
-        "position": "2"
-      },
-      {
-        "id": "raka",
-        "image": "/characters/raka/raka_walk_3_left.png",
-        "position": "1"
-      }
-    ],
-    "next": "museum_013"
-  },
-  "museum_013": {
-    "id": "museum_013",
-    "type": "narration",
-    "text": "Di dalam benaknya, ada sinyal yang berbunyi.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
-    "characters": [
-      {
-        "id": "melati",
-        "image": "/characters/melati/melati_dalam_hati.png",
-        "position": "2"
-      },
-      {
-        "id": "raka",
-        "image": "/characters/raka/raka_walk_3_left.png",
-        "position": "1"
-      }
-    ],
-    "next": "museum_014"
-  },
-  "museum_014": {
-    "id": "museum_014",
     "type": "dialogue",
     "speaker": "(Pikiran Melati)",
-    "text": "Ini nggak seperti yang aku bayangkan.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
-    "characters": [
-      {
-        "id": "melati",
-        "image": "/characters/melati/melati_dalam_hati.png",
-        "position": "2"
-      },
-      {
-        "id": "raka",
-        "image": "/characters/raka/raka_walk_3_left.png",
-        "position": "1"
-      }
-    ],
-    "next": "museum_015"
-  },
-  "museum_015": {
-    "id": "museum_015",
-    "type": "dialogue",
-    "speaker": "(Pikiran Melati)",
-    "text": "Tempat ini makin sepi.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
-    "characters": [
-      {
-        "id": "melati",
-        "image": "/characters/melati/melati_dalam_hati.png",
-        "position": "2"
-      },
-      {
-        "id": "raka",
-        "image": "/characters/raka/raka_walk_3_left.png",
-        "position": "1"
-      }
-    ],
-    "next": "museum_016"
-  },
-  "museum_016": {
-    "id": "museum_016",
-    "type": "dialogue",
-    "speaker": "(Pikiran Melati)",
-    "text": " Dia bukan seperti di foto.",
+    "text": "Ini nggak seperti yang aku bayangkan. Tempat ini makin sepi. Dia bukan seperti di foto.",
     "background": "/backgrounds/museum/museum_background_quiet.png",
     "characters": [
       {

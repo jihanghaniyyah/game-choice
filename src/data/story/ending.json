@@ -45,109 +45,248 @@
 
   "ending_instinct_006": {
     "id": "ending_instinct_006",
-    "type": "ending",
-    "title": "Instinct",
-    "content": [
-      {
-        "type": "text",
-        "value": "Melati tidak tahu pasti apakah Raka berbahaya. Tapi ketidaknyamanan itu sudah cukup sebagai alasan untuk berhenti."
-      },
+    "background": "/backgrounds/ending/ending_1_1.png",
+    "next": "ending_instinct_007"
+  },
 
-      {
-        "type": "lesson",
-        "title": "Pelajaran yang Bisa Diambil",
-        "value": "Perasaan tidak nyaman adalah sinyal, bukan imajinasi. Kamu tidak perlu bukti untuk berhenti dari situasi yang tidak terasa aman. "
-      }
-    ]
+  "ending_instinct_007": {
+    "id": "ending_instinct_007",
+    "background": "/backgrounds/ending/ending_1_2.png",
+    "next": "ending_instinct_007"
   },
 
   "ending_escape_001": {
     "id": "ending_escape_001",
     "type": "narration",
     "text": "Di dalam museum, Melati mengambil napas.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_idle_sad.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_walk_3_left.png",
+        "position": "1"
+      }
+    ],
     "next": "ending_escape_002"
   },
 
   "ending_escape_002": {
     "id": "ending_escape_002",
     "type": "narration",
-    "text": "Ponselnya di saku. Ia tekan layar pura-pura menerima telepon.",
+    "text": "Ponselnya di saku.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_ambil_hp.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_walk_3_left.png",
+        "position": "1"
+      }
+    ],
     "next": "ending_escape_003"
   },
 
   "ending_escape_003": {
     "id": "ending_escape_003",
-    "type": "dialogue",
-    "speaker": "Melati",
-    "text": "Halo? Oh - iya, sebentar.",
+    "type": "narration",
+    "text": "Ia tekan layar pura-pura menerima telepon.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_buka_hp.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_walk_3_left.png",
+        "position": "1"
+      }
+    ],
     "next": "ending_escape_004"
   },
 
   "ending_escape_004": {
     "id": "ending_escape_004",
-    "type": "narration",
-    "text": "Ia berbalik ke orang itu",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Halo? Oh - iya, sebentar.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_angkat_hp.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_idle.png",
+        "position": "1"
+      }
+    ],
     "next": "ending_escape_005"
   },
 
   "ending_escape_005": {
     "id": "ending_escape_005",
-    "type": "dialogue",
-    "speaker": "Melati",
-    "text": "Maaf, ada teman yang nyariin. Aku permisi dulu ke toilet ya.",
+    "type": "narration",
+    "text": "Ia berbalik ke orang itu",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_idle_sad.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_idle.png",
+        "position": "1"
+      }
+    ],
     "next": "ending_escape_006"
   },
 
   "ending_escape_006": {
     "id": "ending_escape_006",
-    "type": "narration",
-    "text": "Ia berjalan ke arah toilet, tapi langkahnya tidak berhenti.",
+    "type": "dialogue",
+    "speaker": "Melati",
+    "text": "Maaf, ada teman yang nyariin. Aku permisi dulu ke toilet ya.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_dialog.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_idle.png",
+        "position": "1"
+      }
+    ],
     "next": "ending_escape_007"
   },
 
   "ending_escape_007": {
     "id": "ending_escape_007",
     "type": "narration",
-    "text": "Ia terus berjalan sampai ke area ramai, ke pintu utama, ke luar.",
+    "text": "Ia berjalan ke arah toilet, tapi langkahnya tidak berhenti.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_jalan_sedih_2.png",
+        "position": "3"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_idle.png",
+        "position": "1"
+      }
+    ],
     "next": "ending_escape_008"
   },
 
   "ending_escape_008": {
     "id": "ending_escape_008",
     "type": "narration",
-    "text": "Di sana ia bertemu Nisa yang ternyata mengikutinya.",
+    "text": "Ia terus berjalan sampai ke area ramai, ke pintu utama, ke luar.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_jalan_sedih_1.png",
+        "position": "4"
+      }
+    ],
     "next": "ending_escape_009"
   },
 
   "ending_escape_009": {
     "id": "ending_escape_009",
     "type": "narration",
-    "text": "Nisa langsung menghubungi guru pendamping. Semuanya segera ditangani.",
+    "text": "Di sana ia bertemu Nisa yang ternyata mengikutinya.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_idle_sad_right.png",
+        "position": "4"
+      },
+      {
+        "id": "nisa",
+        "image": "/characters/nisa/nisa_walk.png",
+        "position": "5"
+      }
+    ],
     "next": "ending_escape_010"
   },
 
   "ending_escape_010": {
     "id": "ending_escape_010",
-    "type": "ending",
-    "title": "Escape",
-    "content": [
+    "type": "narration",
+    "text": "Nisa langsung menghubungi guru pendamping. Semuanya segera ditangani.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
       {
-        "type": "text",
-        "value": "Melati tidak panik. Ia berpikir cepat dan menggunakan alasan yang terasa natural. Keluar dari situasi yang tidak aman tidak selalu harus dramatis."
+        "id": "melati",
+        "image": "/characters/melati/melati_idle_sad_right.png",
+        "position": "4"
       },
-
       {
-        "type": "lesson",
-        "title": "Pelajaran yang Bisa Diambil",
-        "value": "Kamu boleh menggunakan alasan apapun untuk keluar dari situasi yang tidak terasa aman. Aku harus pergi adalah kalimat yang valid tanpa perlu penjelasan apapun."
+        "id": "nisa",
+        "image": "/characters/nisa/nisa_megang_melati.png",
+        "position": "5"
       }
-    ]
+    ],
+    "next": "ending_escape_011"
+  },
+
+  "ending_escape_011": {
+    "id": "ending_escape_011",
+    "background": "/backgrounds/ending/ending_2_1.png",
+    "next": "ending_escape_012"
+  },
+
+  "ending_escape_012": {
+    "id": "ending_escape_012",
+    "background": "/backgrounds/ending/ending_2_2.png",
+    "next": "ending_escape_013"
+  },
+
+  "ending_escape_013": {
+    "id": "ending_escape_013",
+    "background": "/backgrounds/ending/ending_2_3.png",
+    "next": "ending_credit"
   },
 
   "ending_boundary_001": {
     "id": "ending_boundary_001",
     "type": "narration",
     "text": "Melati berhenti melangkah.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_dalam_hati.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_walk_3_left.png",
+        "position": "1"
+      }
+    ],
     "next": "ending_boundary_002"
   },
 
@@ -156,14 +295,40 @@
     "type": "dialogue",
     "speaker": "Melati",
     "text": "Maaf. Aku harus pergi.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_dialog.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_idle.png",
+        "position": "1"
+      }
+    ],
     "next": "ending_boundary_003"
   },
 
   "ending_boundary_003": {
     "id": "ending_boundary_003",
     "type": "dialogue",
-    "speaker": "(ORANG ITU)",
+    "speaker": "Raka",
     "text": "Eh, baru datang juga. Nggak bisa sebentar-",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_idle_sad.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_3.png",
+        "position": "1"
+      }
+    ],
     "next": "ending_boundary_004"
   },
 
@@ -171,7 +336,20 @@
     "id": "ending_boundary_004",
     "type": "dialogue",
     "speaker": "Melati",
-    "text": "Aku harus pergi sekarang. ",
+    "text": "Aku harus pergi sekarang.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_dialog.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_idle.png",
+        "position": "1"
+      }
+    ],
     "next": "ending_boundary_005"
   },
 
@@ -179,6 +357,14 @@
     "id": "ending_boundary_005",
     "type": "narration",
     "text": "Ia berjalan keluar. Kakinya terasa berat tapi terus bergerak.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_jalan_sedih_1.png",
+        "position": "3"
+      }
+    ],
     "next": "ending_boundary_006"
   },
 
@@ -186,31 +372,52 @@
     "id": "ending_boundary_006",
     "type": "narration",
     "text": "Di luar ia menghubungi guru pendamping dan menceritakan semuanya.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_angkat_hp.png",
+        "position": "4"
+      }
+    ],
     "next": "ending_boundary_007"
   },
 
   "ending_boundary_007": {
     "id": "ending_boundary_007",
-    "type": "ending",
-    "title": "Boundary",
-    "content": [
-      {
-        "type": "text",
-        "value": "Melati tidak menjelaskan, tidak meminta maaf berlebihan, tidak menunggu izin. Ia hanya pergi. Dan itu cukup."
-      },
+    "background": "/backgrounds/ending/ending_3_1.png",
+    "next": "ending_boundary_008"
+  },
 
-      {
-        "type": "lesson",
-        "title": "Pelajaran yang Bisa Diambil",
-        "value": " Kamu tidak perlu penjelasan panjang untuk pergi dari situasi yang tidak aman. Aku harus pergi sudah cukup sebagai kalimat lengkap."
-      }
-    ]
+  "ending_boundary_008": {
+    "id": "ending_boundary_008",
+    "background": "/backgrounds/ending/ending_3_2.png",
+    "next": "ending_boundary_009"
+  },
+
+  "ending_boundary_009": {
+    "id": "ending_boundary_009",
+    "background": "/backgrounds/ending/ending_3_3.png",
+    "next": "ending_boundary_010"
   },
 
   "ending_rescue_001": {
     "id": "ending_rescue_001",
     "type": "narration",
     "text": "Selama berjalan, pikiran Melati penuh. Seluruh sinyalnya berbunyi.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_idle_sad.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_walk_3_left.png",
+        "position": "1"
+      }
+    ],
     "next": "ending_rescue_002"
   },
 
@@ -219,13 +426,44 @@
     "type": "dialogue",
     "speaker": "(Pikiran Melati)",
     "text": "Ini nggak bener. Aku nggak nyaman di sini. Aku mau pergi.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_dalam_hati.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_walk_3_left.png",
+        "position": "1"
+      }
+    ],
     "next": "ending_rescue_003"
   },
 
   "ending_rescue_003": {
     "id": "ending_rescue_003",
     "type": "narration",
-    "text": "Tiba-tiba seseorang menggenggam tangannya dari belakang. Nisa.",
+    "text": "Tiba-tiba seseorang memanggilnya dari belakang. Nisa.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_idle_sad.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_walk_3_left.png",
+        "position": "1"
+      },
+      {
+        "id": "nisa",
+        "image": "/characters/nisa/nisa_walk.png",
+        "position": "5"
+      }
+    ],
     "next": "ending_rescue_004"
   },
 
@@ -234,14 +472,50 @@
     "type": "dialogue",
     "speaker": "Nisa",
     "text": "Mel, kamu ke mana aja? Dari tadi aku cariin.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_idle_sad_right.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_5.png",
+        "position": "1"
+      },
+      {
+        "id": "nisa",
+        "image": "/characters/nisa/nisa_bicara_1.png",
+        "position": "4"
+      }
+    ],
     "next": "ending_rescue_005"
   },
 
   "ending_rescue_005": {
     "id": "ending_rescue_005",
     "type": "dialogue",
-    "speaker": "(ORANG ITU)",
+    "speaker": "Raka",
     "text": "Heh, lo siapa?",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_idle_sad_right.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_4.png",
+        "position": "1"
+      },
+      {
+        "id": "nisa",
+        "image": "/characters/nisa/nisa_idle_marah.png",
+        "position": "3"
+      }
+    ],
     "next": "ending_rescue_006"
   },
 
@@ -250,14 +524,50 @@
     "type": "dialogue",
     "speaker": "Nisa",
     "text": "Gue temennya.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_idle_sad_right.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_5.png",
+        "position": "1"
+      },
+      {
+        "id": "nisa",
+        "image": "/characters/nisa/nisa_bicara_2.png",
+        "position": "3"
+      }
+    ],
     "next": "ending_rescue_007"
   },
 
   "ending_rescue_007": {
     "id": "ending_rescue_008",
     "type": "dialogue",
-    "speaker": "(ORANG ITU)",
+    "speaker": "Raka",
     "text": "Oh, jadi kamu nggak ke sini sendirian, Melati? Harusnya bilang, biar bisa jalan bertiga.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_idle_sad.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_1.png",
+        "position": "1"
+      },
+      {
+        "id": "nisa",
+        "image": "/characters/nisa/nisa_idle_marah.png",
+        "position": "3"
+      }
+    ],
     "next": "ending_rescue_009"
   },
 
@@ -265,112 +575,208 @@
     "id": "ending_rescue_009",
     "type": "narration",
     "text": "Melati merasa lega ada Nisa di sisinya.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_idle_senyum_galeri.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_5.png",
+        "position": "1"
+      },
+      {
+        "id": "nisa",
+        "image": "/characters/nisa/nisa_idle_marah.png",
+        "position": "3"
+      }
+    ],
     "next": "ending_rescue_010"
   },
 
   "ending_rescue_010": {
     "id": "ending_rescue_010",
-    "type": "narration",
-    "text": "Saat orang itu kembali mengajak mereka ke arah yang lebih sepi, Nisa memegang lengan Melati.",
+    "type": "dialogue",
+    "speaker": "Nisa",
+    "text": "Maaf, kami harus pergi sekarang. Ada yang tunggu di luar.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_idle_senyum_galeri.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_5.png",
+        "position": "1"
+      },
+      {
+        "id": "nisa",
+        "image": "/characters/nisa/nisa_bicara_1.png",
+        "position": "3"
+      }
+    ],
     "next": "ending_rescue_011"
   },
 
   "ending_rescue_011": {
     "id": "ending_rescue_011",
     "type": "dialogue",
-    "speaker": "Nisa",
-    "text": "Maaf, kami harus pergi sekarang. Ada yang tunggu di luar.",
+    "speaker": "Raka",
+    "text": "Eh, nggak usah buru-buru-",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_idle_senyum_galeri.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_4.png",
+        "position": "1"
+      },
+      {
+        "id": "nisa",
+        "image": "/characters/nisa/nisa_idle_marah.png",
+        "position": "3"
+      }
+    ],
     "next": "ending_rescue_012"
   },
 
   "ending_rescue_012": {
     "id": "ending_rescue_012",
     "type": "dialogue",
-    "speaker": "(ORANG ITU)",
-    "text": "Eh, nggak usah buru-buru-",
+    "speaker": "Nisa",
+    "text": "Kami harus pergi sekarang.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_idle_senyum_galeri.png",
+        "position": "2"
+      },
+      {
+        "id": "raka",
+        "image": "/characters/raka/raka_5.png",
+        "position": "1"
+      },
+      {
+        "id": "nisa",
+        "image": "/characters/nisa/nisa_bicara_2.png",
+        "position": "3"
+      }
+    ],
     "next": "ending_rescue_013"
   },
 
   "ending_rescue_013": {
     "id": "ending_rescue_013",
-    "type": "dialogue",
-    "speaker": "Nisa",
-    "text": "Kami harus pergi sekarang.",
+    "type": "narration",
+    "text": "Nisa bersama Melati berjalan cepat ke arah pintu.",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_walk_2.png",
+        "position": "3"
+      },
+      {
+        "id": "nisa",
+        "image": "/characters/nisa/nisa_walk_1.png",
+        "position": "4"
+      }
+    ],
     "next": "ending_rescue_014"
   },
 
   "ending_rescue_014": {
     "id": "ending_rescue_014",
     "type": "narration",
-    "text": "Nisa menarik Melati berjalan cepat ke arah pintu.",
+    "text": "Di luar, guru pendamping sudah menunggu",
+    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_walk_3.png",
+        "position": "4"
+      },
+      {
+        "id": "nisa",
+        "image": "/characters/nisa/nisa_walk_2.png",
+        "position": "5"
+      }
+    ],
     "next": "ending_rescue_015"
   },
 
   "ending_rescue_015": {
     "id": "ending_rescue_015",
-    "type": "narration",
-    "text": "Di luar, guru pendamping sudah menunggu",
+    "type": "dialogue",
+    "background": "/backgrounds/ending/ending_car.jpeg",
+    "speaker": "Guru",
+    "text": "Melati, Nisa. Ayo masuk mobil dulu.",
     "next": "ending_rescue_016"
   },
 
   "ending_rescue_016": {
     "id": "ending_rescue_016",
-    "type": "dialogue",
+    "type": "narration",
     "background": "/backgrounds/ending/ending_car.jpeg",
-    "speaker": "Guru",
-    "text": "Melati, Nisa. Ayo masuk mobil dulu.",
+    "text": "Di dalam mobil, Melati menyadari: Nisa sudah menghubungi guru itu jauh sebelum mereka tiba di museum.",
     "next": "ending_rescue_017"
   },
 
   "ending_rescue_017": {
     "id": "ending_rescue_017",
-    "type": "narration",
+    "type": "dialogue",
     "background": "/backgrounds/ending/ending_car.jpeg",
-    "text": "Di dalam mobil, Melati menyadari: Nisa sudah menghubungi guru itu jauh sebelum mereka tiba di museum.",
+    "speaker": "(Pikiran Melati)",
+    "text": "Nisa... tahu. Dari tadi dia tahu.",
     "next": "ending_rescue_018"
   },
 
   "ending_rescue_018": {
     "id": "ending_rescue_018",
-    "type": "dialogue",
+    "type": "narration",
     "background": "/backgrounds/ending/ending_car.jpeg",
-    "speaker": "(Pikiran Melati)",
-    "text": "Nisa... tahu. Dari tadi dia tahu.",
+    "text": "Melati menangis sembari dipeluk oleh Nisa",
     "next": "ending_rescue_019"
   },
 
   "ending_rescue_019": {
     "id": "ending_rescue_019",
     "type": "narration",
-    "background": "/backgrounds/ending/ending_car.jpeg",
-    "text": "Melati menangis sembari dipeluk oleh Nisa",
+    "text": "Mereka melaporkan kejadian ini.",
+    "next": "ending_rescue_020"
+  },
+
+  "ending_rescue_020": {
+    "id": "ending_rescue_020",
+    "type": "narration",
+    "text": "Akun @raka.workinframe ternyata sudah pernah dilaporkan oleh orang lain sebelumnya.",
     "next": "ending_rescue_021"
   },
 
   "ending_rescue_021": {
     "id": "ending_rescue_021",
-    "type": "narration",
-    "text": "Mereka melaporkan kejadian ini.",
+    "background": "/backgrounds/ending/ending_4_1.png",
     "next": "ending_rescue_022"
   },
 
   "ending_rescue_022": {
     "id": "ending_rescue_022",
-    "type": "narration",
-    "text": "Akun @raka.workinframe ternyata sudah pernah dilaporkan oleh orang lain sebelumnya.",
+    "background": "/backgrounds/ending/ending_4_2.png",
     "next": "ending_rescue_023"
   },
 
   "ending_rescue_023": {
     "id": "ending_rescue_023",
-    "type": "ending",
-    "title": "Ending",
-    "content": [
-      {
-        "type": "text",
-        "value": "Melati selamat karena Nisa tidak diam. Nisa tidak berteriak, tidak menghakimi, tidak melarang : ia hanya hadir, mengamati, dan bertindak tepat waktu. Kadang yang menyelamatkan kita bukan yang paling keras suaranya, tapi yang paling memperhatikan."
-      }
-    ],
+    "background": "/backgrounds/ending/ending_4_3.png",
     "next": "epilogue_001"
   },
 
