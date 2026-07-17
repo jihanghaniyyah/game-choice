@@ -91,7 +91,12 @@ export default function CharacterLayer({
   }, [gameSession]);
 
   if (!scene.characters?.length) return null;
-
+  console.log(
+    "Raka walking:",
+    walkingCharacters["raka"],
+    "Position:",
+    positions["raka"],
+  );
   return (
     <div className="absolute inset-0 z-20 pointer-events-none">
       {scene.characters.map((character) => {

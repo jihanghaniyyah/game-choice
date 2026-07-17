@@ -1,45 +1,97 @@
 {
   "ending_instinct_001": {
     "id": "ending_instinct_001",
-    "type": "narration",
     "background": "/backgrounds/museum/phone_dm_raka.png",
-    "text": "Melati mengetik balasan dengan tangan yang sedikit gemetar.",
+    "type": "chat",
+    "chatMode": "all",
+    "messages": [
+      {
+        "from": "other",
+        "text": "Eh, kamu lagi di Surabaya? Kebetulan banget, aku lagi di sini buat urusan kuliah!"
+      },
+      {
+        "from": "me",
+        "text": "Hah, serius? Wah kebetulan banget."
+      },
+      {
+        "from": "other",
+        "text": "Iya. Btw, ada museum seni yang bagus banget di sini."
+      },
+      {
+        "from": "other",
+        "text": "Kamu suka seni kan? Gimana kalau kita ke sana?"
+      },
+      {
+        "from": "other",
+        "text": "Kapan lagi ada kesempatan kayak gini, kita kan belum pernah ketemu langsung."
+      }
+    ],
+    "overlayUI": {
+      "type": "narration",
+      "text": "Melati mengetik balasan dengan tangan yang sedikit gemetar."
+    },
     "next": "ending_instinct_002"
   },
 
   "ending_instinct_002": {
     "id": "ending_instinct_002",
-    "type": "dialogue",
     "background": "/backgrounds/museum/phone_dm_raka.png",
-    "speaker": "Melati",
-    "text": "Maaf Raka, aku nggak bisa. Aku lagi sama teman-teman dan nggak enak ninggalin mereka.",
-    "next": "ending_instinct_003"
-  },
+    "type": "chat",
+    "messages": [
+      {
+        "from": "me",
+        "text": "Maaf Raka, aku nggak bisa. Aku lagi sama teman-teman dan nggak enak ninggalin mereka."
+      },
+      {
+        "from": "other",
 
-  "ending_instinct_003": {
-    "id": "ending_instinct_003",
-    "type": "dialogue",
-    "background": "/backgrounds/museum/phone_dm_raka.png",
-    "speaker": "Raka",
-    "text": "Ih, nggak bisa fleksibel dikit? Kapan lagi ada kesempatan gini?",
+        "text": "Ih, nggak bisa fleksibel dikit? Kapan lagi ada kesempatan gini?"
+      }
+    ],
     "next": "ending_instinct_004"
   },
 
   "ending_instinct_004": {
     "id": "ending_instinct_004",
-    "type": "dialogue",
     "background": "/backgrounds/museum/phone_dm_raka.png",
-    "speaker": "(Pikiran Melati)",
-    "text": "Ada sesuatu yang salah dari cara dia bereaksi ini.",
+    "type": "chat",
+    "chatMode": "all",
+    "messages": [
+      {
+        "from": "me",
+        "text": "Maaf Raka, aku nggak bisa. Aku lagi sama teman-teman dan nggak enak ninggalin mereka."
+      },
+      {
+        "from": "other",
+        "text": "Ih, nggak bisa fleksibel dikit? Kapan lagi ada kesempatan gini?"
+      }
+    ],
+    "overlayUI": {
+      "speaker": "(Pikiran Melati)",
+      "text": "Ada sesuatu yang salah dari cara dia bereaksi ini."
+    },
     "next": "ending_instinct_005"
   },
 
   "ending_instinct_005": {
     "id": "ending_instinct_005",
-    "type": "dialogue",
     "background": "/backgrounds/museum/phone_dm_raka.png",
-    "speaker": "Melati",
-    "text": "Maaf ya. Lain kali aja.",
+    "type": "chat",
+    "chatMode": "all",
+    "messages": [
+      {
+        "from": "me",
+        "text": "Maaf Raka, aku nggak bisa. Aku lagi sama teman-teman dan nggak enak ninggalin mereka."
+      },
+      {
+        "from": "other",
+        "text": "Ih, nggak bisa fleksibel dikit? Kapan lagi ada kesempatan gini?"
+      },
+      {
+        "from": "me",
+        "text": "Maaf ya. Lain kali aja."
+      }
+    ],
     "next": "ending_instinct_006"
   },
 
@@ -186,28 +238,9 @@
     "characters": [
       {
         "id": "melati",
-        "image": "/characters/melati/melati_jalan_sedih_2.png",
-        "position": "3"
-      },
-      {
-        "id": "raka",
-        "image": "/characters/raka/raka_idle.png",
-        "position": "1"
-      }
-    ],
-    "next": "ending_escape_008"
-  },
-
-  "ending_escape_008": {
-    "id": "ending_escape_008",
-    "type": "narration",
-    "text": "Ia terus berjalan sampai ke area ramai, ke pintu utama, ke luar.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
-    "characters": [
-      {
-        "id": "melati",
-        "image": "/characters/melati/melati_jalan_sedih_1.png",
-        "position": "4"
+        "asset": "melati_museum",
+        "position": "2",
+        "moveTo": "3"
       }
     ],
     "next": "ending_escape_009"
@@ -216,18 +249,19 @@
   "ending_escape_009": {
     "id": "ending_escape_009",
     "type": "narration",
-    "text": "Di sana ia bertemu Nisa yang ternyata mengikutinya.",
+    "text": "Ia bertemu Nisa yang ternyata mengikutinya.",
     "background": "/backgrounds/museum/museum_background_quiet.png",
     "characters": [
       {
         "id": "melati",
         "image": "/characters/melati/melati_idle_sad_right.png",
-        "position": "4"
+        "position": "3"
       },
       {
         "id": "nisa",
-        "image": "/characters/nisa/nisa_walk.png",
-        "position": "5"
+        "asset": "nisa_museum",
+        "position": "5",
+        "moveTo": "4"
       }
     ],
     "next": "ending_escape_010"
@@ -242,12 +276,12 @@
       {
         "id": "melati",
         "image": "/characters/melati/melati_idle_sad_right.png",
-        "position": "4"
+        "position": "3"
       },
       {
         "id": "nisa",
         "image": "/characters/nisa/nisa_megang_melati.png",
-        "position": "5"
+        "position": "4"
       }
     ],
     "next": "ending_escape_011"
@@ -363,8 +397,9 @@
     "characters": [
       {
         "id": "melati",
-        "image": "/characters/melati/melati_jalan_sedih_1.png",
-        "position": "3"
+        "asset": "melati_museum",
+        "position": "2",
+        "moveTo": "3"
       }
     ],
     "next": "ending_boundary_006"
@@ -379,7 +414,7 @@
       {
         "id": "melati",
         "image": "/characters/melati/melati_angkat_hp.png",
-        "position": "4"
+        "position": "3"
       }
     ],
     "next": "ending_boundary_007"
@@ -407,7 +442,7 @@
   "ending_rescue_001": {
     "id": "ending_rescue_001",
     "type": "narration",
-    "text": "Selama berjalan, pikiran Melati penuh. Seluruh sinyalnya berbunyi.",
+    "text": "Pikiran Melati penuh. Seluruh sinyalnya berbunyi.",
     "background": "/backgrounds/museum/museum_background_quiet.png",
     "characters": [
       {
@@ -438,7 +473,7 @@
       },
       {
         "id": "raka",
-        "image": "/characters/raka/raka_walk_3_left.png",
+        "image": "/characters/raka/raka_idle_left.png",
         "position": "1"
       }
     ],
@@ -463,8 +498,9 @@
       },
       {
         "id": "nisa",
-        "image": "/characters/nisa/nisa_walk.png",
-        "position": "5"
+        "asset": "nisa_museum",
+        "position": "5",
+        "moveTo": "3"
       }
     ],
     "next": "ending_rescue_004"
@@ -490,7 +526,7 @@
       {
         "id": "nisa",
         "image": "/characters/nisa/nisa_bicara_1.png",
-        "position": "4"
+        "position": "3"
       }
     ],
     "next": "ending_rescue_005"
@@ -685,13 +721,15 @@
     "characters": [
       {
         "id": "melati",
-        "image": "/characters/melati/melati_walk_2.png",
-        "position": "3"
+        "asset": "melati_museum",
+        "position": "2",
+        "moveTo": "4"
       },
       {
         "id": "nisa",
-        "image": "/characters/nisa/nisa_walk_1.png",
-        "position": "4"
+        "asset": "nisa_museum_right",
+        "position": "3",
+        "moveTo": "4"
       }
     ],
     "next": "ending_rescue_014"
@@ -701,19 +739,7 @@
     "id": "ending_rescue_014",
     "type": "narration",
     "text": "Di luar, guru pendamping sudah menunggu",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
-    "characters": [
-      {
-        "id": "melati",
-        "image": "/characters/melati/melati_walk_3.png",
-        "position": "4"
-      },
-      {
-        "id": "nisa",
-        "image": "/characters/nisa/nisa_walk_2.png",
-        "position": "5"
-      }
-    ],
+    "background": "/backgrounds/ending/ending_car.jpeg",
     "next": "ending_rescue_015"
   },
 

@@ -41,11 +41,16 @@ export function useStoryEngine() {
   }, [visitedFriends, currentSceneId]);
 
   const nextScene = () => {
+    console.log({
+      visibleMessages,
+      totalMessages: currentScene.messages?.length,
+    });
     console.log("NEXT CLICK");
     console.log("Current Scene:", currentScene);
 
     if (
       currentScene.type === "chat" &&
+      currentScene.chatMode !== "all" &&
       currentScene.messages &&
       visibleMessages < currentScene.messages.length
     ) {

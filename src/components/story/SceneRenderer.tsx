@@ -18,6 +18,7 @@ import FlashEffect from "./FlashEffect";
 import FadeTransition from "./FadeTransition";
 import ImageChoice from "./ImageChoice";
 import NotebookButton from "./NotebookButton";
+import OverlayUI from "./OverlayUI";
 
 interface SceneRendererProps {
   scene: Scene;
@@ -96,6 +97,7 @@ export default function SceneRenderer({
           <ChatBox
             messages={scene.messages ?? []}
             visibleCount={visibleMessages}
+            chatMode={scene.chatMode}
           />
         )}
 
@@ -112,6 +114,10 @@ export default function SceneRenderer({
           <ImageChoice hotspots={scene.hotspots ?? []} onChoose={choose} />
         )}
 
+        {scene.overlayUI?.type === "narration" && (
+          <NarrationBox text={scene.overlayUI.text} />
+        )}
+
         {(scene.type === "popup" ||
           scene.type === "ending" ||
           scene.type === "epilogue") && (
@@ -120,6 +126,27 @@ export default function SceneRenderer({
 
         {scene.type === "video" && scene.video && (
           <VideoPlayer src={scene.video} onEnded={nextScene} />
+        )}
+
+        {scene.overlayUI && (
+          <OverlayUI>
+            {scene.overlayUI.type === "dialogue" ? (
+              <DialogueBox
+                speaker={scene.overlayUI.speaker ?? ""}
+                text={scene.overlayUI.text}
+              />
+            ) : (
+              <NarrationBox text={scene.overlayUI.text} />
+            )}
+          </OverlayUI>
+        )}
+
+        {scene.overlayChoice && (
+          <ChoiceList
+            choices={scene.overlayChoice.choices}
+            onChoose={choose}
+            visitedFriends={visitedFriends}
+          />
         )}
       </div>
 

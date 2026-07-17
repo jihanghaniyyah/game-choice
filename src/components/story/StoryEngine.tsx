@@ -55,7 +55,7 @@ export default function StoryEngine() {
         onNext={nextScene}
         onPrevious={previousScene}
         onReset={resetProgress}
-        showNext={!!currentScene.next}
+        showNext={!!currentScene.next && !currentScene.overlayChoice}
       />
     </GameLayout>
   );

@@ -26,7 +26,7 @@ export default function ChoiceList({
 
   return (
     <div
-      className={`absolute bottom-32 left-1/2 z-30 -translate-x-1/2 flex gap-3 ${
+      className={`absolute bottom-32 left-1/2 z-60 -translate-x-1/2 flex gap-3 ${
         layout === "horizontal"
           ? "flex-row justify-center"
           : "w-[600px] flex-col"

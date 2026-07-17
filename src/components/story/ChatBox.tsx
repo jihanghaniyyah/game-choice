@@ -9,9 +9,17 @@ export interface ChatMessage {
 interface ChatBoxProps {
   messages: ChatMessage[];
   visibleCount: number;
+  chatMode?: "progressive" | "all";
 }
 
-export default function ChatBox({ messages, visibleCount }: ChatBoxProps) {
+export default function ChatBox({
+  messages,
+  visibleCount,
+  chatMode = "progressive",
+}: ChatBoxProps) {
+  const displayedMessages =
+    chatMode === "all" ? messages : messages.slice(0, visibleCount);
+
   return (
     <div
       className="
@@ -33,7 +41,7 @@ export default function ChatBox({ messages, visibleCount }: ChatBoxProps) {
           space-y-2
         "
       >
-        {messages.slice(0, visibleCount).map((message, index) => (
+        {displayedMessages.map((message, index) => (
           <ChatBubble key={index} from={message.from} text={message.text} />
         ))}
       </div>

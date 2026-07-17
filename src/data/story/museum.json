@@ -7,8 +7,9 @@
     "characters": [
       {
         "id": "melati",
-        "image": "/characters/melati/melati_walk_3.png",
-        "position": "4"
+        "position": "1",
+        "asset": "melati_museum",
+        "moveTo": "3"
       }
     ],
     "next": "museum_002"
@@ -23,7 +24,7 @@
       {
         "id": "melati",
         "image": "/characters/melati/melati_idle_museum_left.png",
-        "position": "4"
+        "position": "3"
       }
     ],
     "next": "museum_003"
@@ -33,37 +34,18 @@
     "id": "museum_003",
     "type": "narration",
     "background": "/backgrounds/museum/museum_background_quiet.png",
-    "text": "Seseorang mendekatinya.",
+    "text": "Seseorang mendekatinya. Bukan seperti foto-foto yang pernah ia lihat di Instagram. Usianya terlihat jauh lebih tua dari mahasiswa 19 tahun.",
     "characters": [
       {
         "id": "melati",
         "image": "/characters/melati/melati_idle_museum_left.png",
-        "position": "4"
+        "position": "3"
       },
       {
         "id": "raka",
-        "image": "/characters/raka/raka_walk_4.png",
-        "position": "1"
-      }
-    ],
-    "next": "museum_004"
-  },
-
-  "museum_004": {
-    "id": "museum_004",
-    "type": "narration",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
-    "text": "Bukan seperti foto-foto yang pernah ia lihat di Instagram. Usianya terlihat jauh lebih tua dari mahasiswa 19 tahun.",
-    "characters": [
-      {
-        "id": "melati",
-        "image": "/characters/melati/melati_idle_museum_left.png",
-        "position": "4"
-      },
-      {
-        "id": "raka",
-        "image": "/characters/raka/raka_walk_3.png",
-        "position": "2"
+        "asset": "raka_museum",
+        "position": "1",
+        "moveTo": "2"
       }
     ],
     "next": "museum_005"
@@ -79,11 +61,11 @@
       {
         "id": "melati",
         "image": "/characters/melati/melati_idle_sad.png",
-        "position": "4"
+        "position": "3"
       },
       {
         "id": "raka",
-        "image": "/characters/raka/raka_walk_3.png",
+        "image": "/characters/raka/raka_idle.png",
         "position": "2"
       }
     ],
@@ -100,12 +82,12 @@
       {
         "id": "melati",
         "image": "/characters/melati/melati_idle_sad.png",
-        "position": "4"
+        "position": "3"
       },
       {
         "id": "raka",
         "image": "/characters/raka/raka_1.png",
-        "position": "3"
+        "position": "2"
       }
     ],
     "next": "museum_007"
@@ -121,12 +103,12 @@
       {
         "id": "melati",
         "image": "/characters/melati/melati_idle_sad.png",
-        "position": "4"
+        "position": "3"
       },
       {
         "id": "raka",
         "image": "/characters/raka/raka_2.png",
-        "position": "3"
+        "position": "2"
       }
     ],
     "next": "museum_008"
@@ -142,12 +124,12 @@
       {
         "id": "melati",
         "image": "/characters/melati/melati_dalam_hati.png",
-        "position": "4"
+        "position": "3"
       },
       {
         "id": "raka",
         "image": "/characters/raka/raka_walk_3_left.png",
-        "position": "3"
+        "position": "2"
       }
     ],
     "next": "museum_009"
@@ -162,12 +144,12 @@
       {
         "id": "melati",
         "image": "/characters/melati/melati_dalam_hati.png",
-        "position": "4"
+        "position": "3"
       },
       {
         "id": "raka",
         "image": "/characters/raka/raka_walk_3_left.png",
-        "position": "3"
+        "position": "2"
       }
     ],
     "next": "museum_010"
@@ -181,7 +163,7 @@
     "characters": [
       {
         "id": "melati",
-        "image": "/characters/melati/melati_jalan_sedih_2_kiri.png",
+        "image": "/characters/melati/melati_dalam_hati.png",
         "position": "3"
       },
       {
@@ -200,13 +182,15 @@
     "characters": [
       {
         "id": "melati",
-        "image": "/characters/melati/melati_jalan_sedih_1_kiri.png",
-        "position": "2"
+        "asset": "melati_museum_sad",
+        "position": "3",
+        "moveTo": "2"
       },
       {
         "id": "raka",
-        "image": "/characters/raka/raka_walk_3_left.png",
-        "position": "1"
+        "asset": "raka_museum_left",
+        "position": "2",
+        "moveTo": "1"
       }
     ],
     "next": "museum_012"
@@ -232,6 +216,7 @@
     ],
     "next": "choice_museum_001"
   },
+
   "choice_museum_001": {
     "id": "choice_museum_001",
     "type": "choice",

@@ -92,6 +92,15 @@ export interface Scene {
   next?: string;
   flash?: boolean;
   transition?: "fade";
+  overlayUI?: {
+    type: "narration" | "dialogue";
+    speaker?: string;
+    text: string;
+  };
+  overlayChoice?: {
+    choices: Choice[];
+  };
+  chatMode?: "progressive" | "all";
 }
 
 export type Story = Record<string, Scene>;

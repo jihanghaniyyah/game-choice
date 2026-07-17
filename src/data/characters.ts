@@ -70,4 +70,95 @@ export const CHARACTER_ASSETS = {
     defaultOffsetX: 0,
     defaultOffsetY: 0,
   },
+
+  ibu_bedroom: {
+    idle: "/characters/ibu/ibu_idle.png",
+    walk: [
+      "/characters/ibu/walk/ibu_bedroom/ibu_walk_1.png",
+      "/characters/ibu/walk/ibu_bedroom/ibu_walk_2.png",
+      "/characters/ibu/walk/ibu_bedroom/ibu_walk_3.png",
+      "/characters/ibu/walk/ibu_bedroom/ibu_walk_4.png",
+    ],
+    defaultScale: 1,
+    defaultOffsetX: 0,
+    defaultOffsetY: 0,
+  },
+
+  melati_museum: {
+    idle: "/characters/melati/melati_idle_senyum_galeri.png",
+    walk: [
+      "/characters/melati/walk/melati_museum/melati_walk_1.png",
+      "/characters/melati/walk/melati_museum/melati_walk_2.png",
+      "/characters/melati/walk/melati_museum/melati_walk_3.png",
+      "/characters/melati/walk/melati_museum/melati_walk_4.png",
+    ],
+    defaultScale: 1,
+    defaultOffsetX: 0,
+    defaultOffsetY: 0,
+  },
+
+  melati_museum_sad: {
+    idle: "/characters/melati/melati_idle_sad.png",
+    walk: [
+      "/characters/melati/walk/melati_museum_sad/melati_walk_1.png",
+      "/characters/melati/walk/melati_museum_sad/melati_walk_2.png",
+      "/characters/melati/walk/melati_museum_sad/melati_walk_3.png",
+      "/characters/melati/walk/melati_museum_sad/melati_walk_4.png",
+    ],
+    defaultScale: 1,
+    defaultOffsetX: 0,
+    defaultOffsetY: 0,
+  },
+
+  raka_museum: {
+    idle: "/characters/raka/raka_idle.png",
+    walk: [
+      "/characters/raka/walk/raka_museum/raka_walk_1.png",
+      "/characters/raka/walk/raka_museum/raka_walk_2.png",
+      "/characters/raka/walk/raka_museum/raka_walk_3.png",
+      "/characters/raka/walk/raka_museum/raka_walk_4.png",
+    ],
+    defaultScale: 1,
+    defaultOffsetX: 0,
+    defaultOffsetY: 0,
+  },
+
+  raka_museum_left: {
+    idle: "/characters/raka/raka_idle_left.png",
+    walk: [
+      "/characters/raka/walk/raka_museum_left/raka_walk_1.png",
+      "/characters/raka/walk/raka_museum_left/raka_walk_2.png",
+      "/characters/raka/walk/raka_museum_left/raka_walk_3.png",
+      "/characters/raka/walk/raka_museum_left/raka_walk_4.png",
+    ],
+    defaultScale: 1,
+    defaultOffsetX: 0,
+    defaultOffsetY: 0,
+  },
+
+  nisa_museum: {
+    idle: "/characters/nisa/nisa_idle_left.png",
+    walk: [
+      "/characters/nisa/walk/nisa_museum/nisa_walk_1.png",
+      "/characters/nisa/walk/nisa_museum/nisa_walk_2.png",
+      "/characters/nisa/walk/nisa_museum/nisa_walk_3.png",
+      "/characters/nisa/walk/nisa_museum/nisa_walk_4.png",
+    ],
+    defaultScale: 1,
+    defaultOffsetX: 0,
+    defaultOffsetY: 0,
+  },
+
+  nisa_museum_right: {
+    idle: "/characters/nisa/nisa_idle_right.png",
+    walk: [
+      "/characters/nisa/walk/nisa_museum_right/nisa_walk_1.png",
+      "/characters/nisa/walk/nisa_museum_right/nisa_walk_2.png",
+      "/characters/nisa/walk/nisa_museum_right/nisa_walk_3.png",
+      "/characters/nisa/walk/nisa_museum_right/nisa_walk_4.png",
+    ],
+    defaultScale: 1,
+    defaultOffsetX: 0,
+    defaultOffsetY: 0,
+  },
 };

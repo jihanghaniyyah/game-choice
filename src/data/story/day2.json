@@ -161,6 +161,7 @@
   "day2_017": {
     "id": "day2_017",
     "background": "/backgrounds/bedroom/malam.png",
+    "transition": "fade",
     "audios": "/audios/knock_door.mp3",
     "next": "day2_0171"
   },
@@ -168,11 +169,14 @@
   "day2_0171": {
     "id": "day2_0171",
     "background": "/backgrounds/bedroom/bedroom_messy.png",
+    "camera": {
+      "enabled": true
+    },
     "characters": [
       {
         "id": "melati",
         "image": "/characters/melati/melati_idle.png",
-        "position": "2"
+        "position": "3"
       }
     ],
     "audios": "/audios/knock_door.mp3",
@@ -182,7 +186,10 @@
   "day2_018": {
     "id": "day2_018",
     "type": "narration",
-    "background": "/backgrounds/bedroom/bedroom_messy.png",
+    "background": "/backgrounds/bedroom/bedroom_messy_open_door.png",
+    "camera": {
+      "enabled": true
+    },
     "characters": [
       {
         "id": "melati",
@@ -192,7 +199,9 @@
       {
         "id": "ibu",
         "image": "/characters/ibu/ibu_idle.png",
-        "position": "2"
+        "position": "1",
+        "asset": "ibu_bedroom",
+        "moveTo": "2"
       }
     ],
     "text": "Rumah terasa sunyi. Melati sedang melukis di kamarnya. Pintu kamarnya dibuka.",
@@ -202,7 +211,10 @@
   "day2_019": {
     "id": "day2_019",
     "type": "dialogue",
-    "background": "/backgrounds/bedroom/bedroom_messy.png",
+    "camera": {
+      "enabled": true
+    },
+    "background": "/backgrounds/bedroom/bedroom_messy_open_door.png",
     "characters": [
       {
         "id": "melati",
@@ -223,7 +235,10 @@
   "day2_020": {
     "id": "day2_020",
     "type": "dialogue",
-    "background": "/backgrounds/bedroom/bedroom_messy.png",
+    "camera": {
+      "enabled": true
+    },
+    "background": "/backgrounds/bedroom/bedroom_messy_open_door.png",
     "characters": [
       {
         "id": "melati",
@@ -244,7 +259,10 @@
   "day2_021": {
     "id": "day2_021",
     "type": "dialogue",
-    "background": "/backgrounds/bedroom/bedroom_messy.png",
+    "camera": {
+      "enabled": true
+    },
+    "background": "/backgrounds/bedroom/bedroom_messy_open_door.png",
     "characters": [
       {
         "id": "melati",
@@ -253,7 +271,7 @@
       },
       {
         "id": "ibu",
-        "image": "/characters/ibu/ibu_bicara_1.png",
+        "image": "/characters/ibu/ibu_idle.png",
         "position": "2"
       }
     ],
@@ -265,7 +283,10 @@
   "day2_022": {
     "id": "day2_022",
     "type": "dialogue",
-    "background": "/backgrounds/bedroom/bedroom_messy.png",
+    "camera": {
+      "enabled": true
+    },
+    "background": "/backgrounds/bedroom/bedroom_messy_open_door.png",
     "characters": [
       {
         "id": "melati",
@@ -286,7 +307,10 @@
   "day2_023": {
     "id": "day2_023",
     "type": "dialogue",
-    "background": "/backgrounds/bedroom/bedroom_messy.png",
+    "camera": {
+      "enabled": true
+    },
+    "background": "/backgrounds/bedroom/bedroom_messy_open_door.png",
     "characters": [
       {
         "id": "melati",
@@ -300,14 +324,17 @@
       }
     ],
     "speaker": "Ibu",
-    "text": " Ibu cuma mau yang terbaik buat kamu.",
+    "text": "Ibu cuma mau yang terbaik buat kamu.",
     "next": "day2_024"
   },
 
   "day2_024": {
     "id": "day2_024",
     "type": "dialogue",
-    "background": "/backgrounds/bedroom/bedroom_messy.png",
+    "camera": {
+      "enabled": true
+    },
+    "background": "/backgrounds/bedroom/bedroom_messy_open_door.png",
     "characters": [
       {
         "id": "melati",
@@ -316,7 +343,7 @@
       },
       {
         "id": "ibu",
-        "image": "/characters/ibu/ibu_bicara_1.png",
+        "image": "/characters/ibu/ibu_idle.png",
         "position": "2"
       }
     ],
@@ -328,7 +355,10 @@
   "day2_025": {
     "id": "day2_025",
     "type": "dialogue",
-    "background": "/backgrounds/bedroom/bedroom_messy.png",
+    "camera": {
+      "enabled": true
+    },
+    "background": "/backgrounds/bedroom/bedroom_messy_open_door.png",
     "characters": [
       {
         "id": "melati",
@@ -349,7 +379,10 @@
   "day2_026": {
     "id": "day2_026",
     "type": "dialogue",
-    "background": "/backgrounds/bedroom/bedroom_messy.png",
+    "camera": {
+      "enabled": true
+    },
+    "background": "/backgrounds/bedroom/bedroom_messy_open_door.png",
     "characters": [
       {
         "id": "melati",
@@ -370,6 +403,9 @@
   "day2_027": {
     "id": "day2_027",
     "type": "narration",
+    "camera": {
+      "enabled": true
+    },
     "background": "/backgrounds/bedroom/bedroom_messy.png",
     "characters": [
       {
@@ -385,7 +421,10 @@
   "day2_028": {
     "id": "day2_028",
     "type": "dialogue",
-    "background": "/backgrounds/bedroom/base.png",
+    "camera": {
+      "enabled": true
+    },
+    "background": "/backgrounds/bedroom/bedroom_messy.png",
     "characters": [
       {
         "id": "melati",
