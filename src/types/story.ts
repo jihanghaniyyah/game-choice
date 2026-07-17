@@ -1,3 +1,5 @@
+import { CHARACTER_ASSETS } from "@/data/characters";
+
 export type SceneType =
   | "splash"
   | "narration"
@@ -7,10 +9,16 @@ export type SceneType =
   | "overlay"
   | "popup"
   | "ending"
+  | "chat"
   | "epilogue"
   | "video"
   | "audio"
   | "image-choice";
+
+export interface ChatMessage {
+  from: "me" | "other";
+  text: string;
+}
 
 export interface Choice {
   label: string;
@@ -36,7 +44,10 @@ export interface Camera {
 export interface CharacterInstance {
   id: string;
   image: string;
+  asset?: keyof typeof CHARACTER_ASSETS;
+  walkFrames?: string[];
   position: 1 | 2 | 3 | 4 | 5;
+  moveTo?: 1 | 2 | 3 | 4 | 5;
   scale?: number;
   offsetX?: number;
   offsetY?: number;
@@ -74,6 +85,7 @@ export interface Scene {
   hotspots?: Hotspot[];
   choiceLayout?: "vertical" | "horizontal";
   controls?: "intro" | "default" | "none";
+  messages?: ChatMessage[];
   showNotebook?: boolean;
   video?: string;
   audio?: string;

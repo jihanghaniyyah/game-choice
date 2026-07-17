@@ -13,6 +13,9 @@ export function useStoryEngine() {
   const [readNotebooks, setReadNotebooks] = useState<string[]>([]);
   const [flash, setFlash] = useState(false);
   const [transition, setTransition] = useState(false);
+  const [cameraX, setCameraX] = useState(0);
+  const [gameSession, setGameSession] = useState(0);
+  const [visibleMessages, setVisibleMessages] = useState(1);
 
   useEffect(() => {
     const savedScene = localStorage.getItem(STORAGE_KEY);
@@ -28,6 +31,10 @@ export function useStoryEngine() {
   }, [currentSceneId]);
 
   useEffect(() => {
+    setVisibleMessages(1);
+  }, [currentSceneId]);
+
+  useEffect(() => {
     if (currentSceneId === "choice_friend_001" && visitedFriends.length === 3) {
       setCurrentSceneId("day2_008");
     }
@@ -36,6 +43,15 @@ export function useStoryEngine() {
   const nextScene = () => {
     console.log("NEXT CLICK");
     console.log("Current Scene:", currentScene);
+
+    if (
+      currentScene.type === "chat" &&
+      currentScene.messages &&
+      visibleMessages < currentScene.messages.length
+    ) {
+      setVisibleMessages((prev) => prev + 1);
+      return;
+    }
 
     if (!currentScene.next) {
       console.log("NEXT TIDAK ADA");
@@ -71,6 +87,18 @@ export function useStoryEngine() {
 
     setCurrentSceneId(currentScene.next);
   };
+
+  const moveCameraLeft = () => {
+    setCameraX((prev) => Math.min(prev + 250, 0));
+  };
+
+  const moveCameraRight = () => {
+    setCameraX((prev) => Math.max(prev - 250, -1000));
+  };
+
+  useEffect(() => {
+    console.log("Camera X:", cameraX);
+  }, [cameraX]);
 
   const choose = (nextId: string) => {
     setHistory((prev) => [...prev, currentSceneId]);
@@ -129,7 +157,9 @@ export function useStoryEngine() {
   const resetProgress = () => {
     localStorage.removeItem(STORAGE_KEY);
     setVisitedFriends([]);
+    setHistory([]);
     setCurrentSceneId(STARTING_SCENE);
+    setGameSession((prev) => prev + 1);
   };
 
   return {
@@ -138,10 +168,18 @@ export function useStoryEngine() {
     previousScene,
     choose,
     resetProgress,
+    gameSession,
     visitedFriends,
+
     flash,
     transition,
+
     markNotebookAsRead,
     readNotebooks,
+
+    cameraX,
+    moveCameraLeft,
+    moveCameraRight,
+    visibleMessages,
   };
 }

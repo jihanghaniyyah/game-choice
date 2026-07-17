@@ -1,46 +1,139 @@
 "use client";
 
-import Image from "next/image";
+import { useEffect, useState } from "react";
 import { Scene } from "@/types/story";
+import { CHARACTER_ASSETS } from "@/data/characters";
+import CharacterSprite from "./CharacterSprite";
 
 interface CharacterLayerProps {
   scene: Scene;
+  gameSession: number;
 }
 
-const POSITION_CLASS = {
-  1: "left-[2%]",
-  2: "left-[20%]",
-  3: "left-1/2 -translate-x-1/2",
-  4: "right-[20%]",
-  5: "right-[2%]",
+const POSITION_X = {
+  1: 10,
+  2: 20,
+  3: 50,
+  4: 80,
+  5: 90,
 } as const;
 
-export default function CharacterLayer({ scene }: CharacterLayerProps) {
+export default function CharacterLayer({
+  scene,
+  gameSession,
+}: CharacterLayerProps) {
+  const [positions, setPositions] = useState<Record<string, number>>({});
+  const [walkingCharacters, setWalkingCharacters] = useState<
+    Record<string, boolean>
+  >({});
+  const [facingRight, setFacingRight] = useState<Record<string, boolean>>({});
+
+  useEffect(() => {
+    scene.characters?.forEach((character) => {
+      const target = POSITION_X[character.moveTo ?? character.position];
+      const start = positions[character.id] ?? POSITION_X[character.position];
+
+      setFacingRight((prev) => ({
+        ...prev,
+        [character.id]: target >= start,
+      }));
+
+      if (start === target) return;
+
+      let current = start;
+
+      const distance = Math.abs(target - start);
+      const speed = Math.max(0.25, distance / 60);
+
+      setWalkingCharacters((prev) => ({
+        ...prev,
+        [character.id]: true,
+      }));
+
+      const interval = setInterval(() => {
+        if (Math.abs(current - target) <= speed) {
+          current = target;
+
+          setPositions((prev) => ({
+            ...prev,
+            [character.id]: target,
+          }));
+
+          setWalkingCharacters((prev) => ({
+            ...prev,
+            [character.id]: false,
+          }));
+
+          clearInterval(interval);
+          return;
+        }
+
+        current += current < target ? speed : -speed;
+
+        setPositions((prev) => ({
+          ...prev,
+          [character.id]: current,
+        }));
+      }, 16);
+    });
+  }, [scene]);
+
+  useEffect(() => {
+    const initialPositions: Record<string, number> = {};
+
+    scene.characters?.forEach((character) => {
+      initialPositions[character.id] = POSITION_X[character.position];
+    });
+
+    setPositions(initialPositions);
+    setWalkingCharacters({});
+    setFacingRight({});
+  }, [gameSession]);
+
   if (!scene.characters?.length) return null;
 
   return (
     <div className="absolute inset-0 z-20 pointer-events-none">
-      {scene.characters.map((character) => (
-        <div
-          key={character.id}
-          className={`absolute bottom-0 ${POSITION_CLASS[character.position]}`}
-          style={{
-            transform: `translate(${character.offsetX ?? 0}px, ${
-              character.offsetY ?? 0
-            }px) scale(${character.scale ?? 1})`,
-            transformOrigin: "bottom center",
-          }}
-        >
-          <Image
-            src={character.image}
-            alt={character.id}
-            width={650}
-            height={900}
-            priority
-            className="h-[88vh] w-auto object-contain"
-          />
-        </div>
-      ))}
+      {scene.characters.map((character) => {
+        const asset = character.asset
+          ? CHARACTER_ASSETS[character.asset]
+          : null;
+
+        console.log("Character Render", {
+          scene: scene.id,
+          id: character.id,
+          image: character.image,
+          asset: character.asset,
+          idle: asset?.idle,
+          walk: asset?.walk,
+          state: walkingCharacters[character.id] ? "walking" : "idle",
+        });
+
+        return (
+          <div
+            key={character.id}
+            className="absolute bottom-0"
+            style={{
+              left: `${positions[character.id] ?? POSITION_X[character.position]}%`,
+
+              transform: `
+              translate(calc(-50% + ${character.offsetX ?? 0}px), ${character.offsetY ?? 0}px)
+              scale(${character.scale ?? 1})
+            `,
+
+              transformOrigin: "bottom center",
+            }}
+          >
+            <CharacterSprite
+              image={asset?.idle ?? character.image}
+              walkFrames={asset?.walk ?? character.walkFrames}
+              state={walkingCharacters[character.id] ? "walking" : "idle"}
+              alt={character.id}
+              className="h-[88vh] w-auto object-contain"
+            />
+          </div>
+        );
+      })}
     </div>
   );
 }

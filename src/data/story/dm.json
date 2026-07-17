@@ -17,11 +17,15 @@
 
   "dm_003": {
     "id": "dm_003",
-    "type": "dialogue",
+    "type": "chat",
     "background": "/backgrounds/phone/phone_dm_raka.png",
-    "speaker": "Raka (komentar IG)",
-    "text": "Haii aku Raka. Ini kamu yang gambar? Keren banget perspektifnya. Jarang ada yang bisa nangkep lighting kayak gini.",
-    "next": "dm_004"
+    "next": "dm_004",
+    "messages": [
+      {
+        "from": "other",
+        "text": "Haii aku Raka. Ini kamu yang gambar? Keren banget perspektifnya. Jarang ada yang bisa nangkep lighting kayak gini."
+      }
+    ]
   },
 
   "dm_004": {
@@ -43,10 +47,14 @@
 
   "dm_007": {
     "id": "dm_007",
-    "type": "dialogue",
+    "type": "chat",
     "background": "/backgrounds/phone/phone_dm_raka.png",
-    "speaker": "Raka (DM)",
-    "text": "Hei, maaf DM langsung ya. Tadi lihat gambaran kamu. Kamu gambarnya di mana? Pake tablet atau manual? Soalnya kamu gambarnya bagus banget.",
+    "messages": [
+      {
+        "from": "other",
+        "text": "Hei, maaf DM langsung ya. Tadi lihat gambaran kamu. Kamu gambarnya di mana? Pake tablet atau manual? Soalnya kamu gambarnya bagus banget."
+      }
+    ],
     "next": "dm_008"
   },
 
@@ -72,20 +80,52 @@
 
   "dm_after_choice_001": {
     "id": "dm_after_choice_001",
-    "type": "dialogue",
+    "type": "chat",
     "background": "/backgrounds/phone/phone_dm_raka.png",
-    "speaker": "Raka",
-    "text": "Kamu kelasnya sibuk banget ya? Kayaknya stress dari postingan ulang kamu.",
-    "next": "dm_010"
+    "messages": [
+      {
+        "from": "me",
+        "text": "Makasih ya! Aku gambar manual biasanya"
+      },
+      {
+        "from": "other",
+        "text": "Kamu kelasnya sibuk banget ya? Kayaknya stress dari postingan ulang kamu."
+      },
+      {
+        "from": "me",
+        "text": "Haha iya, lagi banyak PR. Nilai juga lagi ga bagus."
+      },
+      {
+        "from": "other",
+        "text": " Ih, padahal gambarnya sekeren ini. Sayang banget kalau kamu down terus. Orang sekreatif kamu harusnya lebih diapresiasi. "
+      }
+    ],
+    "next": "dm_012"
   },
 
   "dm_after_choice_002": {
     "id": "dm_after_choice_002",
-    "type": "dialogue",
+    "type": "chat",
     "background": "/backgrounds/phone/phone_dm_raka.png",
-    "speaker": "Raka",
-    "text": "Iyaa aku juga suka. Kamu kelasnya sibuk banget ya? Kayaknya stress dari postingan ulang kamu.",
-    "next": "dm_010"
+    "messages": [
+      {
+        "from": "me",
+        "text": "Hehe beneran? Aku suka banget nih latihan perspektif! Kamu juga suka gambar?"
+      },
+      {
+        "from": "other",
+        "text": "Iyaa aku juga suka. Kamu kelasnya sibuk banget ya? Kayaknya stress dari postingan ulang kamu."
+      },
+      {
+        "from": "me",
+        "text": "Haha iya, lagi banyak PR. Nilai juga lagi ga bagus."
+      },
+      {
+        "from": "other",
+        "text": " Ih, padahal gambarnya sekeren ini. Sayang banget kalau kamu down terus. Orang sekreatif kamu harusnya lebih diapresiasi. "
+      }
+    ],
+    "next": "dm_012"
   },
 
   "dm_after_choice_003": {
@@ -96,19 +136,22 @@
 
   "dm_010": {
     "id": "dm_010",
-    "type": "dialogue",
+    "type": "chat",
     "background": "/backgrounds/phone/phone_dm_raka.png",
-    "speaker": "Melati",
-    "text": " Haha iya, lagi banyak PR. Nilai juga lagi ga bagus.",
-    "next": "dm_011"
-  },
-
-  "dm_011": {
-    "id": "dm_011",
-    "type": "dialogue",
-    "background": "/backgrounds/phone/phone_dm_raka.png",
-    "speaker": "Raka",
-    "text": " Ih, padahal gambarnya sekeren ini. Sayang banget kalau kamu down terus. Orang sekreatif kamu harusnya lebih diapresiasi. ",
+    "messages": [
+      {
+        "from": "other",
+        "text": "Kamu kelasnya sibuk banget ya? Kayaknya stress dari postingan ulang kamu."
+      },
+      {
+        "from": "me",
+        "text": "Haha iya, lagi banyak PR. Nilai juga lagi ga bagus."
+      },
+      {
+        "from": "other",
+        "text": " Ih, padahal gambarnya sekeren ini. Sayang banget kalau kamu down terus. Orang sekreatif kamu harusnya lebih diapresiasi. "
+      }
+    ],
     "next": "dm_012"
   },
 

@@ -3,6 +3,7 @@
 import GameLayout from "./GameLayout";
 import GameControls from "./GameControls";
 import SceneRenderer from "./SceneRenderer";
+import PanoramaControls from "./PanoramaControls";
 import { useStoryEngine } from "@/hooks/useStoryEngine";
 
 export default function StoryEngine() {
@@ -12,11 +13,16 @@ export default function StoryEngine() {
     previousScene,
     choose,
     resetProgress,
+    gameSession,
     visitedFriends,
     flash,
     transition,
     readNotebooks,
     markNotebookAsRead,
+    cameraX,
+    moveCameraLeft,
+    moveCameraRight,
+    visibleMessages,
   } = useStoryEngine();
 
   return (
@@ -30,7 +36,19 @@ export default function StoryEngine() {
         transition={transition}
         readNotebooks={readNotebooks}
         markNotebookAsRead={markNotebookAsRead}
+        cameraX={cameraX}
+        gameSession={gameSession}
+        visibleMessages={visibleMessages}
       />
+
+      {currentScene.camera?.enabled && (
+        <PanoramaControls
+          onLeft={moveCameraLeft}
+          onRight={moveCameraRight}
+          canMoveLeft={cameraX < 0}
+          canMoveRight={cameraX > -1000}
+        />
+      )}
 
       <GameControls
         scene={currentScene}

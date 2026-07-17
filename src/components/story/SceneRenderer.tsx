@@ -8,6 +8,7 @@ import CharacterLayer from "./CharacterLayer";
 import OverlayLayer from "./OverlayLayer";
 import SplashBox from "./SplashBox";
 import DialogueBox from "./DialogueBox";
+import ChatBox from "./ChatBox";
 import NarrationBox from "./NarrationBox";
 import ChoiceList from "./ChoiceList";
 import InfoBox from "./InfoBox";
@@ -27,6 +28,9 @@ interface SceneRendererProps {
   transition: boolean;
   readNotebooks: string[];
   markNotebookAsRead: () => void;
+  cameraX: number;
+  gameSession: number;
+  visibleMessages: number;
 }
 
 export default function SceneRenderer({
@@ -38,6 +42,9 @@ export default function SceneRenderer({
   transition,
   readNotebooks,
   markNotebookAsRead,
+  cameraX,
+  gameSession,
+  visibleMessages,
 }: SceneRendererProps) {
   const [showOverlay, setShowOverlay] = useState(false);
   useEffect(() => {
@@ -47,12 +54,12 @@ export default function SceneRenderer({
   return (
     <div className="relative h-full w-full overflow-hidden">
       {/* Background */}
-      <BackgroundLayer scene={scene} />
+      <BackgroundLayer scene={scene} cameraX={cameraX} />
 
       {scene.audio && <AudioPlayer src={scene.audio} />}
 
       {/* Character */}
-      <CharacterLayer scene={scene} />
+      <CharacterLayer scene={scene} gameSession={gameSession} />
 
       {/* Overlay Gelap */}
       <div className="absolute inset-0 z-30" />
@@ -84,6 +91,13 @@ export default function SceneRenderer({
         )}
 
         {scene.type === "narration" && <NarrationBox text={scene.text ?? ""} />}
+
+        {scene.type === "chat" && (
+          <ChatBox
+            messages={scene.messages ?? []}
+            visibleCount={visibleMessages}
+          />
+        )}
 
         {scene.type === "choice" && (
           <ChoiceList

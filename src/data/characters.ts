@@ -43,3 +43,31 @@ export const CHARACTER_COLORS: Record<string, string> = {
 
   Guru: "bg-yellow-500 ",
 };
+
+export const CHARACTER_ASSETS = {
+  melati_bedroom: {
+    idle: "/characters/melati/walk/melati_bedroom/melati_walk_0.png",
+    walk: [
+      "/characters/melati/walk/melati_bedroom/melati_walk_1.png",
+      "/characters/melati/walk/melati_bedroom/melati_walk_2.png",
+      "/characters/melati/walk/melati_bedroom/melati_walk_3.png",
+      "/characters/melati/walk/melati_bedroom/melati_walk_4.png",
+    ],
+    defaultScale: 1,
+    defaultOffsetX: 0,
+    defaultOffsetY: 0,
+  },
+
+  ayah_bedroom: {
+    idle: "/characters/ayah/ayah_idle.png",
+    walk: [
+      "/characters/ayah/walk/ayah_bedroom/ayah_walk_1.png",
+      "/characters/ayah/walk/ayah_bedroom/ayah_walk_2.png",
+      "/characters/ayah/walk/ayah_bedroom/ayah_walk_3.png",
+      "/characters/ayah/walk/ayah_bedroom/ayah_walk_4.png",
+    ],
+    defaultScale: 1,
+    defaultOffsetX: 0,
+    defaultOffsetY: 0,
+  },
+};
