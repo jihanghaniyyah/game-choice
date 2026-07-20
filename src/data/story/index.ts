@@ -5,6 +5,7 @@ import day1 from "./day1.json";
 import dm from "./dm.json";
 import competition from "./competition.json";
 import day2 from "./day2.json";
+import hotspot from "./hotspot.json";
 import friends from "./friends.json";
 import hotel from "./hotel.json";
 import museum from "./museum.json";
@@ -17,6 +18,7 @@ export const story = {
   ...dm,
   ...competition,
   ...day2,
+  ...hotspot,
   ...friends,
   ...hotel,
   ...museum,

@@ -9,11 +9,15 @@ interface ImageChoiceProps {
 
 export default function ImageChoice({ hotspots, onChoose }: ImageChoiceProps) {
   return (
-    <>
+    <div className="pointer-events-auto">
       {hotspots.map((spot, index) => (
         <button
           key={index}
-          onClick={() => onChoose(spot.next)}
+          onClick={() => {
+            if (spot.next) {
+              onChoose(spot.next);
+            }
+          }}
           className="
             absolute
             z-40
@@ -33,6 +37,6 @@ export default function ImageChoice({ hotspots, onChoose }: ImageChoiceProps) {
           }}
         />
       ))}
-    </>
+    </div>
   );
 }

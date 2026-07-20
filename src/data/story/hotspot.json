@@ -1,0 +1,9 @@
+{
+  "desk_001": {
+    "id": "desk_001",
+    "background": "/backgrounds/bedroom/hotspot/desk.png",
+    "camera": {
+      "enabled": true
+    }
+  }
+}

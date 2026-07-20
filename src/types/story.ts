@@ -59,11 +59,12 @@ export interface Overlay {
 }
 
 export interface Hotspot {
+  id: string;
   left: string;
   top: string;
   width: string;
   height: string;
-  next: string;
+  next?: string;
 }
 
 export interface Scene {

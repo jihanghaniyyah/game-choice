@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect } from "react";
+
 import GameLayout from "./GameLayout";
 import GameControls from "./GameControls";
 import SceneRenderer from "./SceneRenderer";
@@ -23,7 +25,36 @@ export default function StoryEngine() {
     moveCameraLeft,
     moveCameraRight,
     visibleMessages,
+    roomState,
+    completeRoomTask,
+    showWardrobeOverlay,
+    setShowWardrobeOverlay,
   } = useStoryEngine();
+
+  const handleWardrobeComplete = () => {
+    completeRoomTask("wardrobe");
+    setShowWardrobeOverlay(false);
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      switch (event.key) {
+        case "ArrowRight":
+          nextScene();
+          break;
+
+        case "ArrowLeft":
+          previousScene();
+          break;
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [nextScene, previousScene]);
 
   return (
     <GameLayout>
@@ -37,8 +68,11 @@ export default function StoryEngine() {
         readNotebooks={readNotebooks}
         markNotebookAsRead={markNotebookAsRead}
         cameraX={cameraX}
+        roomState={roomState}
         gameSession={gameSession}
         visibleMessages={visibleMessages}
+        showWardrobeOverlay={showWardrobeOverlay}
+        onWardrobeComplete={handleWardrobeComplete}
       />
 
       {currentScene.camera?.enabled && (

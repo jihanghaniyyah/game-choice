@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import { Hotspot } from "@/types/story";
+import HotspotLayer from "./HotspotLayer";
 
 interface BackgroundPanoramicProps {
   background: string;
@@ -18,7 +20,6 @@ export default function BackgroundPanoramic({
             absolute
             left-0
             top-0
-            flex
             h-full
             transition-transform
             duration-700
@@ -28,21 +29,24 @@ export default function BackgroundPanoramic({
           transform: `translateX(${cameraX}px)`,
         }}
       >
-        <Image
-          src={background}
-          alt="Background"
-          width={3200}
-          height={1080}
-          priority
-          draggable={false}
-          className="
-            h-screen
-            max-w-none
-            w-auto
-            select-none
-            object-cover
+        <div className="relative">
+          <Image
+            src={background}
+            alt="Background"
+            width={3200}
+            height={1080}
+            priority
+            draggable={false}
+            className="
+                h-screen
+                max-w-none
+                w-auto
+                select-none
+                object-cover
+                pointer-events-none
             "
-        />
+          />
+        </div>
       </div>
     </div>
   );

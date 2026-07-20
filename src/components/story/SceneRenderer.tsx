@@ -12,6 +12,7 @@ import ChatBox from "./ChatBox";
 import NarrationBox from "./NarrationBox";
 import ChoiceList from "./ChoiceList";
 import InfoBox from "./InfoBox";
+import HotspotLayer from "./HotspotLayer";
 import VideoPlayer from "./VideoPlayer";
 import AudioPlayer from "./AudioPlayer";
 import FlashEffect from "./FlashEffect";
@@ -30,8 +31,16 @@ interface SceneRendererProps {
   readNotebooks: string[];
   markNotebookAsRead: () => void;
   cameraX: number;
+  roomState: {
+    desk: boolean;
+    bed: boolean;
+    painting: boolean;
+    wardrobe: boolean;
+  };
   gameSession: number;
   visibleMessages: number;
+  showWardrobeOverlay: boolean;
+  onWardrobeComplete: () => void;
 }
 
 export default function SceneRenderer({
@@ -44,26 +53,45 @@ export default function SceneRenderer({
   readNotebooks,
   markNotebookAsRead,
   cameraX,
+  roomState,
   gameSession,
   visibleMessages,
+  showWardrobeOverlay,
+  onWardrobeComplete,
 }: SceneRendererProps) {
   const [showOverlay, setShowOverlay] = useState(false);
   useEffect(() => {
     setShowOverlay(false);
   }, [scene.id]);
 
+  const allTasksCompleted =
+    roomState.desk && roomState.bed && roomState.painting && roomState.wardrobe;
+
   return (
     <div className="relative h-full w-full overflow-hidden">
       {/* Background */}
-      <BackgroundLayer scene={scene} cameraX={cameraX} />
+      <BackgroundLayer
+        scene={scene}
+        cameraX={cameraX}
+        roomState={roomState}
+        onHotspotClick={choose}
+      />
 
       {scene.audio && <AudioPlayer src={scene.audio} />}
 
       {/* Character */}
       <CharacterLayer scene={scene} gameSession={gameSession} />
 
-      {/* Overlay Gelap */}
-      <div className="absolute inset-0 z-30" />
+      {scene.hotspots && scene.id === "day2_029" && (
+        <HotspotLayer
+          hotspots={scene.hotspots}
+          onClick={choose}
+          roomState={roomState}
+          cameraX={cameraX}
+          showWardrobeOverlay={showWardrobeOverlay}
+          onWardrobeComplete={onWardrobeComplete}
+        />
+      )}
 
       {/* Notebook Icon */}
       {scene.showNotebook !== false && (
@@ -83,8 +111,31 @@ export default function SceneRenderer({
         onClose={() => setShowOverlay(false)}
       />
 
+      {scene.id === "day2_029" && allTasksCompleted && (
+        <button
+          onClick={nextScene}
+          className="
+      absolute
+      bottom-6
+      right-8
+      z-50
+      cursor-pointer
+      rounded-xl
+      bg-green-600
+      px-6
+      py-3
+      font-semibold
+      text-white
+      transition
+      hover:bg-green-500
+    "
+        >
+          Lanjut →
+        </button>
+      )}
+
       {/* UI Layer */}
-      <div className="absolute inset-0 z-40">
+      <div className="absolute inset-0 z-40 pointer-events-none">
         {scene.type === "splash" && <SplashBox onStart={nextScene} />}
 
         {scene.type === "dialogue" && (

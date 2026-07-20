@@ -15,15 +15,17 @@ export default function NotebookButton({
     <button
       onClick={onOpen}
       className="
-        absolute
-        right-6
-        top-6
-        z-[45]
-        cursor-pointer
-        transition
-        duration-200
-        hover:scale-110
-      "
+    group
+    absolute
+    right-6
+    top-6
+    z-[45]
+    cursor-pointer
+    transition-all
+    duration-200
+    hover:scale-110
+    active:scale-95
+  "
     >
       {/* Notebook */}
       <Image
@@ -31,6 +33,12 @@ export default function NotebookButton({
         alt="Notebook"
         width={300}
         height={300}
+        className="
+    drop-shadow-[0_0_10px_rgba(255,255,255,0.65)]
+    transition-all
+    duration-200
+    group-hover:drop-shadow-[0_0_18px_rgba(255,255,255,0.9)]
+  "
       />
 
       {/* Notification */}

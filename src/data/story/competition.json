@@ -75,18 +75,20 @@
     "background": "/backgrounds/museum/photo_choice.png",
     "hotspots": [
       {
+        "id": "photo_top",
         "left": "40%",
         "top": "13%",
         "width": "23%",
         "height": "28%",
-        "next": "competition_008"
+        "next": "competition_009"
       },
       {
+        "id": "photo_bottom",
         "left": "40%",
         "top": "54%",
         "width": "23%",
         "height": "28%",
-        "next": "competition_009"
+        "next": "competition_008"
       }
     ]
   },

@@ -21,11 +21,6 @@ export default function CharacterSprite({
   const [currentImage, setCurrentImage] = useState(image);
 
   useEffect(() => {
-    console.log({
-      alt,
-      state,
-      walkFrames,
-    });
     if (state === "idle" || !walkFrames?.length) {
       setCurrentImage(image);
       return;

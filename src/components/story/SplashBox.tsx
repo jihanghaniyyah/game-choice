@@ -8,7 +8,7 @@ interface SplashBoxProps {
 
 export default function SplashBox({ onStart }: SplashBoxProps) {
   return (
-    <div className="absolute inset-0 z-30 flex items-center">
+    <div className="absolute inset-0 z-30 flex items-center pointer-events-auto">
       {/* Gradient kiri */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/20 to-transparent" />
 

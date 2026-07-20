@@ -15,6 +15,13 @@ export function useStoryEngine() {
   const [transition, setTransition] = useState(false);
   const [cameraX, setCameraX] = useState(0);
   const [gameSession, setGameSession] = useState(0);
+  const [roomState, setRoomState] = useState({
+    desk: false,
+    bed: false,
+    painting: false,
+    wardrobe: false,
+  });
+  const [showWardrobeOverlay, setShowWardrobeOverlay] = useState(false);
   const [visibleMessages, setVisibleMessages] = useState(1);
 
   useEffect(() => {
@@ -40,14 +47,11 @@ export function useStoryEngine() {
     }
   }, [visitedFriends, currentSceneId]);
 
-  const nextScene = () => {
-    console.log({
-      visibleMessages,
-      totalMessages: currentScene.messages?.length,
-    });
-    console.log("NEXT CLICK");
-    console.log("Current Scene:", currentScene);
+  useEffect(() => {
+    console.log("ROOM STATE:", roomState);
+  }, [roomState]);
 
+  const nextScene = () => {
     if (
       currentScene.type === "chat" &&
       currentScene.chatMode !== "all" &&
@@ -59,7 +63,6 @@ export function useStoryEngine() {
     }
 
     if (!currentScene.next) {
-      console.log("NEXT TIDAK ADA");
       return;
     }
 
@@ -101,11 +104,45 @@ export function useStoryEngine() {
     setCameraX((prev) => Math.max(prev - 250, -1000));
   };
 
-  useEffect(() => {
-    console.log("Camera X:", cameraX);
-  }, [cameraX]);
+  const completeRoomTask = (task: "desk" | "bed" | "painting" | "wardrobe") => {
+    setRoomState((prev) => ({
+      ...prev,
+      [task]: true,
+    }));
+  };
 
   const choose = (nextId: string) => {
+    const isBedroomExploration = currentScene.id === "day2_029";
+
+    if (isBedroomExploration) {
+      switch (nextId) {
+        case "desk":
+          setRoomState((prev) => ({
+            ...prev,
+            desk: true,
+          }));
+          return;
+
+        case "painting":
+          setRoomState((prev) => ({
+            ...prev,
+            painting: true,
+          }));
+          return;
+
+        case "wardrobe":
+          setShowWardrobeOverlay(true);
+          return;
+
+        case "bed":
+          setRoomState((prev) => ({
+            ...prev,
+            bed: true,
+          }));
+          return;
+      }
+    }
+
     setHistory((prev) => [...prev, currentSceneId]);
 
     if (nextId.startsWith("kira")) {
@@ -186,5 +223,12 @@ export function useStoryEngine() {
     moveCameraLeft,
     moveCameraRight,
     visibleMessages,
+
+    roomState,
+    setRoomState,
+    completeRoomTask,
+
+    showWardrobeOverlay,
+    setShowWardrobeOverlay,
   };
 }

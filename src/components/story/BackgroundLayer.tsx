@@ -3,28 +3,50 @@
 import Image from "next/image";
 import BackgroundPanoramic from "./BackgroundPanoramic";
 import { Scene } from "@/types/story";
+import { getBedroomBackground } from "@/utils/getBedroomBackground";
 
 interface BackgroundLayerProps {
   scene: Scene;
   cameraX: number;
+
+  roomState?: {
+    desk: boolean;
+    bed: boolean;
+    painting: boolean;
+    wardrobe: boolean;
+  };
+
+  onHotspotClick?: (id: string) => void;
 }
 
 export default function BackgroundLayer({
   scene,
   cameraX,
+  roomState,
 }: BackgroundLayerProps) {
-  if (!scene.background) return null;
+  const isBedroomExploration = scene.id === "day2_029";
 
-  if (scene.camera?.enabled && scene.background) {
-    return (
-      <BackgroundPanoramic background={scene.background} cameraX={cameraX} />
-    );
+  const background = isBedroomExploration
+    ? getBedroomBackground(roomState!)
+    : scene.background;
+
+  console.log({
+    scene: scene.id,
+    isBedroomExploration,
+    sceneBackground: scene.background,
+    finalBackground: background,
+  });
+
+  if (!background) return null;
+
+  if (scene.camera?.enabled && background) {
+    return <BackgroundPanoramic background={background} cameraX={cameraX} />;
   }
 
   return (
     <div className="absolute inset-0 z-0">
       <Image
-        src={scene.background}
+        src={background}
         alt="Background"
         fill
         priority

@@ -434,12 +434,58 @@
     ],
     "speaker": "(Pikiran Melati)",
     "text": "Aku ngerti Ibu capek. Tapi rasanya... belum sempat aku jelasin apa yang aku mau.",
-    "transition": "fade",
     "next": "day2_029"
   },
 
   "day2_029": {
     "id": "day2_029",
+    "background": "/backgrounds/bedroom/bedroom_messy.png",
+    "camera": {
+      "enabled": true
+    },
+    "characters": [
+      {
+        "id": "melati",
+        "image": "/characters/melati/melati_idle.png",
+        "position": "3"
+      }
+    ],
+    "hotspots": [
+      {
+        "id": "desk",
+        "left": "300px",
+        "top": "170px",
+        "width": "500px",
+        "height": "650px"
+      },
+      {
+        "id": "painting",
+        "left": "950px",
+        "top": "170px",
+        "width": "480px",
+        "height": "700px"
+      },
+      {
+        "id": "wardrobe",
+        "left": "1450px",
+        "top": "150px",
+        "width": "470px",
+        "height": "600px"
+      },
+      {
+        "id": "bed",
+        "left": "2100px",
+        "top": "300px",
+        "width": "750px",
+        "height": "600px"
+      }
+    ],
+    "transition": "fade",
+    "next": "day2_030"
+  },
+
+  "day2_030": {
+    "id": "day2_030",
     "type": "narration",
     "background": "/backgrounds/phone/phone_conversation.png",
     "text": "Setelah targetnya selesai, Melati rebahan di kasur dan membuka HP. Ada notif dari Raka.",

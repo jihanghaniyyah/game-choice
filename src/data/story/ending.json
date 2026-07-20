@@ -105,7 +105,7 @@
   "ending_instinct_007": {
     "id": "ending_instinct_007",
     "background": "/backgrounds/ending/ending_1_2.png",
-    "next": "ending_instinct_007"
+    "next": "epilogue_001"
   },
 
   "ending_escape_001": {

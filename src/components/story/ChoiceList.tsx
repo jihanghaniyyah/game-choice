@@ -26,7 +26,7 @@ export default function ChoiceList({
 
   return (
     <div
-      className={`absolute bottom-32 left-1/2 z-60 -translate-x-1/2 flex gap-3 ${
+      className={`absolute bottom-32 left-1/2 z-60 -translate-x-1/2 flex gap-3 pointer-events-auto ${
         layout === "horizontal"
           ? "flex-row justify-center"
           : "w-[600px] flex-col"
@@ -37,18 +37,37 @@ export default function ChoiceList({
           key={choice.label}
           onClick={() => onChoose(choice.next)}
           className={`
-    cursor-pointer
-    rounded-xl
-    px-8
-    py-4
-    min-w-[180px]
-    font-semibold
-    text-white
-    shadow-lg
-    transition-all
-    duration-200
-    hover:scale-105
+            cursor-pointer
 
+            rounded-2xl
+            border-2
+            border-slate-800
+
+            bg-white/85
+
+            px-8
+            py-4
+            min-w-[180px]
+
+            text-left
+            font-semibold
+            text-slate-900
+
+            shadow-xl
+            backdrop-blur-sm
+
+            transition-all
+            duration-200
+            ease-out
+
+            hover:-translate-y-1
+            hover:bg-white
+            hover:shadow-2xl
+            hover:border-slate-900
+
+            active:translate-y-0
+            active:scale-[0.98]
+            active:shadow-lg
     ${
       choice.label === "YA"
         ? "bg-green-600 hover:bg-green-500 border border-green-500"

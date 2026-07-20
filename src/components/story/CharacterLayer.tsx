@@ -91,29 +91,12 @@ export default function CharacterLayer({
   }, [gameSession]);
 
   if (!scene.characters?.length) return null;
-  console.log(
-    "Raka walking:",
-    walkingCharacters["raka"],
-    "Position:",
-    positions["raka"],
-  );
   return (
     <div className="absolute inset-0 z-20 pointer-events-none">
       {scene.characters.map((character) => {
         const asset = character.asset
           ? CHARACTER_ASSETS[character.asset]
           : null;
-
-        console.log("Character Render", {
-          scene: scene.id,
-          id: character.id,
-          image: character.image,
-          asset: character.asset,
-          idle: asset?.idle,
-          walk: asset?.walk,
-          state: walkingCharacters[character.id] ? "walking" : "idle",
-        });
-
         return (
           <div
             key={character.id}
