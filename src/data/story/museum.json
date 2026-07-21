@@ -1,4 +1,83 @@
 {
+  "galeri_001": {
+    "id": "galeri_001",
+    "type": "search",
+    "background": "/backgrounds/museum/museum.png",
+    "camera": {
+      "enabled": true
+    },
+    "objective": "Cari Raka",
+    "target": "raka",
+    "wrongMessage": "Itu bukan Raka.",
+    "hotspots": [
+      {
+        "id": "orang1",
+        "left": "10%",
+        "top": "15%",
+        "width": "20%",
+        "height": "30%"
+      },
+      {
+        "id": "orang2",
+        "left": "5%",
+        "top": "60%",
+        "width": "15%",
+        "height": "30%"
+      },
+      {
+        "id": "orang3",
+        "left": "25%",
+        "top": "60%",
+        "width": "10%",
+        "height": "30%"
+      },
+      {
+        "id": "orang4",
+        "left": "32%",
+        "top": "15%",
+        "width": "15%",
+        "height": "40%"
+      },
+      {
+        "id": "orang5",
+        "left": "55%",
+        "top": "15%",
+        "width": "15%",
+        "height": "30%"
+      },
+      {
+        "id": "orang6",
+        "left": "75%",
+        "top": "15%",
+        "width": "10%",
+        "height": "40%"
+      },
+      {
+        "id": "orang7",
+        "left": "45%",
+        "top": "55%",
+        "width": "15%",
+        "height": "40%"
+      },
+      {
+        "id": "orang8",
+        "left": "68%",
+        "top": "55%",
+        "width": "10%",
+        "height": "30%"
+      },
+
+      {
+        "id": "raka",
+        "left": "88%",
+        "top": "0%",
+        "width": "8%",
+        "height": "80%"
+      }
+    ],
+    "next": "museum_001"
+  },
+
   "museum_001": {
     "id": "museum_001",
     "type": "narration",

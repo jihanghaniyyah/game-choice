@@ -342,6 +342,29 @@
     "type": "narration",
     "background": "/backgrounds/phone/phone_off.png",
     "text": "Tugas, belajar untuk ulangan besok. Setelah semuanya selesai, Melati akhirnya meraih ponselnya.",
+    "next": "day1_018"
+  },
+
+  "day1_018": {
+    "id": "day1_018",
+    "type": "image-choice",
+    "background": "/backgrounds/phone/phone_off.png",
+    "objective": "Nyalakan HP",
+    "hotspots": [
+      {
+        "id": "home_button",
+        "left": "49%",
+        "top": "90%",
+        "width": "6%",
+        "height": "9%",
+        "next": "day1_019"
+      }
+    ]
+  },
+
+  "day1_019": {
+    "id": "day1_019",
+    "background": "/backgrounds/phone/phone_profile_melati.png",
     "next": "dm_001"
   }
 }

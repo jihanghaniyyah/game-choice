@@ -1,13 +1,6 @@
 {
   "competition_001": {
     "id": "competition_001",
-    "background": "/backgrounds/museum/hari_perlombaan.png",
-    "transition": "fade",
-    "next": "competition_0011"
-  },
-
-  "competition_0011": {
-    "id": "competition_0011",
     "type": "narration",
     "background": "/backgrounds/museum/competition.png",
     "text": "Melati dan Nisa tiba.",

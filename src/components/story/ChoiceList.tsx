@@ -24,9 +24,27 @@ export default function ChoiceList({
     return true;
   });
 
+  const getButtonColor = (label: string) => {
+    switch (label) {
+      case "YA":
+        return "bg-green-600 hover:bg-green-500 border-green-500 text-white";
+
+      case "TIDAK":
+        return "bg-red-600 hover:bg-red-500 border-red-500 text-white";
+
+      default:
+        return "bg-white/85 hover:bg-white border-slate-800 text-slate-900 hover:border-slate-900";
+    }
+  };
+
+  const isYesNoChoice =
+    filteredChoices.length === 2 &&
+    filteredChoices.some((c) => c.label === "YA") &&
+    filteredChoices.some((c) => c.label === "TIDAK");
+
   return (
     <div
-      className={`absolute bottom-32 left-1/2 z-60 -translate-x-1/2 flex gap-3 pointer-events-auto ${
+      className={`absolute bottom-20 left-1/2 z-60 -translate-x-1/2 flex gap-3 pointer-events-auto ${
         layout === "horizontal"
           ? "flex-row justify-center"
           : "w-[600px] flex-col"
@@ -41,15 +59,12 @@ export default function ChoiceList({
 
             rounded-2xl
             border-2
-            border-slate-800
-
-            bg-white/85
 
             px-8
             py-4
             min-w-[180px]
 
-            text-left
+            ${isYesNoChoice ? "text-center" : "text-left"}
             font-semibold
             text-slate-900
 
@@ -61,20 +76,12 @@ export default function ChoiceList({
             ease-out
 
             hover:-translate-y-1
-            hover:bg-white
             hover:shadow-2xl
-            hover:border-slate-900
 
             active:translate-y-0
             active:scale-[0.98]
             active:shadow-lg
-    ${
-      choice.label === "YA"
-        ? "bg-green-600 hover:bg-green-500 border border-green-500"
-        : choice.label === "TIDAK"
-          ? "bg-slate-600 hover:bg-slate-500 border border-slate-500"
-          : "bg-slate-800 hover:bg-slate-700 border border-slate-600 text-left"
-    }
+    ${getButtonColor(choice.label)}
   `}
         >
           {choice.label}

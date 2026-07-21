@@ -13,13 +13,16 @@ import NarrationBox from "./NarrationBox";
 import ChoiceList from "./ChoiceList";
 import InfoBox from "./InfoBox";
 import HotspotLayer from "./HotspotLayer";
+import WardrobePanoramaOverlay from "./WardrobePanoramaOverlay";
 import VideoPlayer from "./VideoPlayer";
 import AudioPlayer from "./AudioPlayer";
 import FlashEffect from "./FlashEffect";
 import FadeTransition from "./FadeTransition";
 import ImageChoice from "./ImageChoice";
 import NotebookButton from "./NotebookButton";
+import ObjectivePanel from "./ObjectivePanel";
 import OverlayUI from "./OverlayUI";
+import SearchHotspot from "./SearchHotspot";
 
 interface SceneRendererProps {
   scene: Scene;
@@ -37,10 +40,9 @@ interface SceneRendererProps {
     painting: boolean;
     wardrobe: boolean;
   };
+  wardrobeStep: number;
   gameSession: number;
   visibleMessages: number;
-  showWardrobeOverlay: boolean;
-  onWardrobeComplete: () => void;
 }
 
 export default function SceneRenderer({
@@ -56,8 +58,7 @@ export default function SceneRenderer({
   roomState,
   gameSession,
   visibleMessages,
-  showWardrobeOverlay,
-  onWardrobeComplete,
+  wardrobeStep,
 }: SceneRendererProps) {
   const [showOverlay, setShowOverlay] = useState(false);
   useEffect(() => {
@@ -79,6 +80,8 @@ export default function SceneRenderer({
 
       {scene.audio && <AudioPlayer src={scene.audio} />}
 
+      <WardrobePanoramaOverlay step={wardrobeStep} cameraX={cameraX} />
+
       {/* Character */}
       <CharacterLayer scene={scene} gameSession={gameSession} />
 
@@ -88,8 +91,6 @@ export default function SceneRenderer({
           onClick={choose}
           roomState={roomState}
           cameraX={cameraX}
-          showWardrobeOverlay={showWardrobeOverlay}
-          onWardrobeComplete={onWardrobeComplete}
         />
       )}
 
@@ -104,7 +105,8 @@ export default function SceneRenderer({
         />
       )}
 
-      {/* Notebook Overlay */}
+      {scene.objective && <ObjectivePanel objective={scene.objective} />}
+
       <OverlayLayer
         scene={scene}
         visible={showOverlay}
@@ -163,6 +165,20 @@ export default function SceneRenderer({
 
         {scene.type === "image-choice" && (
           <ImageChoice hotspots={scene.hotspots ?? []} onChoose={choose} />
+        )}
+
+        {scene.type === "search" && (
+          <SearchHotspot
+            hotspots={scene.hotspots ?? []}
+            target={scene.target ?? ""}
+            wrongMessage={scene.wrongMessage ?? "Bukan ini."}
+            cameraX={cameraX}
+            onSuccess={() => {
+              if (scene.next) {
+                choose(scene.next);
+              }
+            }}
+          />
         )}
 
         {scene.overlayUI?.type === "narration" && (

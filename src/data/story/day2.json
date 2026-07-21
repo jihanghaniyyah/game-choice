@@ -53,6 +53,7 @@
     "id": "choice_friend_001",
     "type": "choice",
     "background": "/backgrounds/school/cafeteria_friends.png",
+    "objective": "Lihat reaksi Nisa, Kira, dan Dea",
     "choices": [
       {
         "label": "[A] Dengar reaksi KIRA",
@@ -162,7 +163,6 @@
     "id": "day2_017",
     "background": "/backgrounds/bedroom/malam.png",
     "transition": "fade",
-    "audios": "/audios/knock_door.mp3",
     "next": "day2_0171"
   },
 
@@ -443,6 +443,7 @@
     "camera": {
       "enabled": true
     },
+    "objective": "Rapihkan meja belajar, tempat melukis, lemari, dan meja belajar",
     "characters": [
       {
         "id": "melati",
@@ -489,9 +490,6 @@
     "type": "narration",
     "background": "/backgrounds/phone/phone_conversation.png",
     "text": "Setelah targetnya selesai, Melati rebahan di kasur dan membuka HP. Ada notif dari Raka.",
-    "overlay": {
-      "image": "/backgrounds/overlay/notebook_2.png"
-    },
     "next": "dm_013"
   }
 }

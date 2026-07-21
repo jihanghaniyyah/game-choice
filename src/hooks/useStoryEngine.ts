@@ -21,7 +21,7 @@ export function useStoryEngine() {
     painting: false,
     wardrobe: false,
   });
-  const [showWardrobeOverlay, setShowWardrobeOverlay] = useState(false);
+  const [wardrobeStep, setWardrobeStep] = useState(0);
   const [visibleMessages, setVisibleMessages] = useState(1);
 
   useEffect(() => {
@@ -131,7 +131,15 @@ export function useStoryEngine() {
           return;
 
         case "wardrobe":
-          setShowWardrobeOverlay(true);
+          if (wardrobeStep === 0) {
+            setWardrobeStep(1);
+          } else if (wardrobeStep === 1) {
+            setWardrobeStep(2);
+          } else {
+            completeRoomTask("wardrobe");
+            setWardrobeStep(0);
+          }
+
           return;
 
         case "bed":
@@ -228,7 +236,7 @@ export function useStoryEngine() {
     setRoomState,
     completeRoomTask,
 
-    showWardrobeOverlay,
-    setShowWardrobeOverlay,
+    wardrobeStep,
+    setWardrobeStep,
   };
 }

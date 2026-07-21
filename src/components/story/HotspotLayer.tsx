@@ -2,8 +2,6 @@
 
 import { Hotspot } from "@/types/story";
 
-import WardrobeOverlay from "./WardrobeOverlay";
-
 interface HotspotLayerProps {
   hotspots: Hotspot[];
   onClick: (id: string) => void;
@@ -16,9 +14,6 @@ interface HotspotLayerProps {
   };
 
   cameraX: number;
-
-  showWardrobeOverlay: boolean;
-  onWardrobeComplete: () => void;
 }
 
 export default function HotspotLayer({
@@ -26,8 +21,6 @@ export default function HotspotLayer({
   onClick,
   roomState,
   cameraX,
-  showWardrobeOverlay,
-  onWardrobeComplete,
 }: HotspotLayerProps) {
   console.log("HotspotLayer render", hotspots);
   const visibleHotspots = hotspots.filter((hotspot) => {
@@ -79,17 +72,6 @@ export default function HotspotLayer({
           }}
         />
       ))}
-
-      {wardrobeHotspot && (
-        <WardrobeOverlay
-          visible={showWardrobeOverlay}
-          left={parseInt(wardrobeHotspot.left)}
-          top={parseInt(wardrobeHotspot.top)}
-          width={parseInt(wardrobeHotspot.width)}
-          height={parseInt(wardrobeHotspot.height)}
-          onComplete={onWardrobeComplete}
-        />
-      )}
     </div>
   );
 }

@@ -26,15 +26,10 @@ export default function StoryEngine() {
     moveCameraRight,
     visibleMessages,
     roomState,
+    wardrobeStep,
+    setWardrobeStep,
     completeRoomTask,
-    showWardrobeOverlay,
-    setShowWardrobeOverlay,
   } = useStoryEngine();
-
-  const handleWardrobeComplete = () => {
-    completeRoomTask("wardrobe");
-    setShowWardrobeOverlay(false);
-  };
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -71,8 +66,7 @@ export default function StoryEngine() {
         roomState={roomState}
         gameSession={gameSession}
         visibleMessages={visibleMessages}
-        showWardrobeOverlay={showWardrobeOverlay}
-        onWardrobeComplete={handleWardrobeComplete}
+        wardrobeStep={wardrobeStep}
       />
 
       {currentScene.camera?.enabled && (
@@ -89,7 +83,11 @@ export default function StoryEngine() {
         onNext={nextScene}
         onPrevious={previousScene}
         onReset={resetProgress}
-        showNext={!!currentScene.next && !currentScene.overlayChoice}
+        showNext={
+          !!currentScene.next &&
+          !currentScene.overlayChoice &&
+          currentScene.type !== "search"
+        }
       />
     </GameLayout>
   );

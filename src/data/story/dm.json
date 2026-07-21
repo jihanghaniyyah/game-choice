@@ -171,11 +171,35 @@
     "id": "dm_012",
     "type": "dialogue",
     "background": "/backgrounds/phone/phone_profile_raka.png",
+    "objective": "Buka Notebook",
     "speaker": "(Pikiran Melati)",
     "text": "Dia... ngerti. Padahal baru kenal.",
     "overlay": {
       "image": "/backgrounds/overlay/notebook_1.png"
     },
+    "next": "day1_030"
+  },
+
+  "day1_030": {
+    "id": "day1_030",
+    "type": "image-choice",
+    "background": "/backgrounds/phone/phone_profile_raka.png",
+    "objective": "Matikan HP",
+    "hotspots": [
+      {
+        "id": "home_button",
+        "left": "49%",
+        "top": "90%",
+        "width": "6%",
+        "height": "9%",
+        "next": "day1_031"
+      }
+    ]
+  },
+
+  "day1_031": {
+    "id": "day1_031",
+    "background": "/backgrounds/phone/phone_off.png",
     "transition": "fade",
     "next": "day2_001"
   },
@@ -208,7 +232,10 @@
       "type": "narration",
       "text": "Pertanyaan itu, tiga kata sederhana, membuat Melati menceritakan semuanya."
     },
-
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_2.png"
+    },
+    "objective": "Buka Notebook",
     "next": "dm_015"
   },
 

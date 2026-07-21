@@ -29,10 +29,10 @@ export default function NotebookButton({
     >
       {/* Notebook */}
       <Image
-        src="/icons/notebook.png"
+        src="/icons/notebook_icon.png"
         alt="Notebook"
-        width={300}
-        height={300}
+        width={150}
+        height={150}
         className="
     drop-shadow-[0_0_10px_rgba(255,255,255,0.65)]
     transition-all
@@ -44,7 +44,7 @@ export default function NotebookButton({
       {/* Notification */}
       {hasNotification && (
         <Image
-          src="/icons/notebook_notification.png"
+          src="/icons/notebook_badge.png"
           alt="New Notebook"
           width={1000}
           height={1000}

@@ -13,7 +13,8 @@ export type SceneType =
   | "epilogue"
   | "video"
   | "audio"
-  | "image-choice";
+  | "image-choice"
+  | "search";
 
 export interface ChatMessage {
   from: "me" | "other";
@@ -88,6 +89,9 @@ export interface Scene {
   controls?: "intro" | "default" | "none";
   messages?: ChatMessage[];
   showNotebook?: boolean;
+  objective?: string;
+  wrongMessage?: string;
+  target?: string;
   video?: string;
   audio?: string;
   next?: string;
