@@ -23,6 +23,7 @@ import NotebookButton from "./NotebookButton";
 import ObjectivePanel from "./ObjectivePanel";
 import OverlayUI from "./OverlayUI";
 import SearchHotspot from "./SearchHotspot";
+import ComicCutscene from "./ComicCutscene";
 
 interface SceneRendererProps {
   scene: Scene;
@@ -85,6 +86,16 @@ export default function SceneRenderer({
       {/* Character */}
       <CharacterLayer scene={scene} gameSession={gameSession} />
 
+      {scene.type === "comic" && (
+        <ComicCutscene
+          images={scene.images ?? []}
+          onFinished={() => {
+            if (scene.next) {
+              choose(scene.next);
+            }
+          }}
+        />
+      )}
       {scene.hotspots && scene.id === "day2_029" && (
         <HotspotLayer
           hotspots={scene.hotspots}
@@ -171,7 +182,7 @@ export default function SceneRenderer({
           <SearchHotspot
             hotspots={scene.hotspots ?? []}
             target={scene.target ?? ""}
-            wrongMessage={scene.wrongMessage ?? "Bukan ini."}
+            wrongMessages={scene.wrongMessages ?? ["Bukan ini."]}
             cameraX={cameraX}
             onSuccess={() => {
               if (scene.next) {

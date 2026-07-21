@@ -325,7 +325,7 @@
       "text": "Raka... ngerti aku. Padahal kita belum pernah ketemu."
     },
     "transition": "fade",
-    "next": "competition_001"
+    "next": "competition_010"
   },
 
   "dm_023": {
@@ -335,6 +335,7 @@
     "overlay": {
       "image": "/backgrounds/overlay/notebook_3.png"
     },
+    "objective": "Buka Notebook",
     "messages": [
       {
         "from": "other",

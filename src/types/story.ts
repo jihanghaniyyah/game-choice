@@ -14,7 +14,8 @@ export type SceneType =
   | "video"
   | "audio"
   | "image-choice"
-  | "search";
+  | "search"
+  | "comic";
 
 export interface ChatMessage {
   from: "me" | "other";
@@ -81,6 +82,7 @@ export interface Scene {
     width: number;
     height: number;
   };
+  images?: string[];
   title?: string;
   content?: ContentBlock[];
   choices?: Choice[];
@@ -90,7 +92,7 @@ export interface Scene {
   messages?: ChatMessage[];
   showNotebook?: boolean;
   objective?: string;
-  wrongMessage?: string;
+  wrongMessages?: string[];
   target?: string;
   video?: string;
   audio?: string;

@@ -19,6 +19,74 @@
   }
 }
 
+@keyframes comicDown {
+  from {
+    transform: translateY(-140vh) scale(0.85);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes comicUp {
+  from {
+    transform: translateY(140vh) scale(0.85);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes comicHold {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.04);
+  }
+}
+
+@keyframes comicExit {
+  from {
+    opacity: 1;
+    transform: scale(1.04);
+    filter: blur(0px);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.96);
+    filter: blur(3px);
+  }
+}
+
+.animate-comic-down {
+  animation: comicDown 5s cubic-bezier(0.18, 0.85, 0.18, 1) forwards;
+}
+
+.animate-comic-up {
+  animation: comicUp 5s cubic-bezier(0.18, 0.85, 0.18, 1) forwards;
+}
+
+.animate-comic-down-delay {
+  animation: comicDown 5s cubic-bezier(0.18, 0.85, 0.18, 1) forwards;
+}
+
+.animate-comic-hold {
+  animation: comicHold 3.5s linear forwards;
+}
+
+.animate-comic-exit {
+  animation: comicExit 1.5s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
 html,
 body {
   width: 100%;

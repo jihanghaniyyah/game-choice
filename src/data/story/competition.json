@@ -1,4 +1,22 @@
 {
+  "competition_010": {
+    "id": "competition_010",
+    "background": "/backgrounds/museum/hari_perlombaan.png",
+    "transition": "fade",
+    "next": "competition_cutscene"
+  },
+
+  "competition_cutscene": {
+    "id": "competition_cutscene",
+    "type": "comic",
+    "images": [
+      "/cutscene/competition/1.png",
+      "/cutscene/competition/2.png",
+      "/cutscene/competition/3.png"
+    ],
+    "next": "competition_001"
+  },
+
   "competition_001": {
     "id": "competition_001",
     "type": "narration",
@@ -11,7 +29,7 @@
     "id": "competition_002",
     "type": "narration",
     "background": "/backgrounds/museum/competition.png",
-    "text": "Suasana berbeda dari keseharian : kota yang lebih besar, museum seni di dekat venue lomba, udara yang berbeda.",
+    "text": "Suasana berbeda dari keseharian: kota yang lebih besar, museum seni di dekat venue lomba, udara yang berbeda.",
     "next": "competition_003"
   },
 
@@ -43,13 +61,20 @@
 
   "competition_006": {
     "id": "competition_006",
-    "type": "dialogue",
+    "type": "image-choice",
     "background": "/backgrounds/museum/selfie_1.png",
     "speaker": "(Pikiran Melati)",
-    "text": "Viewnya bagus banget di sini. Sayang kalau nggak diabadiin. ",
-    "transition": "fade",
-    "flash": true,
-    "next": "competition_007"
+    "text": "Viewnya bagus banget di sini. Sayang kalau nggak diabadiin.",
+    "hotspots": [
+      {
+        "id": "shutter",
+        "left": "45%",
+        "top": "87%",
+        "width": "10%",
+        "height": "8%",
+        "next": "competition_007"
+      }
+    ]
   },
 
   "competition_007": {

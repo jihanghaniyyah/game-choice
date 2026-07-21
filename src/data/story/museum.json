@@ -8,7 +8,12 @@
     },
     "objective": "Cari Raka",
     "target": "raka",
-    "wrongMessage": "Itu bukan Raka.",
+    "wrongMessages": [
+      "Itu bukan Raka.",
+      "Hmm... bukan dia.",
+      "Sepertinya bukan orang yang kucari.",
+      "Masih belum ketemu."
+    ],
     "hotspots": [
       {
         "id": "orang1",

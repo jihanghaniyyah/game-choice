@@ -8,7 +8,7 @@ import NarrationBox from "./NarrationBox";
 interface SearchHotspotProps {
   hotspots: Hotspot[];
   target: string;
-  wrongMessage: string;
+  wrongMessages: string[];
 
   cameraX: number;
 
@@ -18,11 +18,22 @@ interface SearchHotspotProps {
 export default function SearchHotspot({
   hotspots,
   target,
-  wrongMessage,
+  wrongMessages,
   onSuccess,
   cameraX,
 }: SearchHotspotProps) {
   const [message, setMessage] = useState("");
+
+  const showWrongMessage = () => {
+    const random =
+      wrongMessages[Math.floor(Math.random() * wrongMessages.length)];
+
+    setMessage(random);
+
+    setTimeout(() => {
+      setMessage("");
+    }, 1500);
+  };
 
   const handleClick = (id: string) => {
     if (id === target) {
@@ -30,11 +41,7 @@ export default function SearchHotspot({
       return;
     }
 
-    setMessage(wrongMessage);
-
-    setTimeout(() => {
-      setMessage("");
-    }, 1200);
+    showWrongMessage();
   };
 
   return (
@@ -49,7 +56,7 @@ export default function SearchHotspot({
           <button
             key={spot.id}
             onClick={() => handleClick(spot.id!)}
-            className=" absolute  cursor-pointer"
+            className="absolute cursor-pointer"
             style={{
               left: spot.left,
               top: spot.top,
