@@ -14,6 +14,8 @@ interface HotspotLayerProps {
   };
 
   cameraX: number;
+
+  useCamera?: boolean;
 }
 
 export default function HotspotLayer({
@@ -21,6 +23,7 @@ export default function HotspotLayer({
   onClick,
   roomState,
   cameraX,
+  useCamera = true,
 }: HotspotLayerProps) {
   console.log("HotspotLayer render", hotspots);
   const visibleHotspots = hotspots.filter((hotspot) => {
@@ -45,12 +48,14 @@ export default function HotspotLayer({
   console.log("VISIBLE HOTSPOTS:", visibleHotspots);
 
   const wardrobeHotspot = hotspots.find((hotspot) => hotspot.id === "wardrobe");
-
+  console.log("VISIBLE HOTSPOTS:", visibleHotspots);
   return (
     <div
-      className="absolute left-0 top-0 z-[40] pointer-events-auto"
+      className="absolute inset-0 z-[40] pointer-events-auto"
       style={{
-        transform: `translateX(${cameraX}px)`,
+        width: useCamera ? "3200px" : "100%",
+        height: "100%",
+        transform: useCamera ? `translateX(${cameraX}px)` : undefined,
       }}
     >
       {visibleHotspots.map((hotspot) => (
@@ -63,7 +68,7 @@ export default function HotspotLayer({
           className="
             absolute
             cursor-pointer
-            "
+          "
           style={{
             left: hotspot.left,
             top: hotspot.top,
@@ -75,18 +80,3 @@ export default function HotspotLayer({
     </div>
   );
 }
-
-// export default function HotspotLayer() {
-//   return (
-//     <button
-//       onClick={() => console.log("CLICK")}
-//       className="absolute bg-red-500"
-//       style={{
-//         left: "10%",
-//         top: "20%",
-//         width: "15%",
-//         height: "65%",
-//       }}
-//     />
-//   );
-// }

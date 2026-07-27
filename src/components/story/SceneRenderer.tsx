@@ -62,6 +62,8 @@ export default function SceneRenderer({
   wardrobeStep,
 }: SceneRendererProps) {
   const [showOverlay, setShowOverlay] = useState(false);
+  const [manualFlash, setManualFlash] = useState(false);
+
   useEffect(() => {
     setShowOverlay(false);
   }, [scene.id]);
@@ -69,8 +71,27 @@ export default function SceneRenderer({
   const allTasksCompleted =
     roomState.desk && roomState.bed && roomState.painting && roomState.wardrobe;
 
+  const isRoomExploration = scene.id === "day2_029";
+
+  const isSelfieScene =
+    scene.id === "competition_006" || scene.id === "competition_007";
+
+  const hasComic = scene.type === "comic";
+
+  const handleSelfie = () => {
+    setManualFlash(true);
+
+    setTimeout(() => {
+      setManualFlash(false);
+
+      if (scene.next) {
+        choose(scene.next);
+      }
+    }, 250);
+  };
+
   return (
-    <div className="relative h-full w-full overflow-hidden">
+    <div className="relative h-full w-full overflow-visible">
       {/* Background */}
       <BackgroundLayer
         scene={scene}
@@ -86,7 +107,7 @@ export default function SceneRenderer({
       {/* Character */}
       <CharacterLayer scene={scene} gameSession={gameSession} />
 
-      {scene.type === "comic" && (
+      {hasComic && (
         <ComicCutscene
           images={scene.images ?? []}
           onFinished={() => {
@@ -96,12 +117,25 @@ export default function SceneRenderer({
           }}
         />
       )}
-      {scene.hotspots && scene.id === "day2_029" && (
+
+      {/* Hotspot eksplorasi kamar */}
+      {scene.hotspots && isRoomExploration && (
         <HotspotLayer
           hotspots={scene.hotspots}
           onClick={choose}
           roomState={roomState}
           cameraX={cameraX}
+        />
+      )}
+
+      {/* Hotspot selfie */}
+      {scene.hotspots && isSelfieScene && (
+        <HotspotLayer
+          hotspots={scene.hotspots}
+          roomState={roomState}
+          cameraX={cameraX}
+          useCamera={false}
+          onClick={handleSelfie}
         />
       )}
 
@@ -124,24 +158,24 @@ export default function SceneRenderer({
         onClose={() => setShowOverlay(false)}
       />
 
-      {scene.id === "day2_029" && allTasksCompleted && (
+      {isRoomExploration && allTasksCompleted && (
         <button
           onClick={nextScene}
           className="
-      absolute
-      bottom-6
-      right-8
-      z-50
-      cursor-pointer
-      rounded-xl
-      bg-green-600
-      px-6
-      py-3
-      font-semibold
-      text-white
-      transition
-      hover:bg-green-500
-    "
+            absolute
+            bottom-6
+            right-8
+            z-50
+            cursor-pointer
+            rounded-xl
+            bg-green-600
+            px-6
+            py-3
+            font-semibold
+            text-white
+            transition
+            hover:bg-green-500
+          "
         >
           Lanjut →
         </button>
@@ -228,7 +262,7 @@ export default function SceneRenderer({
         )}
       </div>
 
-      <FlashEffect visible={flash} />
+      <FlashEffect visible={flash || manualFlash} />
       <FadeTransition visible={transition} />
     </div>
   );

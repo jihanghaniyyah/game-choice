@@ -12,10 +12,10 @@ interface CharacterLayerProps {
 
 const POSITION_X = {
   1: 10,
-  2: 20,
+  2: 30,
   3: 50,
-  4: 80,
-  5: 90,
+  4: 65,
+  5: 75,
 } as const;
 
 export default function CharacterLayer({

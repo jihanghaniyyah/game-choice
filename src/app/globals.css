@@ -67,6 +67,15 @@
   }
 }
 
+@font-face {
+  font-family: "Brick Sans";
+  src: url("/fonts/BrickSans.ttf") format("truetype");
+}
+
+.brick {
+  font-family: "Brick Sans";
+}
+
 .animate-comic-down {
   animation: comicDown 5s cubic-bezier(0.18, 0.85, 0.18, 1) forwards;
 }

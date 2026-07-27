@@ -108,6 +108,7 @@ export interface Scene {
     choices: Choice[];
   };
   chatMode?: "progressive" | "all";
+  hideNext?: boolean;
 }
 
 export type Story = Record<string, Scene>;

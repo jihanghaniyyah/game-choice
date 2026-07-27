@@ -86,7 +86,8 @@ export default function StoryEngine() {
         showNext={
           !!currentScene.next &&
           !currentScene.overlayChoice &&
-          currentScene.type !== "search"
+          currentScene.type !== "search" &&
+          !currentScene.hideNext
         }
       />
     </GameLayout>

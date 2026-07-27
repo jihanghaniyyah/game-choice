@@ -55,7 +55,6 @@
     "background": "/backgrounds/museum/competition.png",
     "text": "Melati dan Nisa berjalan-jalan sebentar di sekitar area lomba.",
     "transition": "fade",
-    "flash": true,
     "next": "competition_006"
   },
 
@@ -65,7 +64,18 @@
     "background": "/backgrounds/museum/selfie_1.png",
     "speaker": "(Pikiran Melati)",
     "text": "Viewnya bagus banget di sini. Sayang kalau nggak diabadiin.",
-    "next": "competition_006"
+    "hideNext": true,
+    "objective": "Klik home button untuk selfie",
+    "next": "competition_007",
+    "hotspots": [
+      {
+        "id": "camera",
+        "left": "90%",
+        "top": "0%",
+        "width": "10%",
+        "height": "100%"
+      }
+    ]
   },
 
   "competition_007": {
@@ -74,7 +84,17 @@
     "background": "/backgrounds/museum/selfie_2.png",
     "speaker": "(Pikiran Melati)",
     "text": "Di sini juga bagus.",
-    "transition": "fade",
+    "hideNext": true,
+    "objective": "Klik home button untuk selfie",
+    "hotspots": [
+      {
+        "id": "camera",
+        "left": "90%",
+        "top": "0%",
+        "width": "10%",
+        "height": "100%"
+      }
+    ],
     "next": "choice_competition_001"
   },
 

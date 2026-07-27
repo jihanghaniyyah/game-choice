@@ -188,10 +188,10 @@
     "hotspots": [
       {
         "id": "home_button",
-        "left": "49%",
-        "top": "90%",
-        "width": "6%",
-        "height": "9%",
+        "left": "37%",
+        "top": "0%",
+        "width": "30%",
+        "height": "100%",
         "next": "day1_031"
       }
     ]

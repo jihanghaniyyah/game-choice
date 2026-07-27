@@ -27,13 +27,33 @@ export default function ChoiceList({
   const getButtonColor = (label: string) => {
     switch (label) {
       case "YA":
-        return "bg-green-600 hover:bg-green-500 border-green-500 text-white";
+        return `
+        brick
+        bg-white
+        border-[#2DBE60]
+        text-[#2DBE60]
+        hover:bg-[#2DBE60]
+        hover:text-white
+      `;
 
       case "TIDAK":
-        return "bg-red-600 hover:bg-red-500 border-red-500 text-white";
+        return `
+        brick
+        bg-white
+        border-[#E84D6A]
+        text-[#E84D6A]
+        hover:bg-[#E84D6A]
+        hover:text-white
+      `;
 
       default:
-        return "bg-white/85 hover:bg-white border-slate-800 text-slate-900 hover:border-slate-900";
+        return `
+        bg-white/85
+        hover:bg-white
+        border-slate-800
+        text-slate-900
+        hover:border-slate-900
+      `;
     }
   };
 
@@ -55,6 +75,7 @@ export default function ChoiceList({
           key={choice.label}
           onClick={() => onChoose(choice.next)}
           className={`
+            group
             cursor-pointer
 
             rounded-2xl
@@ -65,24 +86,22 @@ export default function ChoiceList({
             min-w-[180px]
 
             ${isYesNoChoice ? "text-center" : "text-left"}
-            font-semibold
-            text-slate-900
+
+            text-xl
+            font-500
 
             shadow-xl
-            backdrop-blur-sm
-
             transition-all
-            duration-200
-            ease-out
+            duration-300
 
             hover:-translate-y-1
+            hover:scale-105
             hover:shadow-2xl
 
-            active:translate-y-0
             active:scale-[0.98]
-            active:shadow-lg
-    ${getButtonColor(choice.label)}
-  `}
+
+            ${getButtonColor(choice.label)}
+          `}
         >
           {choice.label}
         </button>
