@@ -112,7 +112,7 @@
     "id": "ending_escape_001",
     "type": "narration",
     "text": "Di dalam museum, Melati mengambil napas.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -132,7 +132,7 @@
     "id": "ending_escape_002",
     "type": "narration",
     "text": "Ponselnya di saku.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -152,7 +152,7 @@
     "id": "ending_escape_003",
     "type": "narration",
     "text": "Ia tekan layar pura-pura menerima telepon.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -173,7 +173,7 @@
     "type": "dialogue",
     "speaker": "Melati",
     "text": "Halo? Oh - iya, sebentar.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -193,7 +193,7 @@
     "id": "ending_escape_005",
     "type": "narration",
     "text": "Ia berbalik ke orang itu",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -214,7 +214,7 @@
     "type": "dialogue",
     "speaker": "Melati",
     "text": "Maaf, ada teman yang nyariin. Aku permisi dulu ke toilet ya.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -234,7 +234,7 @@
     "id": "ending_escape_007",
     "type": "narration",
     "text": "Ia berjalan ke arah toilet, tapi langkahnya tidak berhenti.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -250,7 +250,7 @@
     "id": "ending_escape_009",
     "type": "narration",
     "text": "Ia bertemu Nisa yang ternyata mengikutinya.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -271,7 +271,7 @@
     "id": "ending_escape_010",
     "type": "narration",
     "text": "Nisa langsung menghubungi guru pendamping. Semuanya segera ditangani.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -310,7 +310,7 @@
     "id": "ending_boundary_001",
     "type": "narration",
     "text": "Melati berhenti melangkah.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -331,7 +331,7 @@
     "type": "dialogue",
     "speaker": "Melati",
     "text": "Maaf. Aku harus pergi.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -352,7 +352,7 @@
     "type": "dialogue",
     "speaker": "Raka",
     "text": "Eh, baru datang juga. Nggak bisa sebentar-",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -373,7 +373,7 @@
     "type": "dialogue",
     "speaker": "Melati",
     "text": "Aku harus pergi sekarang.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -393,7 +393,7 @@
     "id": "ending_boundary_005",
     "type": "narration",
     "text": "Ia berjalan keluar. Kakinya terasa berat tapi terus bergerak.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -409,7 +409,7 @@
     "id": "ending_boundary_006",
     "type": "narration",
     "text": "Di luar ia menghubungi guru pendamping dan menceritakan semuanya.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -443,7 +443,7 @@
     "id": "ending_rescue_001",
     "type": "narration",
     "text": "Pikiran Melati penuh. Seluruh sinyalnya berbunyi.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -464,7 +464,7 @@
     "type": "dialogue",
     "speaker": "(Pikiran Melati)",
     "text": "Ini nggak bener. Aku nggak nyaman di sini. Aku mau pergi.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -484,7 +484,7 @@
     "id": "ending_rescue_003",
     "type": "narration",
     "text": "Tiba-tiba seseorang memanggilnya dari belakang. Nisa.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -511,7 +511,7 @@
     "type": "dialogue",
     "speaker": "Nisa",
     "text": "Mel, kamu ke mana aja? Dari tadi aku cariin.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -537,7 +537,7 @@
     "type": "dialogue",
     "speaker": "Raka",
     "text": "Heh, lo siapa?",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -563,7 +563,7 @@
     "type": "dialogue",
     "speaker": "Nisa",
     "text": "Gue temennya.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -589,7 +589,7 @@
     "type": "dialogue",
     "speaker": "Raka",
     "text": "Oh, jadi kamu nggak ke sini sendirian, Melati? Harusnya bilang, biar bisa jalan bertiga.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -614,7 +614,7 @@
     "id": "ending_rescue_009",
     "type": "narration",
     "text": "Melati merasa lega ada Nisa di sisinya.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -640,7 +640,7 @@
     "type": "dialogue",
     "speaker": "Nisa",
     "text": "Maaf, kami harus pergi sekarang. Ada yang tunggu di luar.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -666,7 +666,7 @@
     "type": "dialogue",
     "speaker": "Raka",
     "text": "Eh, nggak usah buru-buru-",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -692,7 +692,7 @@
     "type": "dialogue",
     "speaker": "Nisa",
     "text": "Kami harus pergi sekarang.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -717,7 +717,7 @@
     "id": "ending_rescue_013",
     "type": "narration",
     "text": "Nisa bersama Melati berjalan cepat ke arah pintu.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",

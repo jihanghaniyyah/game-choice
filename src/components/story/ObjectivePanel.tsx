@@ -16,7 +16,7 @@ export default function ObjectivePanel({ objective }: ObjectivePanelProps) {
         w-[170px]
 
         rounded-md
-        bg-white/90
+        bg-white/95
 
         px-3
         py-2

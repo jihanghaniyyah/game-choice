@@ -44,7 +44,7 @@ export default function ChatBubble({ text, from }: ChatBubbleProps) {
                 mr-auto
                 ml-1
 
-                bg-white/90
+                bg-white/95
                 border-slate-700
                 text-slate-900
 

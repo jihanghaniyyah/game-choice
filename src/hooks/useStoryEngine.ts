@@ -212,6 +212,10 @@ export function useStoryEngine() {
     setGameSession((prev) => prev + 1);
   };
 
+  const exploreOtherEnding = () => {
+    setCurrentSceneId("choice_dm_001");
+  };
+
   return {
     currentScene,
     nextScene,
@@ -220,6 +224,8 @@ export function useStoryEngine() {
     resetProgress,
     gameSession,
     visitedFriends,
+    visibleMessages,
+    exploreOtherEnding,
 
     flash,
     transition,
@@ -230,7 +236,6 @@ export function useStoryEngine() {
     cameraX,
     moveCameraLeft,
     moveCameraRight,
-    visibleMessages,
 
     roomState,
     setRoomState,

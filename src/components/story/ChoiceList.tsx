@@ -48,7 +48,7 @@ export default function ChoiceList({
 
       default:
         return `
-        bg-white/85
+        bg-white/95
         hover:bg-white
         border-slate-800
         text-slate-900

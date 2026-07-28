@@ -15,6 +15,7 @@ export default function StoryEngine() {
     previousScene,
     choose,
     resetProgress,
+    exploreOtherEnding,
     gameSession,
     visitedFriends,
     flash,
@@ -83,6 +84,8 @@ export default function StoryEngine() {
         onNext={nextScene}
         onPrevious={previousScene}
         onReset={resetProgress}
+        onExploreEnding={exploreOtherEnding}
+        isEnding={currentScene.id === "epilogue_007"}
         showNext={
           !!currentScene.next &&
           !currentScene.overlayChoice &&

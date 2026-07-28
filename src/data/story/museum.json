@@ -86,7 +86,7 @@
   "museum_001": {
     "id": "museum_001",
     "type": "narration",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "text": "Museum lebih sepi dari yang Melati bayangkan.",
     "characters": [
       {
@@ -102,7 +102,7 @@
   "museum_002": {
     "id": "museum_002",
     "type": "narration",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "text": "Pengunjung semakin berkurang.",
     "characters": [
       {
@@ -117,7 +117,7 @@
   "museum_003": {
     "id": "museum_003",
     "type": "narration",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "text": "Seseorang mendekatinya. Bukan seperti foto-foto yang pernah ia lihat di Instagram. Usianya terlihat jauh lebih tua dari mahasiswa 19 tahun.",
     "characters": [
       {
@@ -140,7 +140,7 @@
     "type": "dialogue",
     "speaker": "(Pikiran Melati)",
     "text": "Ini... Raka?",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -161,7 +161,7 @@
     "type": "dialogue",
     "speaker": "Raka",
     "text": "Melati ya? Aku Raka.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -182,7 +182,7 @@
     "type": "dialogue",
     "speaker": "Raka",
     "text": "Ayok ke bagian sana, di sana ada lukisan dengan teknik yang biasa kamu pakai.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -203,7 +203,7 @@
     "type": "dialogue",
     "speaker": "(Pikiran Melati)",
     "text": "Ada yang aneh.. ",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -223,7 +223,7 @@
     "id": "museum_009",
     "type": "narration",
     "text": "Ada sesuatu yang tidak terasa tepat.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -243,7 +243,7 @@
     "id": "museum_010",
     "type": "narration",
     "text": "Melati merasakannya, tapi belum tahu harus berbuat apa.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -262,7 +262,7 @@
     "id": "museum_011",
     "type": "narration",
     "text": "Orang itu mengajaknya ke area koleksi di sayap yang lebih sepi. Jumlah pengunjung di sekitar mereka semakin berkurang. Di dalam benaknya, ada sinyal yang berbunyi.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -285,7 +285,7 @@
     "type": "dialogue",
     "speaker": "(Pikiran Melati)",
     "text": "Ini nggak seperti yang aku bayangkan. Tempat ini makin sepi. Dia bukan seperti di foto.",
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
@@ -318,7 +318,7 @@
         "next": "ending_rescue_001"
       }
     ],
-    "background": "/backgrounds/museum/museum_background_quiet.png",
+    "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
         "id": "melati",
