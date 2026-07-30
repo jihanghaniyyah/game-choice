@@ -34,12 +34,7 @@ export default function StoryEngine() {
     completeRoomTask,
   } = useStoryEngine();
 
-  useEffect(() => {
-    console.log({
-      cameraX,
-      cameraLimit,
-    });
-  }, [cameraX, cameraLimit]);
+  useEffect(() => {}, [cameraX, cameraLimit]);
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {

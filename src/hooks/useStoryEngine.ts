@@ -53,9 +53,7 @@ export function useStoryEngine() {
     }
   }, [visitedFriends, currentSceneId]);
 
-  useEffect(() => {
-    console.log("ROOM STATE:", roomState);
-  }, [roomState]);
+  useEffect(() => {}, [roomState]);
 
   const nextScene = () => {
     if (

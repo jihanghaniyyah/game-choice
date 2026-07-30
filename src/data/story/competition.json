@@ -104,6 +104,7 @@
     "type": "dialogue",
     "background": "/backgrounds/museum/selfie_2.png",
     "speaker": "(Pikiran Melati)",
+    "objective": "Klik home button untuk selfie",
     "text": "Di sini juga bagus.",
     "hideNext": true,
     "hotspots": [
@@ -143,6 +144,7 @@
         "next": "competition_008"
       }
     ],
+    "objective": "Buka Notebook",
     "overlay": {
       "image": "/backgrounds/overlay/notebook_3.png"
     }

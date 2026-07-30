@@ -26,7 +26,6 @@ export default function HotspotLayer({
   cameraX,
   useCamera = true,
 }: HotspotLayerProps) {
-  console.log("HotspotLayer render", hotspots);
   const visibleHotspots = hotspots.filter((hotspot) => {
     switch (hotspot.id) {
       case "desk":
@@ -46,10 +45,7 @@ export default function HotspotLayer({
     }
   });
 
-  console.log("VISIBLE HOTSPOTS:", visibleHotspots);
-
   const wardrobeHotspot = hotspots.find((hotspot) => hotspot.id === "wardrobe");
-  console.log("VISIBLE HOTSPOTS:", visibleHotspots);
   return (
     <div
       className="absolute inset-0 z-[40] pointer-events-auto"
@@ -63,7 +59,6 @@ export default function HotspotLayer({
         <button
           key={hotspot.id}
           onClick={() => {
-            console.log("CLICK", hotspot.id);
             onClick(hotspot.id);
           }}
           className="

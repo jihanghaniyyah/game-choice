@@ -31,12 +31,6 @@ export default function BackgroundPanoramic({
         height: img.naturalHeight,
         loaded: true,
       });
-
-      console.log("🖼 Background Loaded:", {
-        src: background,
-        width: img.naturalWidth,
-        height: img.naturalHeight,
-      });
     };
 
     img.src = background;
@@ -63,11 +57,6 @@ export default function BackgroundPanoramic({
 
   useEffect(() => {
     if (!imageRef.current) return;
-
-    console.log("📏 Rendered Image:", {
-      renderedWidth: imageRef.current.clientWidth,
-      renderedHeight: imageRef.current.clientHeight,
-    });
   }, [viewportWidth, viewportHeight, imageSize.loaded]);
 
   const scale = imageSize.loaded ? viewportHeight / imageSize.height : 1;
@@ -78,35 +67,16 @@ export default function BackgroundPanoramic({
 
   useEffect(() => {
     if (!imageSize.loaded) return;
-
-    console.log("SEND LIMIT", maxOffset);
-
     onLimitCalculated?.(maxOffset);
   }, [maxOffset, imageSize.loaded, onLimitCalculated]);
 
   useEffect(() => {
     if (!imageSize.loaded) return;
-
-    console.log({
-      naturalWidth: imageSize.width,
-      naturalHeight: imageSize.height,
-      viewportWidth,
-      viewportHeight,
-      scale,
-      renderWidth,
-      maxOffset,
-    });
   }, [imageSize, viewportWidth, viewportHeight, renderWidth, maxOffset, scale]);
 
   const clampedCameraX = Math.max(-maxOffset, Math.min(cameraX, 0));
 
-  useEffect(() => {
-    console.log({
-      cameraX,
-      clampedCameraX,
-      maxOffset,
-    });
-  }, [cameraX, clampedCameraX, maxOffset]);
+  useEffect(() => {}, [cameraX, clampedCameraX, maxOffset]);
 
   return (
     <div className="absolute inset-0 overflow-hidden">

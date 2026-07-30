@@ -97,13 +97,6 @@ export default function SceneRenderer({
   const hasNotebookNotification =
     !!notebookId && !readNotebooks.includes(notebookId);
 
-  console.log({
-    scene: scene.id,
-    notebookId,
-    readNotebooks,
-    hasNotebookNotification,
-  });
-
   return (
     <div className="relative h-full w-full overflow-visible">
       {/* Background */}

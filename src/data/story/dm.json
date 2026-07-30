@@ -359,7 +359,6 @@
     "overlay": {
       "image": "/backgrounds/overlay/notebook_3.png"
     },
-    "objective": "Buka Notebook",
     "messages": [
       {
         "from": "other",

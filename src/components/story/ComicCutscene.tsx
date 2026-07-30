@@ -10,24 +10,17 @@ interface Props {
 
 export default function ComicCutscene({ images, onFinished }: Props) {
   const [phase, setPhase] = useState<"enter" | "hold" | "exit">("enter");
-  console.log("Comic Phase:", phase);
 
   useEffect(() => {
-    // selesai animasi masuk
     const holdTimer = setTimeout(() => {
-      console.log("→ HOLD");
       setPhase("hold");
     }, 2000);
 
-    // mulai animasi keluar
     const exitTimer = setTimeout(() => {
-      console.log("→ EXIT");
       setPhase("exit");
     }, 5500);
 
-    // pindah scene
     const finishTimer = setTimeout(() => {
-      console.log("→ NEXT SCENE");
       onFinished();
     }, 6200);
 
