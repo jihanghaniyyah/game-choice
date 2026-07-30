@@ -25,6 +25,15 @@
         "from": "other",
         "text": "Haii aku Raka. Ini kamu yang gambar? Keren banget perspektifnya. Jarang ada yang bisa nangkep lighting kayak gini."
       }
+    ],
+    "hotspots": [
+      {
+        "id": "profile",
+        "left": "30%",
+        "top": "10%",
+        "width": "30%",
+        "height": "10%"
+      }
     ]
   },
 
@@ -194,14 +203,20 @@
         "height": "100%",
         "next": "day1_031"
       }
-    ]
+    ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    }
   },
 
   "day1_031": {
     "id": "day1_031",
     "background": "/backgrounds/phone/phone_off.png",
     "transition": "fade",
-    "next": "day2_001"
+    "next": "day2_001",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    }
   },
 
   "dm_013": {
@@ -214,6 +229,9 @@
         "text": "Gimana hari kamu?"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "dm_014"
   },
 
@@ -277,6 +295,9 @@
         "text": "Kamu nggak harus dapet izin dari siapapun untuk jadi pelukis yang baik."
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_2.png"
+    },
     "next": "dm_022"
   },
 
@@ -325,6 +346,9 @@
       "text": "Raka... ngerti aku. Padahal kita belum pernah ketemu."
     },
     "transition": "fade",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_2.png"
+    },
     "next": "competition_010"
   },
 
@@ -392,6 +416,9 @@
       "type": "narration",
       "text": "Melati membaca pesan itu berkali-kali."
     },
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_3.png"
+    },
     "next": "dm_029"
   },
 
@@ -426,6 +453,9 @@
       "type": "dialogue",
       "speaker": "(Pikiran Melati)",
       "text": "Ini yang aku tunggu-tunggu... ketemu langsung. Tapi sekarang? Di kota yang bukan kotaku?"
+    },
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_3.png"
     },
     "next": "choice_dm_001"
   },
@@ -468,6 +498,10 @@
           "next": "ending_instinct_001"
         }
       ]
+    },
+    "objective": "Buka Notebook",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
     },
     "transition": "fade"
   }

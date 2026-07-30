@@ -30,6 +30,9 @@
       "type": "narration",
       "text": "Melati mengetik balasan dengan tangan yang sedikit gemetar."
     },
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_instinct_002"
   },
 
@@ -44,10 +47,12 @@
       },
       {
         "from": "other",
-
         "text": "Ih, nggak bisa fleksibel dikit? Kapan lagi ada kesempatan gini?"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_instinct_004"
   },
 
@@ -69,6 +74,9 @@
     "overlayUI": {
       "speaker": "(Pikiran Melati)",
       "text": "Ada sesuatu yang salah dari cara dia bereaksi ini."
+    },
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
     },
     "next": "ending_instinct_005"
   },
@@ -92,6 +100,9 @@
         "text": "Maaf ya. Lain kali aja."
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_instinct_006"
   },
 
@@ -99,12 +110,18 @@
     "id": "ending_instinct_006",
     "background": "/backgrounds/ending/ending_1_1.png",
     "next": "ending_instinct_007",
-    "audios": "/audios/after_gallery.mp3"
+    "audio": "/audios/after_gallery.mp3",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    }
   },
 
   "ending_instinct_007": {
     "id": "ending_instinct_007",
     "background": "/backgrounds/ending/ending_1_2.png",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "epilogue_001"
   },
 
@@ -125,6 +142,9 @@
         "position": "1"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_escape_002"
   },
 
@@ -145,6 +165,9 @@
         "position": "1"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_escape_003"
   },
 
@@ -165,6 +188,9 @@
         "position": "1"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_escape_004"
   },
 
@@ -186,6 +212,9 @@
         "position": "1"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_escape_005"
   },
 
@@ -206,6 +235,9 @@
         "position": "1"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_escape_006"
   },
 
@@ -227,6 +259,9 @@
         "position": "1"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_escape_007"
   },
 
@@ -243,6 +278,9 @@
         "moveTo": "3"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_escape_009"
   },
 
@@ -264,6 +302,9 @@
         "moveTo": "4"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_escape_010"
   },
 
@@ -284,6 +325,9 @@
         "position": "4"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_escape_011"
   },
 
@@ -291,18 +335,27 @@
     "id": "ending_escape_011",
     "background": "/backgrounds/ending/ending_2_1.png",
     "next": "ending_escape_012",
-    "audios": "/audios/after_gallery.mp3"
+    "audio": "/audios/after_gallery.mp3",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    }
   },
 
   "ending_escape_012": {
     "id": "ending_escape_012",
     "background": "/backgrounds/ending/ending_2_2.png",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_escape_013"
   },
 
   "ending_escape_013": {
     "id": "ending_escape_013",
     "background": "/backgrounds/ending/ending_2_3.png",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "epilogue_001"
   },
 
@@ -323,6 +376,9 @@
         "position": "1"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_boundary_002"
   },
 
@@ -344,6 +400,9 @@
         "position": "1"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_boundary_003"
   },
 
@@ -365,6 +424,9 @@
         "position": "1"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_boundary_004"
   },
 
@@ -386,6 +448,9 @@
         "position": "1"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_boundary_005"
   },
 
@@ -402,13 +467,16 @@
         "moveTo": "3"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_boundary_006"
   },
 
   "ending_boundary_006": {
     "id": "ending_boundary_006",
     "type": "narration",
-    "text": "Di luar ia menghubungi guru pendamping dan menceritakan semuanya.",
+    "text": "Ia langsung menghubungi guru pendamping dan menceritakan semuanya.",
     "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {
@@ -417,6 +485,9 @@
         "position": "3"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_boundary_007"
   },
 
@@ -424,18 +495,27 @@
     "id": "ending_boundary_007",
     "background": "/backgrounds/ending/ending_3_1.png",
     "next": "ending_boundary_008",
-    "audios": "/audios/after_gallery.mp3"
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
+    "audio": "/audios/after_gallery.mp3"
   },
 
   "ending_boundary_008": {
     "id": "ending_boundary_008",
     "background": "/backgrounds/ending/ending_3_2.png",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_boundary_009"
   },
 
   "ending_boundary_009": {
     "id": "ending_boundary_009",
     "background": "/backgrounds/ending/ending_3_3.png",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "epilogue_001"
   },
 
@@ -456,6 +536,9 @@
         "position": "1"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_002"
   },
 
@@ -477,6 +560,9 @@
         "position": "1"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_003"
   },
 
@@ -503,6 +589,9 @@
         "moveTo": "3"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_004"
   },
 
@@ -529,6 +618,9 @@
         "position": "3"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_005"
   },
 
@@ -555,6 +647,9 @@
         "position": "3"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_006"
   },
 
@@ -581,6 +676,9 @@
         "position": "3"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_007"
   },
 
@@ -607,6 +705,9 @@
         "position": "3"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_009"
   },
 
@@ -632,6 +733,9 @@
         "position": "3"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_010"
   },
 
@@ -658,6 +762,9 @@
         "position": "3"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_011"
   },
 
@@ -684,6 +791,9 @@
         "position": "3"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_012"
   },
 
@@ -710,6 +820,9 @@
         "position": "3"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_013"
   },
 
@@ -732,6 +845,9 @@
         "moveTo": "4"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_014"
   },
 
@@ -740,6 +856,9 @@
     "type": "narration",
     "text": "Di luar, guru pendamping sudah menunggu",
     "background": "/backgrounds/ending/ending_car.jpeg",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_015"
   },
 
@@ -749,6 +868,9 @@
     "background": "/backgrounds/ending/ending_car.jpeg",
     "speaker": "Guru",
     "text": "Melati, Nisa. Ayo masuk mobil dulu.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_016"
   },
 
@@ -757,6 +879,9 @@
     "type": "narration",
     "background": "/backgrounds/ending/ending_car.jpeg",
     "text": "Di dalam mobil, Melati menyadari: Nisa sudah menghubungi guru itu jauh sebelum mereka tiba di museum.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_017"
   },
 
@@ -766,6 +891,9 @@
     "background": "/backgrounds/ending/ending_car.jpeg",
     "speaker": "(Pikiran Melati)",
     "text": "Nisa... tahu. Dari tadi dia tahu.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_018"
   },
 
@@ -774,6 +902,9 @@
     "type": "narration",
     "background": "/backgrounds/ending/ending_car.jpeg",
     "text": "Melati menangis sembari dipeluk oleh Nisa",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_019"
   },
 
@@ -781,6 +912,9 @@
     "id": "ending_rescue_019",
     "type": "narration",
     "text": "Mereka melaporkan kejadian ini.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_020"
   },
 
@@ -788,25 +922,37 @@
     "id": "ending_rescue_020",
     "type": "narration",
     "text": "Akun @raka.workinframe ternyata sudah pernah dilaporkan oleh orang lain sebelumnya.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_021"
   },
 
   "ending_rescue_021": {
     "id": "ending_rescue_021",
     "background": "/backgrounds/ending/ending_4_1.png",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_022",
-    "audios": "/audios/after_gallery.mp3"
+    "audio": "/audios/after_gallery.mp3"
   },
 
   "ending_rescue_022": {
     "id": "ending_rescue_022",
     "background": "/backgrounds/ending/ending_4_2.png",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "ending_rescue_023"
   },
 
   "ending_rescue_023": {
     "id": "ending_rescue_023",
     "background": "/backgrounds/ending/ending_4_3.png",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "epilogue_001"
   }
 }

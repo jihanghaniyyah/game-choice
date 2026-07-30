@@ -5,6 +5,9 @@
     "background": "/backgrounds/school/cafeteria_kira_2.png",
     "speaker": "Kira",
     "text": "WAHH PASTI SERUU BANGET, pasti dia seru dan sefrekuensi kan?!",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "kira_002"
   },
 
@@ -15,6 +18,9 @@
     "speaker": "Melati",
     "text": " Iyaa, dia sefrekuensi.",
     "transition": "fade",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "choice_friend_001"
   },
 
@@ -24,6 +30,9 @@
     "background": "/backgrounds/school/cafeteria_dea.png",
     "speaker": "Dea",
     "text": "Wow... semoga jadi teman baik-baik terus ya.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "dea_002"
   },
 
@@ -33,6 +42,9 @@
     "background": "/backgrounds/school/cafeteria_friends.png",
     "text": "Dea langsung kembali ke ponselnya sendiri.",
     "transition": "fade",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "choice_friend_001"
   },
 
@@ -42,6 +54,9 @@
     "background": "/backgrounds/school/cafeteria_nisa.png",
     "speaker": "Nisa",
     "text": "Mel, aku bilang kamu harus hati-hati deh. Apalagi sama orang yang kamu temuin di media sosial. ",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "nisa_002"
   },
 
@@ -51,6 +66,9 @@
     "background": "/backgrounds/school/cafeteria_nisa.png",
     "speaker": "Melati",
     "text": "Nggak kok, dia baik banget. Apalagi dia udah ngobrol sama aku seminggu dan baik kok, baik banget malah. ",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "nisa_003"
   },
 
@@ -60,6 +78,9 @@
     "background": "/backgrounds/school/cafeteria_nisa_2.png",
     "speaker": "Nisa",
     "text": "Bilang ya kalau ada apa-apa, Mel.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "nisa_004"
   },
 
@@ -70,6 +91,9 @@
     "speaker": "Melati",
     "text": " Iyaa, iyaa, aman Nis.",
     "transition": "fade",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "choice_friend_001"
   }
 }

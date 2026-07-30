@@ -5,6 +5,9 @@
     "background": "/backgrounds/hotel/hotel_1.png",
     "speaker": "Melati",
     "text": "Nis, aku pergi sebentar ya. Mau ke museum.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "hotel_002"
   },
 
@@ -14,6 +17,9 @@
     "background": "/backgrounds/hotel/hotel_2.png",
     "speaker": "Nisa",
     "text": "Sama siapa, Mel? Mau aku temenin?",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "hotel_003"
   },
 
@@ -23,6 +29,9 @@
     "background": "/backgrounds/hotel/hotel_3.png",
     "speaker": "Melati",
     "text": "Nggak usah Nis, nanti aneh. Aku mau pergi sama Raka.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "hotel_004"
   },
 
@@ -32,6 +41,9 @@
     "background": "/backgrounds/hotel/hotel_4.png",
     "speaker": "Nisa",
     "text": "Teman baru online kamu itu? Mel, beneran nggak perlu aku temenin? Aku khawatir.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "hotel_005"
   },
 
@@ -41,6 +53,9 @@
     "background": "/backgrounds/hotel/hotel_5.png",
     "speaker": "Melati",
     "text": "Nggak usah Nis, beneran aman kok.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "hotel_006"
   },
 
@@ -50,6 +65,9 @@
     "background": "/backgrounds/hotel/hotel_6.png",
     "speaker": "Nisa",
     "text": "Hmm... oke deh. Tapi WhatsApp aku ya kalau udah sampai, kalau ada apa-apa!",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "hotel_007"
   },
 
@@ -59,6 +77,9 @@
     "background": "/backgrounds/hotel/hotel_7.png",
     "speaker": "Melati",
     "text": "Okay aman-aman Nis. Duluan ya, Bye!",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "galeri_001"
   }
 }

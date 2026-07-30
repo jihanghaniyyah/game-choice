@@ -44,6 +44,7 @@ interface SceneRendererProps {
   wardrobeStep: number;
   gameSession: number;
   visibleMessages: number;
+  onCameraLimitChange: (limit: number) => void;
 }
 
 export default function SceneRenderer({
@@ -60,6 +61,7 @@ export default function SceneRenderer({
   gameSession,
   visibleMessages,
   wardrobeStep,
+  onCameraLimitChange,
 }: SceneRendererProps) {
   const [showOverlay, setShowOverlay] = useState(false);
   const [manualFlash, setManualFlash] = useState(false);
@@ -90,6 +92,18 @@ export default function SceneRenderer({
     }, 250);
   };
 
+  const notebookId = scene.overlay?.image;
+
+  const hasNotebookNotification =
+    !!notebookId && !readNotebooks.includes(notebookId);
+
+  console.log({
+    scene: scene.id,
+    notebookId,
+    readNotebooks,
+    hasNotebookNotification,
+  });
+
   return (
     <div className="relative h-full w-full overflow-visible">
       {/* Background */}
@@ -98,6 +112,7 @@ export default function SceneRenderer({
         cameraX={cameraX}
         roomState={roomState}
         onHotspotClick={choose}
+        onCameraLimitChange={onCameraLimitChange}
       />
 
       {scene.audio && <AudioPlayer src={scene.audio} />}
@@ -146,7 +161,7 @@ export default function SceneRenderer({
             setShowOverlay(true);
             markNotebookAsRead();
           }}
-          hasNotification={!!scene.overlay && !readNotebooks.includes(scene.id)}
+          hasNotification={hasNotebookNotification}
         />
       )}
 

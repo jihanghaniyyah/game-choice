@@ -3,6 +3,9 @@
     "id": "competition_010",
     "background": "/backgrounds/museum/hari_perlombaan.png",
     "transition": "fade",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_2.png"
+    },
     "next": "competition_cutscene"
   },
 
@@ -22,6 +25,9 @@
     "type": "narration",
     "background": "/backgrounds/museum/competition.png",
     "text": "Melati dan Nisa tiba.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_2.png"
+    },
     "next": "competition_002"
   },
 
@@ -30,6 +36,9 @@
     "type": "narration",
     "background": "/backgrounds/museum/competition.png",
     "text": "Suasana berbeda dari keseharian: kota yang lebih besar, museum seni di dekat venue lomba, udara yang berbeda.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_2.png"
+    },
     "next": "competition_003"
   },
 
@@ -38,6 +47,9 @@
     "type": "narration",
     "background": "/backgrounds/museum/competition.png",
     "text": "Lomba berjalan. Melati melukis dengan fokus.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_2.png"
+    },
     "next": "competition_004"
   },
 
@@ -46,6 +58,9 @@
     "type": "narration",
     "background": "/backgrounds/museum/competition.png",
     "text": "Sesi berakhir. Para peserta istirahat.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_2.png"
+    },
     "next": "competition_005"
   },
 
@@ -55,6 +70,9 @@
     "background": "/backgrounds/museum/competition.png",
     "text": "Melati dan Nisa berjalan-jalan sebentar di sekitar area lomba.",
     "transition": "fade",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_2.png"
+    },
     "next": "competition_006"
   },
 
@@ -75,7 +93,10 @@
         "width": "10%",
         "height": "100%"
       }
-    ]
+    ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_2.png"
+    }
   },
 
   "competition_007": {
@@ -85,7 +106,6 @@
     "speaker": "(Pikiran Melati)",
     "text": "Di sini juga bagus.",
     "hideNext": true,
-    "objective": "Klik home button untuk selfie",
     "hotspots": [
       {
         "id": "camera",
@@ -95,6 +115,9 @@
         "height": "100%"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_2.png"
+    },
     "next": "choice_competition_001"
   },
 
@@ -119,18 +142,27 @@
         "height": "28%",
         "next": "competition_008"
       }
-    ]
+    ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_3.png"
+    }
   },
 
   "competition_008": {
     "id": "competition_008",
     "background": "/backgrounds/museum/photo_choice_2.png",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_3.png"
+    },
     "next": "dm_023"
   },
 
   "competition_009": {
     "id": "competition_009",
     "background": "/backgrounds/museum/photo_choice_1.png",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_3.png"
+    },
     "next": "dm_023"
   }
 }

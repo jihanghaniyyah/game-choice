@@ -29,16 +29,16 @@ export default function ChatBox({
         flex
         flex-col
         justify-end
-        px-8
-        pb-36
+        px-4
+        pb-32
       "
     >
       <div
         className="
           mx-auto
           w-full
-          max-w-[380px]
-          space-y-2
+          max-w-[360px]
+          space-y-3
         "
       >
         {displayedMessages.map((message, index) => (

@@ -13,12 +13,12 @@ export default function ChatBubble({ text, from }: ChatBubbleProps) {
       <div
         className={`
           w-fit
-          max-w-[68%]
+          max-w-[90%]
           px-4
           py-3
 
           rounded-3xl
-          text-[17px]
+          text-[clamp(14px,1.8vw,18px)]
           leading-relaxed
           break-words
 
@@ -31,8 +31,7 @@ export default function ChatBubble({ text, from }: ChatBubbleProps) {
             isMe
               ? `
                 ml-auto
-                mr-0
-                translate-x-18
+                -mr-15
 
                 bg-[#EEF5FF]
                 border-blue-400

@@ -80,6 +80,9 @@
         "height": "80%"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "museum_001"
   },
 
@@ -96,6 +99,9 @@
         "moveTo": "3"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "museum_002"
   },
 
@@ -111,6 +117,9 @@
         "position": "3"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "museum_003"
   },
 
@@ -132,6 +141,9 @@
         "moveTo": "2"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "museum_005"
   },
 
@@ -153,6 +165,9 @@
         "position": "2"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "museum_006"
   },
 
@@ -174,6 +189,9 @@
         "position": "2"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "museum_007"
   },
 
@@ -195,6 +213,9 @@
         "position": "2"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "museum_008"
   },
 
@@ -216,6 +237,9 @@
         "position": "2"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "museum_009"
   },
 
@@ -236,6 +260,9 @@
         "position": "2"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "museum_010"
   },
 
@@ -256,6 +283,9 @@
         "position": "2"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "museum_011"
   },
   "museum_011": {
@@ -277,6 +307,9 @@
         "moveTo": "1"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "museum_012"
   },
 
@@ -298,6 +331,9 @@
         "position": "1"
       }
     ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    },
     "next": "choice_museum_001"
   },
 
@@ -330,6 +366,9 @@
         "image": "/characters/raka/raka_walk_3_left.png",
         "position": "1"
       }
-    ]
+    ],
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_4.png"
+    }
   }
 }

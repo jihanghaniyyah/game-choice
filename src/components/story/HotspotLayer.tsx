@@ -1,6 +1,7 @@
 "use client";
 
 import { Hotspot } from "@/types/story";
+import { PANORAMA } from "@/constants/game";
 
 interface HotspotLayerProps {
   hotspots: Hotspot[];
@@ -53,7 +54,7 @@ export default function HotspotLayer({
     <div
       className="absolute inset-0 z-[40] pointer-events-auto"
       style={{
-        width: useCamera ? "3200px" : "100%",
+        width: useCamera ? `${PANORAMA.WIDTH}px` : "100%",
         height: "100%",
         transform: useCamera ? `translateX(${cameraX}px)` : undefined,
       }}

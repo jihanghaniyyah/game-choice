@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { story } from "@/data/story";
+import { PANORAMA } from "@/constants/game";
 
 const STORAGE_KEY = "digital-grooming-progress";
 const STARTING_SCENE = "splash_001";
@@ -14,6 +15,7 @@ export function useStoryEngine() {
   const [flash, setFlash] = useState(false);
   const [transition, setTransition] = useState(false);
   const [cameraX, setCameraX] = useState(0);
+  const [cameraLimit, setCameraLimit] = useState(1000);
   const [gameSession, setGameSession] = useState(0);
   const [roomState, setRoomState] = useState({
     desk: false,
@@ -39,6 +41,10 @@ export function useStoryEngine() {
 
   useEffect(() => {
     setVisibleMessages(1);
+  }, [currentSceneId]);
+
+  useEffect(() => {
+    setCameraX(0);
   }, [currentSceneId]);
 
   useEffect(() => {
@@ -97,11 +103,11 @@ export function useStoryEngine() {
   };
 
   const moveCameraLeft = () => {
-    setCameraX((prev) => Math.min(prev + 250, 0));
+    setCameraX((prev) => Math.min(prev + PANORAMA.STEP, 0));
   };
 
   const moveCameraRight = () => {
-    setCameraX((prev) => Math.max(prev - 250, -1000));
+    setCameraX((prev) => Math.max(prev - PANORAMA.STEP, -cameraLimit));
   };
 
   const completeRoomTask = (task: "desk" | "bed" | "painting" | "wardrobe") => {
@@ -189,11 +195,13 @@ export function useStoryEngine() {
   };
 
   const markNotebookAsRead = () => {
-    if (!currentScene.overlay) return;
+    const notebookImage = currentScene.overlay?.image;
+
+    if (!notebookImage) return;
 
     setReadNotebooks((prev) => {
-      if (prev.includes(currentScene.id)) return prev;
-      return [...prev, currentScene.id];
+      if (prev.includes(notebookImage)) return prev;
+      return [...prev, notebookImage];
     });
   };
 
@@ -234,6 +242,9 @@ export function useStoryEngine() {
     readNotebooks,
 
     cameraX,
+    cameraLimit,
+    setCameraLimit,
+
     moveCameraLeft,
     moveCameraRight,
 

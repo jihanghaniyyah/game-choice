@@ -3,7 +3,10 @@
     "id": "day2_001",
     "background": "/backgrounds/school/satu_minggu.png",
     "transition": "fade",
-    "next": "day2_002"
+    "next": "day2_002",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    }
   },
 
   "day2_002": {
@@ -11,7 +14,10 @@
     "type": "narration",
     "background": "/backgrounds/school/cafeteria_friends.png",
     "text": "Bel istirahat berbunyi. Melati dan tiga temannya : Kira, Dea, dan Nisa, duduk bersama di kantin sambil makan",
-    "next": "day2_003"
+    "next": "day2_003",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    }
   },
 
   "day2_003": {
@@ -19,7 +25,10 @@
     "type": "narration",
     "background": "/backgrounds/school/cafeteria_friends.png",
     "text": "Melati berkali-kali mengecek HP-nya, senyum-senyum sendiri.",
-    "next": "day2_004"
+    "next": "day2_004",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    }
   },
 
   "day2_004": {
@@ -28,7 +37,10 @@
     "background": "/backgrounds/school/cafeteria_kira_1.png",
     "speaker": "Kira",
     "text": "Eh, dari tadi senyum-senyum sendiri.",
-    "next": "day2_005"
+    "next": "day2_005",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    }
   },
 
   "day2_005": {
@@ -37,7 +49,10 @@
     "background": "/backgrounds/school/cafeteria_kira_1.png",
     "speaker": "Kira",
     "text": "Punya cowok ya?! Spill dong spill!",
-    "next": "day2_006"
+    "next": "day2_006",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    }
   },
 
   "day2_006": {
@@ -46,7 +61,10 @@
     "background": "/backgrounds/school/cafeteria_kira_1.png",
     "speaker": "Melati",
     "text": "Bukan cowok... cuman teman cowok. Tapi online.",
-    "next": "choice_friend_001"
+    "next": "choice_friend_001",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    }
   },
 
   "choice_friend_001": {
@@ -54,6 +72,9 @@
     "type": "choice",
     "background": "/backgrounds/school/cafeteria_friends.png",
     "objective": "Lihat reaksi Nisa, Kira, dan Dea",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "choices": [
       {
         "label": "[A] Dengar reaksi KIRA",
@@ -74,6 +95,9 @@
     "id": "day2_008",
     "background": "/backgrounds/school/sisa_istirahat.png",
     "transition": "fade",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_0081"
   },
 
@@ -82,7 +106,10 @@
     "type": "dialogue",
     "background": "/backgrounds/school/cafeteria_nisa_3.png",
     "speaker": "Nisa",
-    "text": "Seminggu lagi lomba melukis di kota lainnya, Mel.",
+    "text": "Seminggu lagi lomba melukis di kota lain, Mel.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_009"
   },
 
@@ -92,6 +119,9 @@
     "background": "/backgrounds/school/cafeteria_nisa_4.png",
     "speaker": "Nisa",
     "text": "Aku udah 60% latihan ngelukisnya. Kamu gimana?",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_010"
   },
 
@@ -101,6 +131,9 @@
     "background": "/backgrounds/school/cafeteria_nisa_4.png",
     "speaker": "Melati",
     "text": "Aku baru setengah, kayaknya malem ini aku lanjutin.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_011"
   },
 
@@ -110,6 +143,9 @@
     "background": "/backgrounds/school/cafeteria_nisa_4.png",
     "speaker": "Melati",
     "text": "Mumpung besok nggak ada PR.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_012"
   },
 
@@ -119,6 +155,9 @@
     "background": "/backgrounds/school/cafeteria_nisa_5.png",
     "speaker": "Nisa",
     "text": "Okay, semangat ya!",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_013"
   },
 
@@ -128,6 +167,9 @@
     "background": "/backgrounds/school/cafeteria_kira_3.png",
     "speaker": "Kira",
     "text": "GESS SEMANGAT YAA BUAT LOMBANYA, PASTI KALIAN BISA MENANG!",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_014"
   },
 
@@ -137,6 +179,9 @@
     "background": "/backgrounds/school/cafeteria_dea_2.png",
     "speaker": "Dea",
     "text": "Semangat gess.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_015"
   },
 
@@ -146,6 +191,9 @@
     "background": "/backgrounds/school/cafeteria_dea_2.png",
     "speaker": "Nisa & Melati",
     "text": "Makasihh!",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_016"
   },
 
@@ -154,8 +202,11 @@
     "type": "narration",
     "background": "/backgrounds/school/cafeteria_empty.png",
     "text": "Bel berbunyi. Teman-teman berpencar ke kelasnya masing-masing.",
-    "audios": "/audios/bell_ring_cafeteria.mp3",
+    "audio": "/audios/bell_ring_cafeteria.mp3",
     "transition": "fade",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_017"
   },
 
@@ -163,6 +214,9 @@
     "id": "day2_017",
     "background": "/backgrounds/bedroom/malam.png",
     "transition": "fade",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_0171"
   },
 
@@ -179,7 +233,10 @@
         "position": "3"
       }
     ],
-    "audios": "/audios/knock_door.mp3",
+    "audio": "/audios/knock_door.mp3",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_018"
   },
 
@@ -205,6 +262,9 @@
       }
     ],
     "text": "Rumah terasa sunyi. Melati sedang melukis di kamarnya. Pintu kamarnya dibuka.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_019"
   },
 
@@ -229,6 +289,9 @@
     ],
     "speaker": "Ibu",
     "text": "Melati, kamar kamu berantakan lagi nih.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_020"
   },
 
@@ -253,6 +316,9 @@
     ],
     "speaker": "Ibu",
     "text": "Nanti kalau udah selesai tolong dibereskan ya.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_021"
   },
 
@@ -277,6 +343,9 @@
     ],
     "speaker": "Melati",
     "text": "Melati lagi menyelesaiin proyek melukis, Bu. Bagus kan? ",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_022"
   },
 
@@ -301,6 +370,9 @@
     ],
     "speaker": "Ibu",
     "text": "Bagus sih, tapi Ibu khawatir kalau waktumu kebanyakan buat ini, nilai kamu jadi nggak terjaga.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_023"
   },
 
@@ -325,6 +397,9 @@
     ],
     "speaker": "Ibu",
     "text": "Ibu cuma mau yang terbaik buat kamu.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_024"
   },
 
@@ -349,6 +424,9 @@
     ],
     "speaker": "Melati",
     "text": "Aku ngerti Bu... tapi ini juga masa depanku. ",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_025"
   },
 
@@ -373,6 +451,9 @@
     ],
     "speaker": "Ibu",
     "text": "Iya, Ibu nggak bilang nggak boleh. Tapi balance ya",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_026"
   },
 
@@ -397,6 +478,9 @@
     ],
     "speaker": "Ibu",
     "text": "Ibu capek, besok kita omongin lagi ya. ",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_027"
   },
 
@@ -415,6 +499,9 @@
       }
     ],
     "text": "Pintu ditutup. Melati menatap lukisannya.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_028"
   },
 
@@ -434,6 +521,9 @@
     ],
     "speaker": "(Pikiran Melati)",
     "text": "Aku ngerti Ibu capek. Tapi rasanya... belum sempat aku jelasin apa yang aku mau.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_029"
   },
 
@@ -454,17 +544,17 @@
     "hotspots": [
       {
         "id": "desk",
-        "left": "300px",
-        "top": "170px",
-        "width": "500px",
+        "left": "250px",
+        "top": "150px",
+        "width": "550px",
         "height": "650px"
       },
       {
         "id": "painting",
-        "left": "950px",
-        "top": "170px",
-        "width": "480px",
-        "height": "700px"
+        "left": "820px",
+        "top": "150px",
+        "width": "600px",
+        "height": "650px"
       },
       {
         "id": "wardrobe",
@@ -482,6 +572,9 @@
       }
     ],
     "transition": "fade",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "day2_030"
   },
 
@@ -490,6 +583,9 @@
     "type": "narration",
     "background": "/backgrounds/phone/phone_conversation.png",
     "text": "Setelah targetnya selesai, Melati rebahan di kasur dan membuka HP. Ada notif dari Raka.",
+    "overlay": {
+      "image": "/backgrounds/overlay/notebook_1.png"
+    },
     "next": "dm_013"
   }
 }

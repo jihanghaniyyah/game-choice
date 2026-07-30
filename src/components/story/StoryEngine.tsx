@@ -23,6 +23,8 @@ export default function StoryEngine() {
     readNotebooks,
     markNotebookAsRead,
     cameraX,
+    cameraLimit,
+    setCameraLimit,
     moveCameraLeft,
     moveCameraRight,
     visibleMessages,
@@ -31,6 +33,13 @@ export default function StoryEngine() {
     setWardrobeStep,
     completeRoomTask,
   } = useStoryEngine();
+
+  useEffect(() => {
+    console.log({
+      cameraX,
+      cameraLimit,
+    });
+  }, [cameraX, cameraLimit]);
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -68,6 +77,7 @@ export default function StoryEngine() {
         gameSession={gameSession}
         visibleMessages={visibleMessages}
         wardrobeStep={wardrobeStep}
+        onCameraLimitChange={setCameraLimit}
       />
 
       {currentScene.camera?.enabled && (
@@ -75,7 +85,7 @@ export default function StoryEngine() {
           onLeft={moveCameraLeft}
           onRight={moveCameraRight}
           canMoveLeft={cameraX < 0}
-          canMoveRight={cameraX > -1000}
+          canMoveRight={cameraX > -cameraLimit}
         />
       )}
 

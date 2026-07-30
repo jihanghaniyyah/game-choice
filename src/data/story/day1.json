@@ -60,7 +60,7 @@
       }
     ],
     "text": "Tok tok tok",
-    "audios": "/audio/knock_door.mp3",
+    "audio": "/audios/knock_door.mp3",
     "next": "day1_005"
   },
 
@@ -321,7 +321,7 @@
   "day1_016": {
     "id": "day1_016",
     "type": "narration",
-    "background": "/backgrounds/bedroom/base.png",
+    "background": "/backgrounds/bedroom/base_malam_close_door.png",
     "camera": {
       "enabled": true
     },

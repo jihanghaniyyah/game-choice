@@ -17,12 +17,14 @@ interface BackgroundLayerProps {
   };
 
   onHotspotClick?: (id: string) => void;
+  onCameraLimitChange?: (limit: number) => void;
 }
 
 export default function BackgroundLayer({
   scene,
   cameraX,
   roomState,
+  onCameraLimitChange,
 }: BackgroundLayerProps) {
   const isBedroomExploration = scene.id === "day2_029";
 
@@ -30,17 +32,16 @@ export default function BackgroundLayer({
     ? getBedroomBackground(roomState!)
     : scene.background;
 
-  console.log({
-    scene: scene.id,
-    isBedroomExploration,
-    sceneBackground: scene.background,
-    finalBackground: background,
-  });
-
   if (!background) return null;
 
-  if (scene.camera?.enabled && background) {
-    return <BackgroundPanoramic background={background} cameraX={cameraX} />;
+  if (scene.camera?.enabled) {
+    return (
+      <BackgroundPanoramic
+        background={background}
+        cameraX={cameraX}
+        onLimitCalculated={onCameraLimitChange}
+      />
+    );
   }
 
   return (

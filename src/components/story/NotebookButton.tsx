@@ -34,11 +34,11 @@ export default function NotebookButton({
         width={150}
         height={150}
         className="
-    drop-shadow-[0_0_10px_rgba(255,255,255,0.65)]
-    transition-all
-    duration-200
-    group-hover:drop-shadow-[0_0_18px_rgba(255,255,255,0.9)]
-  "
+          drop-shadow-[0_0_10px_rgba(255,255,255,0.65)]
+          transition-all
+          duration-200
+          group-hover:drop-shadow-[0_0_18px_rgba(255,255,255,0.9)]
+        "
       />
 
       {/* Notification */}
