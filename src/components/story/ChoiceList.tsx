@@ -29,11 +29,10 @@ export default function ChoiceList({
       case "YA":
         return `
         brick
-        bg-white
+        bg-[#2DBE60]
         border-[#2DBE60]
-        text-[#2DBE60]
-        hover:bg-[#2DBE60]
-        hover:text-white
+        text-white
+        hover:bg-[#26A854]
       `;
 
       case "TIDAK":

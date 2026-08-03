@@ -6,7 +6,7 @@
     "camera": {
       "enabled": true
     },
-    "objective": "Cari Raka",
+    "objective": ["Cari Raka"],
     "target": "raka",
     "wrongMessages": [
       "Itu bukan Raka.",

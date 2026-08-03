@@ -91,7 +91,7 @@ export interface Scene {
   controls?: "intro" | "default" | "none";
   messages?: ChatMessage[];
   showNotebook?: boolean;
-  objective?: string;
+  objective?: string[];
   wrongMessages?: string[];
   target?: string;
   video?: string;

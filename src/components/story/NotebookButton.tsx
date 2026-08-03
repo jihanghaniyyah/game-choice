@@ -14,7 +14,7 @@ export default function NotebookButton({
   return (
     <button
       onClick={onOpen}
-      className="
+      className={`
     group
     absolute
     right-6
@@ -25,7 +25,9 @@ export default function NotebookButton({
     duration-200
     hover:scale-110
     active:scale-95
-  "
+
+    ${hasNotification ? "animate-notebook" : ""}
+  `}
     >
       {/* Notebook */}
       <Image

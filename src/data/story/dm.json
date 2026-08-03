@@ -71,6 +71,7 @@
     "id": "dm_008",
     "type": "choice",
     "background": "/backgrounds/phone/phone_dm_raka.png",
+    "objective": ["Pilih percakapan"],
     "choices": [
       {
         "label": "[A] Balas singkat: Makasih ya! Aku gambar manual biasanya.",
@@ -180,7 +181,7 @@
     "id": "dm_012",
     "type": "dialogue",
     "background": "/backgrounds/phone/phone_profile_raka.png",
-    "objective": "Buka Notebook",
+    "objective": ["Buka Notebook"],
     "speaker": "(Pikiran Melati)",
     "text": "Dia... ngerti. Padahal baru kenal.",
     "overlay": {
@@ -193,7 +194,7 @@
     "id": "day1_030",
     "type": "image-choice",
     "background": "/backgrounds/phone/phone_profile_raka.png",
-    "objective": "Matikan HP",
+    "objective": ["Matikan HP"],
     "hotspots": [
       {
         "id": "home_button",
@@ -253,7 +254,7 @@
     "overlay": {
       "image": "/backgrounds/overlay/notebook_2.png"
     },
-    "objective": "Buka Notebook",
+    "objective": ["Buka Notebook"],
     "next": "dm_015"
   },
 
@@ -498,7 +499,7 @@
         }
       ]
     },
-    "objective": "Buka Notebook",
+    "objective": ["Buka Notebook", "Pilih percakapan"],
     "overlay": {
       "image": "/backgrounds/overlay/notebook_4.png"
     },

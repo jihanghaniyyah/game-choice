@@ -67,6 +67,34 @@
   }
 }
 
+@keyframes notebook-wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-5deg);
+  }
+
+  40% {
+    transform: rotate(5deg);
+  }
+
+  60% {
+    transform: rotate(-4deg);
+  }
+
+  80% {
+    transform: rotate(4deg);
+  }
+}
+
+.animate-notebook {
+  animation: notebook-wiggle 1.4s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
 @font-face {
   font-family: "Brick Sans";
   src: url("/fonts/BrickSans.ttf") format("truetype");

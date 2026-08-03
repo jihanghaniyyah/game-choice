@@ -73,6 +73,8 @@ export default function SceneRenderer({
   const allTasksCompleted =
     roomState.desk && roomState.bed && roomState.painting && roomState.wardrobe;
 
+  const completedCount = Object.values(roomState).filter(Boolean).length;
+
   const isRoomExploration = scene.id === "day2_029";
 
   const isSelfieScene =
@@ -158,7 +160,13 @@ export default function SceneRenderer({
         />
       )}
 
-      {scene.objective && <ObjectivePanel objective={scene.objective} />}
+      {scene.objective && (
+        <ObjectivePanel
+          objective={scene.objective}
+          completedCount={scene.id === "day2_029" ? completedCount : undefined}
+          totalCount={scene.id === "day2_029" ? 4 : undefined}
+        />
+      )}
 
       <OverlayLayer
         scene={scene}

@@ -71,7 +71,7 @@
     "id": "choice_friend_001",
     "type": "choice",
     "background": "/backgrounds/school/cafeteria_friends.png",
-    "objective": "Lihat reaksi Nisa, Kira, dan Dea",
+    "objective": ["Lihat reaksi Nisa, Kira, dan Dea"],
     "overlay": {
       "image": "/backgrounds/overlay/notebook_1.png"
     },
@@ -533,7 +533,9 @@
     "camera": {
       "enabled": true
     },
-    "objective": "Rapihkan meja belajar, tempat melukis, lemari, dan meja belajar",
+    "objective": [
+      "Rapihkan meja belajar, tempat melukis, lemari, dan meja belajar"
+    ],
     "characters": [
       {
         "id": "melati",
@@ -572,6 +574,7 @@
       }
     ],
     "transition": "fade",
+    "hideNext": true,
     "overlay": {
       "image": "/backgrounds/overlay/notebook_1.png"
     },
