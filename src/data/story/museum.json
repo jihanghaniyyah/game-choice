@@ -6,8 +6,8 @@
     "camera": {
       "enabled": true
     },
-    "objective": ["Cari Raka"],
-    "target": "raka",
+    "objective": ["Cari Raka di ruang galeri ujung kanan"],
+    "target": "next_room",
     "wrongMessages": [
       "Itu bukan Raka.",
       "Hmm... bukan dia.",
@@ -16,68 +16,18 @@
     ],
     "hotspots": [
       {
-        "id": "orang1",
-        "left": "10%",
-        "top": "15%",
-        "width": "20%",
-        "height": "30%"
-      },
-      {
-        "id": "orang2",
-        "left": "5%",
-        "top": "60%",
-        "width": "15%",
-        "height": "30%"
-      },
-      {
-        "id": "orang3",
-        "left": "25%",
-        "top": "60%",
-        "width": "10%",
-        "height": "30%"
-      },
-      {
-        "id": "orang4",
-        "left": "32%",
-        "top": "15%",
-        "width": "15%",
-        "height": "40%"
-      },
-      {
-        "id": "orang5",
-        "left": "55%",
-        "top": "15%",
-        "width": "15%",
-        "height": "30%"
-      },
-      {
-        "id": "orang6",
-        "left": "75%",
-        "top": "15%",
-        "width": "10%",
-        "height": "40%"
-      },
-      {
-        "id": "orang7",
-        "left": "45%",
-        "top": "55%",
-        "width": "15%",
-        "height": "40%"
-      },
-      {
-        "id": "orang8",
-        "left": "68%",
-        "top": "55%",
-        "width": "10%",
-        "height": "30%"
-      },
-
-      {
-        "id": "raka",
-        "left": "88%",
+        "id": "orang_salah",
+        "left": "0px",
         "top": "0%",
-        "width": "8%",
-        "height": "80%"
+        "width": "3650px",
+        "height": "100%"
+      },
+      {
+        "id": "next_room",
+        "left": "2900px",
+        "top": "0%",
+        "width": "3000px",
+        "height": "100%"
       }
     ],
     "overlay": {

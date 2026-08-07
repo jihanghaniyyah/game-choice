@@ -80,6 +80,7 @@
     "overlay": {
       "image": "/backgrounds/overlay/notebook_4.png"
     },
+    "transition": "fade",
     "next": "galeri_001"
   }
 }

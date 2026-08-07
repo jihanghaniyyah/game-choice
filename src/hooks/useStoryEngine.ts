@@ -105,7 +105,11 @@ export function useStoryEngine() {
   };
 
   const moveCameraRight = () => {
-    setCameraX((prev) => Math.max(prev - PANORAMA.STEP, -cameraLimit));
+    const extra = currentScene.id === "galeri_001" ? 3000 : 0;
+
+    setCameraX((prev) =>
+      Math.max(prev - PANORAMA.STEP, -(cameraLimit + extra)),
+    );
   };
 
   const completeRoomTask = (task: "desk" | "bed" | "painting" | "wardrobe") => {

@@ -22,6 +22,32 @@ export default function GameControls({
   if (scene.type === "splash") {
     return null;
   }
+
+  const buttonClass = `
+brick
+cursor-pointer
+
+rounded-2xl
+border-2
+border-[#2DBE60]
+
+bg-white/95
+px-8
+py-4
+
+text-lg
+font-medium
+text-[#2DBE60]
+
+shadow-xl
+transition-all
+duration-300
+
+hover:-translate-y-1
+hover:scale-105
+hover:bg-[#2DBE60]
+hover:text-white
+`;
   return (
     <div className="absolute bottom-6 left-0 right-0 z-50 flex justify-end px-8">
       <div className="flex justify-end brick">
@@ -90,11 +116,50 @@ export default function GameControls({
             </button>
           </div>
         ) : (
-          showNext && (
+          <>
             <button
-              onClick={onNext}
+              onClick={onPrevious}
               className="
+    brick
+    absolute
+    bottom-0
+    left-8
+    z-50
+
+    cursor-pointer
+
+    rounded-2xl
+    border-2
+    border-[#5B6EF5]
+
+    bg-white/95
+    px-8
+    py-4
+
+    text-lg
+    font-medium
+    text-[#5B6EF5]
+
+    shadow-xl
+    transition-all
+    duration-300
+
+    hover:-translate-y-1
+    hover:scale-105
+    hover:bg-[#5B6EF5]
+    hover:text-white
+  "
+            >
+              ← Kembali
+            </button>
+            {showNext && (
+              <button
+                onClick={onNext}
+                className="
                 brick
+                
+    absolute
+    bottom-0
                 cursor-pointer
 
                 rounded-2xl
@@ -118,10 +183,11 @@ export default function GameControls({
                 hover:bg-[#2DBE60]
                 hover:text-white
               "
-            >
-              Lanjut →
-            </button>
-          )
+              >
+                Lanjut →
+              </button>
+            )}
+          </>
         )}
       </div>
     </div>

@@ -163,6 +163,7 @@ export default function SceneRenderer({
       {scene.objective && (
         <ObjectivePanel
           objective={scene.objective}
+          roomState={scene.id === "day2_029" ? roomState : undefined}
           completedCount={scene.id === "day2_029" ? completedCount : undefined}
           totalCount={scene.id === "day2_029" ? 4 : undefined}
         />
@@ -178,20 +179,35 @@ export default function SceneRenderer({
         <button
           onClick={nextScene}
           className="
+            brick
             absolute
             bottom-6
             right-8
             z-50
+
             cursor-pointer
-            rounded-xl
-            bg-green-600
-            px-6
-            py-3
-            font-semibold
-            text-white
-            transition
-            hover:bg-green-500
-          "
+
+            rounded-2xl
+            border-2
+            border-[#2DBE60]
+
+            bg-white/95
+            px-8
+            py-4
+
+            text-lg
+            font-medium
+            text-[#2DBE60]
+
+            shadow-xl
+            transition-all
+            duration-300
+
+            hover:-translate-y-1
+            hover:scale-105
+            hover:bg-[#2DBE60]
+            hover:text-white
+        "
         >
           Lanjut →
         </button>
