@@ -110,7 +110,6 @@
     "id": "ending_instinct_006",
     "background": "/backgrounds/ending/ending_1_1.png",
     "next": "ending_instinct_007",
-    "audio": "/audios/after_gallery.mp3",
     "overlay": {
       "image": "/backgrounds/overlay/notebook_4.png"
     }
@@ -335,7 +334,6 @@
     "id": "ending_escape_011",
     "background": "/backgrounds/ending/ending_2_1.png",
     "next": "ending_escape_012",
-    "audio": "/audios/after_gallery.mp3",
     "overlay": {
       "image": "/backgrounds/overlay/notebook_4.png"
     }
@@ -497,8 +495,7 @@
     "next": "ending_boundary_008",
     "overlay": {
       "image": "/backgrounds/overlay/notebook_4.png"
-    },
-    "audio": "/audios/after_gallery.mp3"
+    }
   },
 
   "ending_boundary_008": {
@@ -934,8 +931,7 @@
     "overlay": {
       "image": "/backgrounds/overlay/notebook_4.png"
     },
-    "next": "ending_rescue_022",
-    "audio": "/audios/after_gallery.mp3"
+    "next": "ending_rescue_022"
   },
 
   "ending_rescue_022": {

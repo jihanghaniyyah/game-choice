@@ -45,7 +45,6 @@ export default function HotspotLayer({
     }
   });
 
-  const wardrobeHotspot = hotspots.find((hotspot) => hotspot.id === "wardrobe");
   return (
     <div
       className="absolute inset-0 z-[40] pointer-events-auto"
@@ -58,9 +57,7 @@ export default function HotspotLayer({
       {visibleHotspots.map((hotspot) => (
         <button
           key={hotspot.id}
-          onClick={() => {
-            onClick(hotspot.id);
-          }}
+          onClick={() => onClick(hotspot.id)}
           className="
             absolute
             cursor-pointer
@@ -71,7 +68,72 @@ export default function HotspotLayer({
             width: hotspot.width,
             height: hotspot.height,
           }}
-        />
+        >
+          {/* Ripple indicator */}
+          <div
+            className="
+    pointer-events-none
+    absolute
+    left-1/2
+    top-1/2
+    -translate-x-1/2
+    -translate-y-1/2
+  "
+          >
+            {/* Soft glow */}
+            <span
+              className="
+      absolute
+      left-1/2
+      top-1/2
+      h-24
+      w-24
+      -translate-x-1/2
+      -translate-y-1/2
+      rounded-full
+      bg-sky-300/20
+      blur-xl
+      animate-ripple-breathe
+    "
+            />
+
+            {/* Outer ripple */}
+            <span
+              className="
+      absolute
+      left-1/2
+      top-1/2
+      h-20
+      w-20
+      -translate-x-1/2
+      -translate-y-1/2
+      rounded-full
+      border-[3px]
+      border-sky-300/40
+      shadow-[0_0_20px_rgba(125,211,252,0.9)]
+      animate-ripple-breathe
+    "
+            />
+
+            {/* Inner ripple */}
+            <span
+              className="
+      absolute
+      left-1/2
+      top-1/2
+      h-10
+      w-10
+      -translate-x-1/2
+      -translate-y-1/2
+      rounded-full
+      border-2
+      border-sky-200/20
+      shadow-[0_0_12px_rgba(186,230,253,0.9)]
+      animate-ripple-breathe
+    "
+            />
+          </div>
+        </button>
       ))}
     </div>
   );

@@ -25,19 +25,7 @@ export function useStoryEngine() {
   });
   const [wardrobeStep, setWardrobeStep] = useState(0);
   const [visibleMessages, setVisibleMessages] = useState(1);
-
-  useEffect(() => {
-    const savedScene = localStorage.getItem(STORAGE_KEY);
-    if (savedScene && story[savedScene]) {
-      setCurrentSceneId(savedScene);
-    }
-  }, []);
-
   const currentScene = story[currentSceneId];
-
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, currentSceneId);
-  }, [currentSceneId]);
 
   useEffect(() => {
     setVisibleMessages(1);

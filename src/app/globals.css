@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* ========================================
+   Theme
+======================================== */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -8,6 +12,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -18,6 +23,41 @@
     --foreground: #ededed;
   }
 }
+
+/* ========================================
+   Global
+======================================== */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ========================================
+   Fonts
+======================================== */
+
+@font-face {
+  font-family: "Brick Sans";
+  src: url("/fonts/BrickSans.ttf") format("truetype");
+}
+
+.brick {
+  font-family: "Brick Sans";
+}
+
+/* ========================================
+   Comic Animations
+======================================== */
 
 @keyframes comicDown {
   from {
@@ -67,6 +107,32 @@
   }
 }
 
+/* Comic animation classes */
+
+.animate-comic-down {
+  animation: comicDown 5s cubic-bezier(0.18, 0.85, 0.18, 1) forwards;
+}
+
+.animate-comic-up {
+  animation: comicUp 5s cubic-bezier(0.18, 0.85, 0.18, 1) forwards;
+}
+
+.animate-comic-down-delay {
+  animation: comicDown 5s cubic-bezier(0.18, 0.85, 0.18, 1) forwards;
+}
+
+.animate-comic-hold {
+  animation: comicHold 3.5s linear forwards;
+}
+
+.animate-comic-exit {
+  animation: comicExit 1.5s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+/* ========================================
+   Notebook Animation
+======================================== */
+
 @keyframes notebook-wiggle {
   0%,
   100% {
@@ -95,48 +161,9 @@
   transform-origin: bottom center;
 }
 
-@font-face {
-  font-family: "Brick Sans";
-  src: url("/fonts/BrickSans.ttf") format("truetype");
-}
-
-.brick {
-  font-family: "Brick Sans";
-}
-
-.animate-comic-down {
-  animation: comicDown 5s cubic-bezier(0.18, 0.85, 0.18, 1) forwards;
-}
-
-.animate-comic-up {
-  animation: comicUp 5s cubic-bezier(0.18, 0.85, 0.18, 1) forwards;
-}
-
-.animate-comic-down-delay {
-  animation: comicDown 5s cubic-bezier(0.18, 0.85, 0.18, 1) forwards;
-}
-
-.animate-comic-hold {
-  animation: comicHold 3.5s linear forwards;
-}
-
-.animate-comic-exit {
-  animation: comicExit 1.5s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* ========================================
+   Next Arrow
+======================================== */
 
 .next-arrow {
   font-size: 56px;
@@ -144,14 +171,6 @@ body {
   text-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
 
   animation: nextArrow 1.3s infinite;
-}
-
-.delay-1 {
-  animation-delay: 0.2s;
-}
-
-.delay-2 {
-  animation-delay: 0.4s;
 }
 
 @keyframes nextArrow {
@@ -171,37 +190,36 @@ body {
   }
 }
 
-.ripple {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  border: 3px solid #60a5fa;
-  border-radius: 9999px;
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0.2);
-  animation: ripple 2s infinite;
+.delay-1 {
+  animation-delay: 0.2s;
 }
 
-.ripple-2 {
-  animation-delay: 0.6s;
+.delay-2 {
+  animation-delay: 0.4s;
 }
 
-.ripple-3 {
-  animation-delay: 1.2s;
-}
+/* ========================================
+   Hotspot Ripple
+======================================== */
 
-@keyframes ripple {
-  0% {
-    opacity: 0.9;
-    transform: translate(-50%, -50%) scale(0.2);
-  }
+/*
+  Ripple utama untuk memberi petunjuk
+  area yang dapat diklik.
+*/
 
-  70% {
-    opacity: 0.2;
-  }
-
+@keyframes ripple-breathe {
+  0%,
   100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(3);
+    transform: scale(0.75);
+    opacity: 0.45;
   }
+
+  50% {
+    transform: scale(1.25);
+    opacity: 1;
+  }
+}
+
+.animate-ripple-breathe {
+  animation: ripple-breathe 1.6s ease-in-out infinite;
 }
