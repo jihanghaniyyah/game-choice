@@ -349,7 +349,7 @@
     "id": "day1_018",
     "type": "image-choice",
     "background": "/backgrounds/phone/phone_off.png",
-    "objective": ["Nyalakan HP"],
+    "objective": ["Nyalakan HP dengan menekan home button"],
     "hotspots": [
       {
         "id": "home_button",

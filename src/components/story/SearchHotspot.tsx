@@ -52,69 +52,69 @@ export default function SearchHotspot({
         }}
       >
         {hotspots.map((spot) => (
-          <div key={spot.id} className="absolute inset-0">
-            {/* Ripple hanya untuk next_room */}
+          <div
+            key={spot.id}
+            className="absolute"
+            style={{
+              left: spot.left,
+              right: spot.right,
+              top: spot.top,
+              width: spot.width,
+              height: spot.height,
+            }}
+          >
             {spot.id === "next_room" && (
               <div
                 className="
-      pointer-events-none
-      absolute
-      z-[999]
-      flex
-      items-center
-      justify-center
-    "
+          pointer-events-none
+          absolute
+          z-[999]
+          flex
+          flex-col
+          items-center
+        "
                 style={{
-                  left: `calc(${spot.left} + 350px)`,
+                  left: "350px",
                   top: "50%",
                   transform: "translateY(-50%)",
                 }}
               >
-                {/* Outer ripple */}
-                <span
-                  className="
-        absolute
-        h-20
-        w-20
-        rounded-full
-        border-[4px]
-        animate-ripple-breathe
-      "
-                  style={{
-                    borderColor: "#FF3B3B",
-                    boxShadow: "0 0 25px rgba(255, 59, 59, 0.95)",
-                  }}
-                />
+                <div className="flex items-center gap-1">
+                  <span className="room-arrow">❯</span>
+                  <span className="room-arrow room-arrow-delay-1">❯</span>
+                  <span className="room-arrow room-arrow-delay-2">❯</span>
+                </div>
 
-                {/* Inner ripple */}
                 <span
                   className="
-        absolute
-        h-10
-        w-10
-        rounded-full
-        border-[3px]
-        animate-ripple-breathe
-      "
-                  style={{
-                    borderColor: "#FF5A5A",
-                    boxShadow: "0 0 15px rgba(255, 90, 90, 0.95)",
-                  }}
-                />
+            mt-2
+            whitespace-nowrap
+            rounded-xl
+            bg-black/60
+            px-4
+            py-2
+            text-sm
+            font-medium
+            tracking-wide
+            text-white
+            shadow-lg
+            backdrop-blur-sm
+          "
+                >
+                  Klik menuju ruangan selanjutnya
+                </span>
               </div>
             )}
 
-            {/* Area hotspot */}
             <button
               onClick={() => handleClick(spot.id)}
-              className="absolute cursor-pointer"
-              style={{
-                left: spot.left,
-                right: spot.right,
-                top: spot.top,
-                width: spot.width,
-                height: spot.height,
-              }}
+              className="
+        absolute
+        inset-0
+        cursor-pointer
+        bg-transparent
+      "
+              aria-label="Hotspot"
             />
           </div>
         ))}

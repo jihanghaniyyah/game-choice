@@ -135,6 +135,7 @@ export default function SceneRenderer({
           onClick={choose}
           roomState={roomState}
           cameraX={cameraX}
+          sceneId={scene.id}
         />
       )}
 
@@ -146,6 +147,7 @@ export default function SceneRenderer({
           cameraX={cameraX}
           useCamera={false}
           onClick={handleSelfie}
+          sceneId={scene.id}
         />
       )}
 

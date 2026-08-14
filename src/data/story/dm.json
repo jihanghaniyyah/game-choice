@@ -194,7 +194,7 @@
     "id": "day1_030",
     "type": "image-choice",
     "background": "/backgrounds/phone/phone_profile_raka.png",
-    "objective": ["Matikan HP"],
+    "objective": ["Matikan HP dengan menekan home button"],
     "hotspots": [
       {
         "id": "home_button",

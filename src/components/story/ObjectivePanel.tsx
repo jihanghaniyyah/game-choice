@@ -52,7 +52,7 @@ export default function ObjectivePanel({
         top-50
         right-10
         z-50
-        w-[250px]
+        w-[300px]
         rounded-md
         bg-white/95
         px-3
@@ -75,7 +75,7 @@ export default function ObjectivePanel({
               </p>
             ))}
 
-            <div className="mt-4 pt-3">
+            <div className="pt-2">
               {completedCount === totalCount ? (
                 <p className="mb-2 font-semibold text-green-600">
                   🎉 Semua area telah dirapihkan!

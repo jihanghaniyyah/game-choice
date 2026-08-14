@@ -17,6 +17,8 @@ interface HotspotLayerProps {
   cameraX: number;
 
   useCamera?: boolean;
+
+  sceneId: string;
 }
 
 export default function HotspotLayer({
@@ -25,6 +27,7 @@ export default function HotspotLayer({
   roomState,
   cameraX,
   useCamera = true,
+  sceneId,
 }: HotspotLayerProps) {
   const visibleHotspots = hotspots.filter((hotspot) => {
     switch (hotspot.id) {
@@ -58,10 +61,13 @@ export default function HotspotLayer({
         <button
           key={hotspot.id}
           onClick={() => onClick(hotspot.id)}
-          className="
-            absolute
-            cursor-pointer
-          "
+          className={`
+  absolute
+  cursor-pointer
+  transition-all
+  duration-200
+  ${sceneId !== "day2_029" ? "hover:bg-white/20" : ""}
+`}
           style={{
             left: hotspot.left,
             top: hotspot.top,
@@ -69,70 +75,52 @@ export default function HotspotLayer({
             height: hotspot.height,
           }}
         >
-          {/* Ripple indicator */}
-          <div
-            className="
-    pointer-events-none
-    absolute
-    left-1/2
-    top-1/2
-    -translate-x-1/2
-    -translate-y-1/2
-  "
-          >
-            {/* Soft glow */}
-            <span
+          {sceneId === "day2_029" && (
+            <div
               className="
-      absolute
-      left-1/2
-      top-1/2
-      h-24
-      w-24
-      -translate-x-1/2
-      -translate-y-1/2
-      rounded-full
-      bg-sky-300/20
-      blur-xl
-      animate-ripple-breathe
-    "
-            />
+          pointer-events-none
+          absolute
+          left-1/2
+          top-1/2
+          -translate-x-1/2
+          -translate-y-1/2
+        "
+            >
+              <span
+                className="
+            absolute
+            left-1/2
+            top-1/2
+            h-20
+            w-20
+            -translate-x-1/2
+            -translate-y-1/2
+            rounded-full
+            border-[8px]
+            border-black/70
+            bg-red-500
+            animate-ripple-breathe
+          "
+              />
 
-            {/* Outer ripple */}
-            <span
-              className="
-      absolute
-      left-1/2
-      top-1/2
-      h-20
-      w-20
-      -translate-x-1/2
-      -translate-y-1/2
-      rounded-full
-      border-[3px]
-      border-sky-300/40
-      shadow-[0_0_20px_rgba(125,211,252,0.9)]
-      animate-ripple-breathe
-    "
-            />
-
-            {/* Inner ripple */}
-            <span
-              className="
-      absolute
-      left-1/2
-      top-1/2
-      h-10
-      w-10
-      -translate-x-1/2
-      -translate-y-1/2
-      rounded-full
-      border-2
-      border-sky-200/20
-      shadow-[0_0_12px_rgba(186,230,253,0.9)]
-      animate-ripple-breathe
-    "
-            />
-          </div>
+              <span
+                className="
+            absolute
+            left-1/2
+            top-1/2
+            -translate-x-1/2
+            -translate-y-1/2
+            whitespace-nowrap
+            text-sm
+            font-medium
+            tracking-wide
+            text-white
+          "
+              >
+                Klik
+              </span>
+            </div>
+          )}
         </button>
       ))}
     </div>
