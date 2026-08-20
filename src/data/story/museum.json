@@ -10,7 +10,7 @@
     "target": "next_room",
     "wrongMessages": [
       "Itu bukan Raka.",
-      "Hmm... bukan dia.",
+      "Hmm..., bukan dia.",
       "Sepertinya bukan orang yang kucari.",
       "Masih belum ketemu."
     ],
@@ -33,6 +33,7 @@
     "overlay": {
       "image": "/backgrounds/overlay/notebook_4.png"
     },
+    "audio": "/audios/gallery.mp3",
     "next": "museum_001"
   },
 
@@ -101,7 +102,7 @@
     "id": "museum_005",
     "type": "dialogue",
     "speaker": "(Pikiran Melati)",
-    "text": "Ini... Raka?",
+    "text": "Ini..., Raka?",
     "background": "/backgrounds/museum/museum_base.png",
     "characters": [
       {

@@ -64,7 +64,7 @@
     "type": "dialogue",
     "background": "/backgrounds/hotel/hotel_6.png",
     "speaker": "Nisa",
-    "text": "Hmm... oke deh. Tapi WhatsApp aku ya kalau udah sampai, kalau ada apa-apa!",
+    "text": "Hmm..., oke deh. Tapi WhatsApp aku ya kalau udah sampai, kalau ada apa-apa!",
     "overlay": {
       "image": "/backgrounds/overlay/notebook_4.png"
     },

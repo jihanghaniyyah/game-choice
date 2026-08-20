@@ -60,7 +60,7 @@
     "type": "dialogue",
     "background": "/backgrounds/school/cafeteria_kira_1.png",
     "speaker": "Melati",
-    "text": "Bukan cowok... cuman teman cowok. Tapi online.",
+    "text": "Bukan cowok..., cuman teman cowok. Tapi online.",
     "next": "choice_friend_001",
     "overlay": {
       "image": "/backgrounds/overlay/notebook_1.png"
@@ -423,7 +423,7 @@
       }
     ],
     "speaker": "Melati",
-    "text": "Aku ngerti Bu... tapi ini juga masa depanku. ",
+    "text": "Aku ngerti Bu..., tapi ini juga masa depanku. ",
     "overlay": {
       "image": "/backgrounds/overlay/notebook_1.png"
     },
@@ -520,7 +520,7 @@
       }
     ],
     "speaker": "(Pikiran Melati)",
-    "text": "Aku ngerti Ibu capek. Tapi rasanya... belum sempat aku jelasin apa yang aku mau.",
+    "text": "Aku ngerti Ibu capek. Tapi rasanya..., belum sempat aku jelasin apa yang aku mau.",
     "overlay": {
       "image": "/backgrounds/overlay/notebook_1.png"
     },

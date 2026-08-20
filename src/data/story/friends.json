@@ -29,7 +29,7 @@
     "type": "dialogue",
     "background": "/backgrounds/school/cafeteria_dea.png",
     "speaker": "Dea",
-    "text": "Wow... semoga jadi teman baik-baik terus ya.",
+    "text": "Wow..., semoga jadi teman baik-baik terus ya.",
     "overlay": {
       "image": "/backgrounds/overlay/notebook_1.png"
     },

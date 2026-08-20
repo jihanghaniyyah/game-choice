@@ -4,6 +4,7 @@ interface ObjectivePanelProps {
   objective: string[];
   completedCount?: number;
   totalCount?: number;
+  hint?: string;
 
   roomState?: {
     desk: boolean;
@@ -18,6 +19,7 @@ export default function ObjectivePanel({
   completedCount,
   totalCount,
   roomState,
+  hint,
 }: ObjectivePanelProps) {
   const roomTasks = roomState
     ? [
@@ -51,7 +53,7 @@ export default function ObjectivePanel({
         absolute
         top-50
         right-10
-        z-50
+        z-40
         w-[300px]
         rounded-md
         bg-white/95
@@ -100,6 +102,12 @@ export default function ObjectivePanel({
           objective.map((item, index) => <p key={index}>• {item}</p>)
         )}
       </div>
+      {hint && (
+        <div className="mt-3 border-t border-black/10 pt-2">
+          <p className="font-bold text-gray-900">💡 Hint:</p>
+          <p className="text-gray-900">{hint}</p>
+        </div>
+      )}
     </div>
   );
 }

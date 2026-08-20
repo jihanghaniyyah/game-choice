@@ -183,7 +183,7 @@
     "background": "/backgrounds/phone/phone_profile_raka.png",
     "objective": ["Buka Notebook"],
     "speaker": "(Pikiran Melati)",
-    "text": "Dia... ngerti. Padahal baru kenal.",
+    "text": "Dia..., ngerti. Padahal baru kenal.",
     "overlay": {
       "image": "/backgrounds/overlay/notebook_1.png"
     },
@@ -277,7 +277,7 @@
       },
       {
         "from": "other",
-        "text": "Hey... itu pasti capek banget."
+        "text": "Hey..., itu pasti capek banget."
       },
       {
         "from": "other",
@@ -322,7 +322,7 @@
       },
       {
         "from": "other",
-        "text": "Hey... itu pasti capek banget."
+        "text": "Hey..., itu pasti capek banget."
       },
       {
         "from": "other",
@@ -344,7 +344,7 @@
     "overlayUI": {
       "type": "dialogue",
       "speaker": "(Pikiran Melati)",
-      "text": "Raka... ngerti aku. Padahal kita belum pernah ketemu."
+      "text": "Raka..., ngerti aku. Padahal kita belum pernah ketemu."
     },
     "transition": "fade",
     "overlay": {
@@ -452,7 +452,7 @@
     "overlayUI": {
       "type": "dialogue",
       "speaker": "(Pikiran Melati)",
-      "text": "Ini yang aku tunggu-tunggu... ketemu langsung. Tapi sekarang? Di kota yang bukan kotaku?"
+      "text": "Ini yang aku tunggu-tunggu..., ketemu langsung. Tapi sekarang? Di kota yang bukan kotaku?"
     },
     "overlay": {
       "image": "/backgrounds/overlay/notebook_3.png"
@@ -490,7 +490,7 @@
     "overlayChoice": {
       "choices": [
         {
-          "label": "[A] Wah... boleh deh. Kamu di mana sekarang?",
+          "label": "[A] Wah..., boleh deh. Kamu di mana sekarang?",
           "next": "hotel_001"
         },
         {

@@ -25,7 +25,7 @@ export default function PanoramaControls({
             absolute
             left-6
             top-1/2
-            z-40
+            z-[9999]
             -translate-y-1/2
             rounded-full
             bg-black/40
@@ -60,7 +60,7 @@ export default function PanoramaControls({
             absolute
             right-6
             top-1/2
-            z-40
+            z-[9999]
             -translate-y-1/2
             rounded-full
             bg-black/40

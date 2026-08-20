@@ -109,14 +109,10 @@ export default function SceneRenderer({
         onHotspotClick={choose}
         onCameraLimitChange={onCameraLimitChange}
       />
-
       {scene.audio && <AudioPlayer src={scene.audio} />}
-
       <WardrobePanoramaOverlay step={wardrobeStep} cameraX={cameraX} />
-
       {/* Character */}
       <CharacterLayer scene={scene} gameSession={gameSession} />
-
       {hasComic && (
         <ComicCutscene
           images={scene.images ?? []}
@@ -127,7 +123,6 @@ export default function SceneRenderer({
           }}
         />
       )}
-
       {/* Hotspot eksplorasi kamar */}
       {scene.hotspots && isRoomExploration && (
         <HotspotLayer
@@ -138,7 +133,6 @@ export default function SceneRenderer({
           sceneId={scene.id}
         />
       )}
-
       {/* Hotspot selfie */}
       {scene.hotspots && isSelfieScene && (
         <HotspotLayer
@@ -150,7 +144,6 @@ export default function SceneRenderer({
           sceneId={scene.id}
         />
       )}
-
       {/* Notebook Icon */}
       {scene.showNotebook !== false && (
         <NotebookButton
@@ -161,22 +154,25 @@ export default function SceneRenderer({
           hasNotification={hasNotebookNotification}
         />
       )}
-
       {scene.objective && (
         <ObjectivePanel
           objective={scene.objective}
           roomState={scene.id === "day2_029" ? roomState : undefined}
           completedCount={scene.id === "day2_029" ? completedCount : undefined}
           totalCount={scene.id === "day2_029" ? 4 : undefined}
+          hint={
+            scene.id === "galeri_001" || scene.id === "day2_029"
+              ? "Klik tombol → pada keyboard untuk melanjutkan"
+              : undefined
+          }
         />
       )}
-
+      o
       <OverlayLayer
         scene={scene}
         visible={showOverlay}
         onClose={() => setShowOverlay(false)}
       />
-
       {isRoomExploration && allTasksCompleted && (
         <button
           onClick={nextScene}
@@ -214,7 +210,6 @@ export default function SceneRenderer({
           Lanjut →
         </button>
       )}
-
       {/* UI Layer */}
       <div className="absolute inset-0 z-40 pointer-events-none">
         {scene.type === "splash" && <SplashBox onStart={nextScene} />}
@@ -295,7 +290,6 @@ export default function SceneRenderer({
           />
         )}
       </div>
-
       <FlashEffect visible={flash || manualFlash} />
       <FadeTransition visible={transition} />
     </div>

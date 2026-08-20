@@ -887,7 +887,7 @@
     "type": "dialogue",
     "background": "/backgrounds/ending/ending_car.jpeg",
     "speaker": "(Pikiran Melati)",
-    "text": "Nisa... tahu. Dari tadi dia tahu.",
+    "text": "Nisa..., tahu. Dari tadi dia tahu.",
     "overlay": {
       "image": "/backgrounds/overlay/notebook_4.png"
     },
