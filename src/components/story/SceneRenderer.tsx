@@ -179,7 +179,7 @@ export default function SceneRenderer({
           completedCount={scene.id === "day2_029" ? completedCount : undefined}
           totalCount={scene.id === "day2_029" ? 4 : undefined}
           hint={
-            scene.id === "galeri_001" || scene.id === "day2_029"
+            scene.id === "galeri_001"
               ? "Klik tombol → pada keyboard untuk melanjutkan"
               : undefined
           }
