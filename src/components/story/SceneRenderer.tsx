@@ -99,6 +99,24 @@ export default function SceneRenderer({
   const hasNotebookNotification =
     !!notebookId && !readNotebooks.includes(notebookId);
 
+  useEffect(() => {
+    if (!hasNotebookNotification) return;
+
+    const audio = new Audio("/audios/notebook_notification.mp3");
+
+    audio.loop = true;
+    audio.volume = 0.5;
+
+    audio.play().catch(() => {
+      // Browser dapat memblokir autoplay sebelum user berinteraksi
+    });
+
+    return () => {
+      audio.pause();
+      audio.currentTime = 0;
+    };
+  }, [hasNotebookNotification]);
+
   return (
     <div className="relative h-full w-full overflow-visible">
       {/* Background */}
@@ -167,7 +185,7 @@ export default function SceneRenderer({
           }
         />
       )}
-      o
+
       <OverlayLayer
         scene={scene}
         visible={showOverlay}
